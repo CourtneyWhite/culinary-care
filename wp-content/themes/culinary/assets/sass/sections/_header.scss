@@ -1,0 +1,64 @@
+
+.header {
+  padding: $base*2 0;
+}
+
+
+.logo {
+  float: left;
+  width: 200px;
+}
+
+.top {
+  @include bp-min-width($medium) {
+    float: right;
+  }
+}
+
+.nav {
+
+  @include bp-min-width($medium) {
+    float: right;
+    clear: right;
+  }
+}
+
+.nav li {
+
+  @include bp-min-width($medium) {
+    position: relative;
+    float: left;
+    margin-left: 50px;
+  }
+  
+  &:after {
+    @include rotate(30deg);
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    width: 2px;
+    height: 40px;
+    background: $yellow;
+  }
+  
+  &:first-child:after,
+  &:last-child:after {
+    display: none;
+  }
+}
+
+
+.nav a {
+  color: $grey;
+  font-weight: $heavy;
+  text-transform: uppercase;
+
+  @include bp-min-width($medium) {
+    @include font-size(21px);
+  }
+  
+  &:last-of-type {
+    @extend .btn;
+  }
+}

@@ -1,0 +1,12 @@
+
+.hero {
+  padding: $base*12 0 $base*10;
+  background: $green;
+/*   background: $green $hero-home no-repeat; */
+  background-size: cover;
+  color: #fff;
+  
+  h1 {
+    max-width: 600px;
+  }
+}

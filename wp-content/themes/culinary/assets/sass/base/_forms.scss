@@ -1,0 +1,191 @@
+
+.form-item {
+  margin-bottom: 12px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form-two-col {
+  @include cf;
+  margin-bottom: 12px;
+  
+  .form-col {
+    float: left;
+    width: 30%;
+    
+    &:first-of-type {
+      width: 70%;
+    }
+  }
+}
+
+label {
+  @include font-size(12px);
+  display: block;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  @include font-size(18px);
+  width: 100%;
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid #fff;
+  font-family: $sans;
+
+  &.error {
+    border-color: $red;
+  }
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border: 1px solid #fff;
+}
+
+textarea {
+  width: 100%;
+  height: $base*4;
+  padding: 0.5em 0.75em;
+  border: 1px solid $grey;
+  color: #fff;
+  font: 400 1em/1em $sans;
+  resize: none;
+  
+  @include bp-min-width($medium) {
+    height: $base*6;
+    max-width: 540px;
+  }
+}
+
+
+/** Select ============**/
+
+.form-select {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid $green;
+  }
+  
+  select {
+    @include appearance(none);
+    text-indent: 0.01px;
+    text-overflow: '';
+    border-radius: 0;
+  }
+}
+
+/** Checkboxes ============**/
+
+.form-checkbox {
+  position: relative;
+  margin-bottom: 0.5em;
+
+  input {
+    opacity: 0;
+    float: left;
+    width: 20px;
+  }
+}
+
+.form-checkbox label {
+  padding-left: 20px;
+  margin-bottom: 0;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background: $grey;
+    border-radius: 3px;
+  }
+
+  .description {
+    display: block;
+    color: $grey;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+.form-checkbox input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 13px;
+  height: 15px;
+}
+
+.checkboxes input {
+  opacity: 0;
+  float: left;
+  width: 20px;
+}
+
+
+/** Radio ============**/
+
+.form-radio {
+  display: inline-block;
+  margin-right: 24px;
+  padding-top: 8px;
+  
+  label, input {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  label {
+    @include font-size(36px);
+    color: #fff;
+  }
+  
+  input {
+    @include appearance(none);
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    border: 1px solid $grey;
+  }
+  
+  input:checked {
+    outline: none;
+/*     background: $radio-check no-repeat 2px 2.5px; */
+  }
+}
+
+
+
+
+/** Buttons ============**/
+
+input[type="submit"], button {
+  @include transition(background 0.15s ease-in);
+  border: none;
+  cursor: pointer;
+  font-family: $sans;
+  
+  &.btn {
+    padding: 1em 2em;
+  }
+}

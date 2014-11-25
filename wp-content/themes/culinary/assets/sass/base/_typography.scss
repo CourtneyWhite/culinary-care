@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900,700,400italic);
+
+$sans: 'Lato', Helvetica, arial, sans-serif;
+
+$reg:   400;
+$bold:  700;
+$heavy: 900;
+
+$base:  24px;
+
+body {
+  font: $reg 1em/1.5em $sans;
+}
+
+h1,h2,h3,h4,h5 {
+  line-height: 1;
+}
+
+h1 {
+  @include font-size(48px);
+  color: #fff;
+  font-weight: $heavy;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+h2 {
+  @include font-size(36px);
+  margin-bottom: $base;
+  color: $green;
+  font-weight: $heavy;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include font-size(24px);
+  font-weight: $heavy;
+  text-transform: uppercase;
+}
+
+h4 {
+  @include font-size(18px);
+  font-weight: $bold;
+}
+
+p {
+  @include font-size(16px);
+}
+
+strong {
+  font-weight: $bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.label {
+  font-weight: $bold;
+}
+
+.body p,
+.body ul,
+.body ol {
+  margin-bottom: $base;
+
+  &:last-child, &.label {
+    margin-bottom: 0;
+  }
+}
+
+.body ul,
+.body ol {
+  margin-left: 1.5em;
+}
+
+.body ul li {
+  list-style: disc;
+}
+
+.body ol li {
+  list-style: decimal;
+}

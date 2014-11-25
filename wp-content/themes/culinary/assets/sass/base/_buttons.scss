@@ -1,0 +1,23 @@
+
+a {
+	@include transition(all 0.15s ease-in);
+	color: $green;
+	
+	&:hover {
+	}
+}
+
+.btn {
+  @include font-size(18px);
+  display: inline-block;
+  padding: 0.75em 1.25em;
+  background: $green;
+  color: #fff;
+  font-weight: $heavy;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  &:hover {
+    background: lighten($green, 50%);
+  }
+}

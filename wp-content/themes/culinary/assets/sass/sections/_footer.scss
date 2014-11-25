@@ -1,0 +1,15 @@
+
+.footer {
+  @include font-size(26px);
+  padding: $base*4 0 $base*5;
+  text-align: center;
+  
+  a {
+    color: $grey;
+    
+    &:hover {
+      color: $green;
+    }
+  }
+
+}

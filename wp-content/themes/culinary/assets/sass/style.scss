@@ -1,0 +1,32 @@
+/*!
+Theme Name: Culinary Care Custom v1
+Theme URI: http://html5reset.org
+Description: A custom theme based on HTML 5 Reset theme
+Author URI: http://bradsawicki.com
+Version: 1.0
+*/
+
+@import "compass";
+
+@import "base/reset";
+@import "base/mixins";
+@import "base/media-queries";
+@import "base/colors";
+@import "base/typography";
+@import "base/images";
+@import "base/icons";
+@import "base/grid";
+@import "base/layout";
+@import "base/buttons";
+@import "base/forms";
+
+@import "sections/header";
+@import "sections/footer";
+
+@import "sections/hero";
+// @import "sections/story";
+// @import "sections/popcorn";
+// @import "sections/where-to-buy";
+// @import "sections/contact";
+
+@import "pages/home";
