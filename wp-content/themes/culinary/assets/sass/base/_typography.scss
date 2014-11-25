@@ -34,13 +34,14 @@ h2 {
 
 h3 {
   @include font-size(24px);
+  color: $grey;
   font-weight: $heavy;
   text-transform: uppercase;
 }
 
 h4 {
   @include font-size(18px);
-  font-weight: $bold;
+  font-weight: $heavy;
 }
 
 p {

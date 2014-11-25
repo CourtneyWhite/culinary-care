@@ -1,17 +1,58 @@
 
 .header {
-  padding: $base*2 0;
+  padding: 18px 0 $base;
+  border-bottom: 2px solid $lt-grey-2;
 }
 
-
-.logo {
+.header .logo {
   float: left;
-  width: 200px;
+  width: 266px;
+
+  @include bp-min-width($medium) {
+    margin-top: 6px;
+  }
 }
 
-.top {
+.header .top {
+  @include cf;
+  
   @include bp-min-width($medium) {
     float: right;
+    margin-bottom: $base;
+  }
+}
+
+.header .top .social-links {
+  float: right;
+  margin-left: 12px;
+  
+  li {
+    float: left;
+    margin-left: 12px;
+  }
+}
+
+.header .top .newsletter {
+  position: relative;
+  float: right;
+  padding-right: 88px;
+  border: 1px solid $lt-grey;
+  
+  label {
+    @include font-size(14px);
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: $grey;
+  }
+  
+  .btn {
+    @extend .grey;
+    @include font-size(14px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75em 1em;
   }
 }
 
@@ -35,10 +76,10 @@
     @include rotate(30deg);
     content: "";
     position: absolute;
-    top: -5px;
+    top: 7px;
     left: -25px;
     width: 2px;
-    height: 40px;
+    height: 38px;
     background: $yellow;
   }
   
@@ -52,13 +93,16 @@
 .nav a {
   color: $grey;
   font-weight: $heavy;
+  line-height: 51px;
   text-transform: uppercase;
 
   @include bp-min-width($medium) {
     @include font-size(21px);
   }
-  
-  &:last-of-type {
-    @extend .btn;
-  }
+}
+
+.nav li:last-child a {
+  @extend .btn;
+  @extend .red;
+  line-height: 1.5;
 }

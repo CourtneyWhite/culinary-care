@@ -1,15 +1,117 @@
 
 .footer {
-  @include font-size(26px);
-  padding: $base*4 0 $base*5;
-  text-align: center;
+  padding: $base*2 0 $base;
+  background: $green;
+  color: #fff;
+
+  @include bp-max-width($medium) {
+    text-align: center;
+  }
   
   a {
-    color: $grey;
+    color: #fff;
     
     &:hover {
-      color: $green;
+      color: $lt-grey;
     }
   }
+}
 
+.footer .top {
+  @include cf;
+  width: 100%;
+  padding-bottom: $base*2;
+}
+
+.footer h4 {
+  color: #fff;
+}
+
+.footer .logo {
+
+  @include bp-min-width($medium) {
+    float: left;
+    width: 24%;
+    margin-top: -6px;
+  }
+}
+
+.footer .newsletter {
+
+  @include bp-min-width($medium) {
+    float: left;
+    width: 39%;
+  }
+  
+  h4 {
+    margin-bottom: $base;
+  }
+  
+  .form-newsletter {
+    position: relative;
+    max-width: 360px;
+    padding-right: 112px;
+  }
+  
+  label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    color: $grey;
+  }
+  
+  input {
+    height: 42px;
+  }
+  
+  .btn {
+    @include font-size(18px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.55em 1em;
+  }
+}
+
+.footer .social-links {
+
+  @include bp-min-width($medium) {
+    float: left;
+    width: 20%;
+  }
+  
+  li {
+    float: left;
+    margin-right: 12px;
+  }
+}
+
+.footer-nav {
+
+  @include bp-min-width($medium) {
+    float: left;
+    width: 17%;
+    text-align: right;
+  }
+  
+  a {
+    font-weight: $heavy;
+    text-transform: uppercase;
+  }
+}
+
+.footer .bottom {
+  @include cf;
+  @include font-size(14px);
+  width: 100%;
+  padding-top: $base;
+  border-top: 1px solid #fff;
+  
+  .copyright {
+    float: left;
+  }
+  
+  .site-by {
+    float: right;
+  }
 }

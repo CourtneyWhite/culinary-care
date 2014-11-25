@@ -20,4 +20,16 @@ a {
   &:hover {
     background: lighten($green, 50%);
   }
+  
+  &.red {
+    background: $red;
+  }
+
+  &.yellow {
+    background: $yellow;
+  }
+
+  &.grey {
+    background: $grey;
+  }
 }
