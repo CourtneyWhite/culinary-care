@@ -42,11 +42,27 @@
 		</section>
 		
 		
-		<section id="story" class="story">
+		<section id="how-it-works" class="how-it-works section">
 		  <div class="wrapper">
-  			<div class="content">
-    			<?php the_field(''); ?>
-  			</div>
+		    <h2 class="section-title">How It Works</h2>
+		    <div class="grid">
+  			  <div class="col-1-4">
+  			    <h3><span><?php the_field('how_it_works_block_1_title'); ?><span></h3>
+  			    <?php the_field('how_it_works_block_1'); ?>
+  			  </div>
+  			  <div class="col-1-4">
+  			    <h3><span><?php the_field('how_it_works_block_2_title'); ?></span></h3>
+  			    <?php the_field('how_it_works_block_2'); ?>
+  			  </div>
+  			  <div class="col-1-4">
+  			    <h3><span><?php the_field('how_it_works_block_3_title'); ?></span></h3>
+  			    <?php the_field('how_it_works_block_3'); ?>
+  			  </div>
+  			  <div class="col-1-4">
+  			    <h3><span><?php the_field('how_it_works_block_4_title'); ?></span></h3>
+  			    <?php the_field('how_it_works_block_4'); ?>
+  			  </div>
+		    </div>
 		  </div>
 		</section>
 

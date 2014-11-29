@@ -30,6 +30,7 @@ h2 {
   color: $green;
   font-weight: $heavy;
   text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 h3 {
@@ -37,6 +38,7 @@ h3 {
   color: $grey;
   font-weight: $heavy;
   text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 h4 {
@@ -45,7 +47,12 @@ h4 {
 }
 
 p {
-  @include font-size(16px);
+  @include font-size(17px);
+}
+
+.section-title {
+  margin-bottom: $base*2.5;
+  text-align: center;
 }
 
 strong {

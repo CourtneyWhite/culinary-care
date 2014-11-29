@@ -22,3 +22,11 @@ body {
     margin: 0 auto;
   }
 }
+
+.section .wrapper {
+  padding: $base 0;
+  
+  @include bp-min-width($medium) {
+    padding: $base*2.5 0;
+  }
+}

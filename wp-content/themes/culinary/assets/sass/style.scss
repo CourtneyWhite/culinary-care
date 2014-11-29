@@ -22,11 +22,8 @@ Version: 1.0
 
 @import "sections/header";
 @import "sections/footer";
-
 @import "sections/hero";
-// @import "sections/story";
-// @import "sections/popcorn";
-// @import "sections/where-to-buy";
-// @import "sections/contact";
 
 @import "pages/home";
+
+@import "modules/hero-slider";

@@ -106,6 +106,7 @@ h2 {
   color: #8aad64;
   font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 h3 {
@@ -114,6 +115,7 @@ h3 {
   color: #818282;
   font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 h4 {
@@ -123,8 +125,13 @@ h4 {
 }
 
 p {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
+}
+
+.section-title {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 strong {
@@ -260,6 +267,15 @@ body {
     width: 92%;
     max-width: 1400px;
     margin: 0 auto;
+  }
+}
+
+.section .wrapper {
+  padding: 24px 0;
+}
+@media (min-width: 740px) {
+  .section .wrapper {
+    padding: 60px 0;
   }
 }
 
@@ -724,6 +740,33 @@ input[type="submit"].btn, button.btn {
   max-width: 600px;
 }
 
+.how-it-works {
+  text-align: center;
+}
+.how-it-works p {
+  color: #818282;
+}
+
+.how-it-works h3 {
+  position: relative;
+  height: 192px;
+  margin-bottom: 18px;
+  color: #fff;
+  background: #363636;
+}
+.how-it-works h3 span {
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100%;
+  padding: 0 24px;
+}
+
 .hero-slider {
   *zoom: 1;
 }
@@ -755,7 +798,18 @@ input[type="submit"].btn, button.btn {
   .hero-slider .slide-content {
     float: left;
     width: 44%;
+    padding: 72px 4%;
   }
+}
+
+.hero-slider .slide-content h1 {
+  margin-bottom: 12px;
+}
+
+.hero-slider .slide-content p {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.25;
 }
 
 @media (min-width: 740px) {
@@ -786,9 +840,10 @@ input[type="submit"].btn, button.btn {
   padding: 16px 0;
   background: #8aad64;
   color: #fff;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 740px) {
   .slider-tabs a {
@@ -798,4 +853,28 @@ input[type="submit"].btn, button.btn {
     float: left;
     width: 25%;
   }
+}
+.slider-tabs a:hover {
+  box-shadow: inset 0 4px 0 #567931;
+}
+
+.slider-tabs .tab-2 {
+  background: #97d4c9;
+}
+.slider-tabs .tab-2:hover {
+  box-shadow: inset 0 4px 0 #66a196;
+}
+
+.slider-tabs .tab-3 {
+  background: #fcd268;
+}
+.slider-tabs .tab-3:hover {
+  box-shadow: inset 0 4px 0 #d4a737;
+}
+
+.slider-tabs .tab-4 {
+  background: #f7a489;
+}
+.slider-tabs .tab-4:hover {
+  box-shadow: inset 0 4px 0 #da7554;
 }

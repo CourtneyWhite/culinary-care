@@ -1,0 +1,93 @@
+
+.hero-slider {
+  @include cf;
+  
+  .slides {
+    @include cf;
+    max-width: 1800px;
+    background: lighten($lt-grey, 15%);
+  }
+}
+
+.hero-slider .slide-content {
+  background: $green;
+  color: #fff;
+
+  @include bp-min-width($medium) {
+    float: left;
+    width: 44%;
+    padding: $base*3 4%;
+  }
+}
+
+.hero-slider .slide-content h1 {
+  margin-bottom: 12px;
+}
+
+.hero-slider .slide-content p {
+  @include font-size(24px);
+  line-height: 1.25;
+}
+
+.hero-slider .slide-img {
+
+  @include bp-min-width($medium) {
+    float: right;
+    width: 66%;
+  }
+}
+
+.slide-2, .slide-3, .slide-4 {
+  display: none;
+}
+
+.slider-tabs {  
+  @include cf;
+  padding: 0 4%;
+  background: lighten($lt-grey, 20%);
+}
+
+.slider-tabs a {
+  padding: 16px 0;
+  background: $green;
+  color: #fff;
+  font-weight: $heavy;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(#000, 0.1);
+
+  @include bp-min-width($medium) {
+    @include font-size(21px);
+    display: block;
+    float: left;
+    width: 25%;
+  }
+  
+  &:hover {
+    box-shadow: inset 0 4px 0 $dk-green;
+  }
+}
+
+.slider-tabs .tab-2 {
+  background: $turq;
+
+  &:hover {
+    box-shadow: inset 0 4px 0 $dk-turq;
+  }
+}
+
+.slider-tabs .tab-3 {
+  background: $yellow;
+
+  &:hover {
+    box-shadow: inset 0 4px 0 $gold;
+  }
+}
+
+.slider-tabs .tab-4 {
+  background: $pink;
+
+  &:hover {
+    box-shadow: inset 0 4px 0 $dk-pink;
+  }
+}
