@@ -99,6 +99,10 @@
   @include bp-min-width($medium) {
     @include font-size(21px);
   }
+  
+  &:hover {
+    color: $black;
+  }
 }
 
 .nav li:last-child a {

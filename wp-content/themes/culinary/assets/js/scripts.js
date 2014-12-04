@@ -10,8 +10,9 @@ $(function(){
   $('.hero-slider .slides').owlCarousel({
     loop: false,
     items: 1,
-    URLhashListener: true,
-    startPosition: 'URLHash'
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
+    URLhashListener: true
   });
 
   sliderTabActive = function() {
@@ -23,16 +24,18 @@ $(function(){
   }
 
 
-  charityColHeight = function() {
+  sliderContentHeight = function() {
 
-    var col = $('.place .col-1-3');
-    var colHeight = col.map(function() {
+    var content = $('.slide-content');
+    var img = $('.slide-img');
+    var contentHeight = content.map(function() {
       $(this).removeAttr('style');
       return $(this).height();
     }).get();
-    var maxHeight = Math.max.apply(Math, colHeight);
+    var maxHeight = Math.max.apply(Math, contentHeight);
 
-    col.height(maxHeight);
+    content.height(maxHeight);
+    img.height(maxHeight);
 
   }
 
@@ -86,6 +89,7 @@ $(function(){
 	}
   
   sliderTabActive();
+  sliderContentHeight();
   // navScroll();
   // charityColHeight();
   // formSubmit();

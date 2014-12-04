@@ -287,7 +287,7 @@ a {
   color: #8aad64;
 }
 
-.btn, .nav li:last-child a {
+.btn, .nav li:last-child a, .hero-slider .slide-content a {
   font-size: 18px;
   font-size: 1.125rem;
   display: inline-block;
@@ -298,17 +298,26 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.btn:hover, .nav li:last-child a:hover {
-  background: white;
+.btn:hover, .nav li:last-child a:hover, .hero-slider .slide-content a:hover {
+  background: #567931;
 }
-.btn.red, .nav li:last-child a {
+.btn.red, .nav li:last-child a, .hero-slider .slide-content a.red {
   background: #ec6e6a;
 }
-.btn.yellow, .nav li:last-child a.yellow {
+.btn.red:hover, .nav li:last-child a:hover, .hero-slider .slide-content a.red:hover {
+  background: #d15352;
+}
+.btn.yellow, .nav li:last-child a.yellow, .hero-slider .slide-content a.yellow {
   background: #fcd268;
 }
-.btn.grey, .header .top .newsletter .btn, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .nav li:last-child a.grey {
+.btn.yellow:hover, .nav li:last-child a.yellow:hover, .hero-slider .slide-content a.yellow:hover {
+  background: #d4a737;
+}
+.btn.grey, .header .top .newsletter .btn, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a, .nav li:last-child a.grey, .hero-slider .slide-content a.grey {
   background: #818282;
+}
+.btn.grey:hover, .header .top .newsletter .btn:hover, .header .top .newsletter .nav li:last-child a:hover, .nav li:last-child .header .top .newsletter a:hover, .header .top .newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .newsletter a:hover, .nav li:last-child a.grey:hover, .hero-slider .slide-content a.grey:hover {
+  background: #363636;
 }
 
 .form-item {
@@ -553,7 +562,7 @@ input[type="submit"].btn, button.btn {
   left: 10px;
   color: #818282;
 }
-.header .top .newsletter .btn, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a {
+.header .top .newsletter .btn, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a {
   font-size: 14px;
   font-size: 0.875rem;
   position: absolute;
@@ -604,6 +613,9 @@ input[type="submit"].btn, button.btn {
     font-size: 21px;
     font-size: 1.3125rem;
   }
+}
+.nav a:hover {
+  color: #363636;
 }
 
 .nav li:last-child a {
@@ -675,7 +687,7 @@ input[type="submit"].btn, button.btn {
 .footer .newsletter input {
   height: 42px;
 }
-.footer .newsletter .btn, .footer .newsletter .nav li:last-child a, .nav li:last-child .footer .newsletter a {
+.footer .newsletter .btn, .footer .newsletter .nav li:last-child a, .nav li:last-child .footer .newsletter a, .footer .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .footer .newsletter a {
   font-size: 18px;
   font-size: 1.125rem;
   position: absolute;
@@ -1142,14 +1154,58 @@ input[type="submit"].btn, button.btn {
 .hero-slider .slide-content p {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.25;
+  line-height: 30px;
+  line-height: 1.875rem;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 740px) {
   .hero-slider .slide-img {
     float: right;
-    width: 66%;
+    width: 56%;
+    height: 100%;
+    padding: 72px 4%;
+    background: url('assets/images/pic-hero-01.jpg?1417661759') no-repeat center center;
+    background-size: auto 100%;
   }
+}
+
+.hero-slider .slide {
+  *zoom: 1;
+}
+.hero-slider .slide:before, .hero-slider .slide:after {
+  content: " ";
+  display: block;
+}
+.hero-slider .slide:after {
+  clear: both;
+}
+
+.hero-slider .slide-content a {
+  font-size: 24px;
+  font-size: 1.5rem;
+  background: #567931;
+}
+
+.hero-slider .slide-2 .slide-content {
+  background: #97d4c9;
+}
+.hero-slider .slide-2 .slide-content a {
+  background: #66a196;
+}
+
+.hero-slider .slide-3 .slide-content {
+  background: #fcd268;
+}
+.hero-slider .slide-3 .slide-content a {
+  background: #d4a737;
+}
+
+.hero-slider .slide-4 .slide-content {
+  background: #f7a489;
+}
+.hero-slider .slide-4 .slide-content a {
+  background: #da7554;
 }
 
 .slider-tabs {

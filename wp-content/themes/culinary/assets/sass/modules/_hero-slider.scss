@@ -26,14 +26,52 @@
 
 .hero-slider .slide-content p {
   @include font-size(24px);
-  line-height: 1.25;
+  @include line-height(30px);
+  margin-bottom: $base;
 }
 
 .hero-slider .slide-img {
-
   @include bp-min-width($medium) {
     float: right;
-    width: 66%;
+    width: 56%;
+    height: 100%;
+    padding: $base*3 4%;
+    background: $pic-hero-01 no-repeat center center;
+    background-size: auto 100%;
+  }
+}
+
+.hero-slider .slide {
+  @include cf;
+}
+
+.hero-slider .slide-content a {
+  @extend .btn;
+  @include font-size(24px);
+  background: $dk-green;
+}
+
+.hero-slider .slide-2 .slide-content {
+  background: $turq;
+  
+  a {
+    background: $dk-turq;
+  }
+}
+
+.hero-slider .slide-3 .slide-content {
+  background: $yellow;
+  
+  a {
+    background: $gold;
+  }
+}
+
+.hero-slider .slide-4 .slide-content {
+  background: $pink;
+  
+  a {
+    background: $dk-pink;
   }
 }
 

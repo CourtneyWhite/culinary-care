@@ -4,28 +4,28 @@
 			
 		<section class="hero-slider">
 		  <div class="slides">
-  		  <div class="slide-1" data-hash="slide-1">
+  		  <div class="slide slide-1" data-hash="slide-1">
   		    <div class="slide-content">
       			<?php the_field('slide_1_content'); ?>
   		    </div>
   		    <div class="slide-img">
   		    </div>
   		  </div>
-  		  <div class="slide-2" data-hash="slide-2">
+  		  <div class="slide slide-2" data-hash="slide-2">
   		    <div class="slide-content">
       			<?php the_field('slide_2_content'); ?>
   		    </div>
   		    <div class="slide-img">
   		    </div>
   		  </div>
-  		  <div class="slide-3" data-hash="slide-3">
+  		  <div class="slide slide-3" data-hash="slide-3">
   		    <div class="slide-content">
       			<?php the_field('slide_3_content'); ?>
   		    </div>
   		    <div class="slide-img">
   		    </div>
   		  </div>
-  		  <div class="slide-4" data-hash="slide-4">
+  		  <div class="slide slide-4" data-hash="slide-4">
   		    <div class="slide-content">
       			<?php the_field('slide_4_content'); ?>
   		    </div>

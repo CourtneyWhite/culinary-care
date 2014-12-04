@@ -18,18 +18,30 @@ a {
   letter-spacing: 0.05em;
   
   &:hover {
-    background: lighten($green, 50%);
+    background: $dk-green;
   }
   
   &.red {
     background: $red;
+    
+    &:hover {
+      background: $dk-red;
+    }
   }
 
   &.yellow {
     background: $yellow;
+    
+    &:hover {
+      background: $gold
+    }
   }
 
   &.grey {
     background: $grey;
+    
+    &:hover {
+      background: $black;
+    }
   }
 }
