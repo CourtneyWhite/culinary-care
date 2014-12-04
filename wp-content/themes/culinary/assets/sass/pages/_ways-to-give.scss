@@ -1,0 +1,39 @@
+
+.give-grid {
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @include bp-min-width($medium) {
+    padding-top: $base;
+  }
+  
+  [class*="col-"] {
+    margin-bottom: $base*2;
+  }
+  
+  [class*="col-"]:nth-child(2n+1) {
+    @include bp-min-width($medium) {
+      clear: left;
+    }
+  }
+  
+  .give-image {
+    margin-bottom: $base;
+  }
+  
+  h2 {
+    @include font-size(24px);
+    margin-bottom: 12px;
+    color: $grey;
+  }
+  
+  p:first-of-type {
+    margin-bottom: 12px;
+  }
+}
+
+.give-grid a {
+  color: $red;
+  font-weight: $bold;
+  text-transform: uppercase;
+}

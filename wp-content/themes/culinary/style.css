@@ -133,6 +133,7 @@ p {
 .page-title {
   margin-bottom: 24px;
   text-align: center;
+  color: #8aad64;
 }
 
 .section-title {
@@ -1033,6 +1034,42 @@ input[type="submit"].btn, button.btn {
 }
 .donate-form .by-check a:hover {
   border-bottom: none;
+}
+
+.give-grid {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+@media (min-width: 740px) {
+  .give-grid {
+    padding-top: 24px;
+  }
+}
+.give-grid [class*="col-"] {
+  margin-bottom: 48px;
+}
+@media (min-width: 740px) {
+  .give-grid [class*="col-"]:nth-child(2n+1) {
+    clear: left;
+  }
+}
+.give-grid .give-image {
+  margin-bottom: 24px;
+}
+.give-grid h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #818282;
+}
+.give-grid p:first-of-type {
+  margin-bottom: 12px;
+}
+
+.give-grid a {
+  color: #ec6e6a;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* 
