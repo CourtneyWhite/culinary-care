@@ -7,6 +7,21 @@ $(function(){
     navText: []
   });
 
+  $('.hero-slider .slides').owlCarousel({
+    loop: false,
+    items: 1,
+    URLhashListener: true,
+    startPosition: 'URLHash'
+  });
+
+  sliderTabActive = function() {
+    var tab = $('.slider-tabs a');
+    $('.slider-tabs a').on('click', function() {
+      $(tab).removeClass('active');
+      $(this).addClass('active');
+    });  
+  }
+
 
   charityColHeight = function() {
 
@@ -70,6 +85,7 @@ $(function(){
 	
 	}
   
+  sliderTabActive();
   // navScroll();
   // charityColHeight();
   // formSubmit();

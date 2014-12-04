@@ -37,10 +37,6 @@
   }
 }
 
-.slide-2, .slide-3, .slide-4 {
-  display: none;
-}
-
 .slider-tabs {  
   @include cf;
   padding: 0 4%;
@@ -48,6 +44,7 @@
 }
 
 .slider-tabs a {
+  position: relative;
   padding: 16px 0;
   background: $green;
   color: #fff;
@@ -63,31 +60,53 @@
     width: 25%;
   }
   
-  &:hover {
+  &.active, &:hover {
     box-shadow: inset 0 4px 0 $dk-green;
+  }
+  
+  &.active:before {
+    @include up-triangle(12px, $dk-green);
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    z-index: 10;
+    margin-left: -6px;
   }
 }
 
 .slider-tabs .tab-2 {
   background: $turq;
 
-  &:hover {
+  &.active, &:hover {
     box-shadow: inset 0 4px 0 $dk-turq;
+  }
+
+  &.active:before {
+    border-bottom-color: $dk-turq;
   }
 }
 
 .slider-tabs .tab-3 {
   background: $yellow;
 
-  &:hover {
+  &.active, &:hover {
     box-shadow: inset 0 4px 0 $gold;
+  }
+
+  &.active:before {
+    border-bottom-color: $gold;
   }
 }
 
 .slider-tabs .tab-4 {
   background: $pink;
 
-  &:hover {
+  &.active, &:hover {
     box-shadow: inset 0 4px 0 $dk-pink;
+  }
+
+  &.active:before {
+    border-bottom-color: $dk-pink;
   }
 }

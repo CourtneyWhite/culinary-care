@@ -1152,10 +1152,6 @@ input[type="submit"].btn, button.btn {
   }
 }
 
-.slide-2, .slide-3, .slide-4 {
-  display: none;
-}
-
 .slider-tabs {
   *zoom: 1;
   padding: 0 4%;
@@ -1170,6 +1166,7 @@ input[type="submit"].btn, button.btn {
 }
 
 .slider-tabs a {
+  position: relative;
   padding: 16px 0;
   background: #8aad64;
   color: #fff;
@@ -1187,27 +1184,49 @@ input[type="submit"].btn, button.btn {
     width: 25%;
   }
 }
-.slider-tabs a:hover {
+.slider-tabs a.active, .slider-tabs a:hover {
   box-shadow: inset 0 4px 0 #567931;
+}
+.slider-tabs a.active:before {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #567931;
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  z-index: 10;
+  margin-left: -6px;
 }
 
 .slider-tabs .tab-2 {
   background: #97d4c9;
 }
-.slider-tabs .tab-2:hover {
+.slider-tabs .tab-2.active, .slider-tabs .tab-2:hover {
   box-shadow: inset 0 4px 0 #66a196;
+}
+.slider-tabs .tab-2.active:before {
+  border-bottom-color: #66a196;
 }
 
 .slider-tabs .tab-3 {
   background: #fcd268;
 }
-.slider-tabs .tab-3:hover {
+.slider-tabs .tab-3.active, .slider-tabs .tab-3:hover {
   box-shadow: inset 0 4px 0 #d4a737;
+}
+.slider-tabs .tab-3.active:before {
+  border-bottom-color: #d4a737;
 }
 
 .slider-tabs .tab-4 {
   background: #f7a489;
 }
-.slider-tabs .tab-4:hover {
+.slider-tabs .tab-4.active, .slider-tabs .tab-4:hover {
   box-shadow: inset 0 4px 0 #da7554;
+}
+.slider-tabs .tab-4.active:before {
+  border-bottom-color: #da7554;
 }

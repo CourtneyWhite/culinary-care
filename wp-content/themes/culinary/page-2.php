@@ -4,28 +4,28 @@
 			
 		<section class="hero-slider">
 		  <div class="slides">
-  		  <div class="slide-1">
+  		  <div class="slide-1" data-hash="slide-1">
   		    <div class="slide-content">
       			<?php the_field('slide_1_content'); ?>
   		    </div>
   		    <div class="slide-img">
   		    </div>
   		  </div>
-  		  <div class="slide-2">
+  		  <div class="slide-2" data-hash="slide-2">
   		    <div class="slide-content">
       			<?php the_field('slide_2_content'); ?>
   		    </div>
   		    <div class="slide-img">
   		    </div>
   		  </div>
-  		  <div class="slide-3">
+  		  <div class="slide-3" data-hash="slide-3">
   		    <div class="slide-content">
       			<?php the_field('slide_3_content'); ?>
   		    </div>
   		    <div class="slide-img">
   		    </div>
   		  </div>
-  		  <div class="slide-4">
+  		  <div class="slide-4" data-hash="slide-4">
   		    <div class="slide-content">
       			<?php the_field('slide_4_content'); ?>
   		    </div>
@@ -34,10 +34,10 @@
   		  </div>
 		  </div>
 		  <div class="slider-tabs">
-		    <a href="#" class="tab-1"><?php the_field('slide_1_tab'); ?></a>
-		    <a href="#" class="tab-2"><?php the_field('slide_2_tab'); ?></a>
-		    <a href="#" class="tab-3"><?php the_field('slide_3_tab'); ?></a>
-		    <a href="#" class="tab-4"><?php the_field('slide_4_tab'); ?></a>
+		    <a href="#slide-1" class="tab-1 active"><?php the_field('slide_1_tab'); ?></a>
+		    <a href="#slide-2" class="tab-2"><?php the_field('slide_2_tab'); ?></a>
+		    <a href="#slide-3" class="tab-3"><?php the_field('slide_3_tab'); ?></a>
+		    <a href="#slide-4" class="tab-4"><?php the_field('slide_4_tab'); ?></a>
 		  </div>
 		</section>
 		
