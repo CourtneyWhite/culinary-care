@@ -12,6 +12,14 @@ body {
   }
 }
 
+.main .wrapper {
+  padding: $base 0;
+
+  @include bp-min-width($medium) {
+    padding: $base*2 0;
+  }
+}
+
 .wrapper {
   @include cf;
   margin: 0 5%;

@@ -1,0 +1,120 @@
+
+.page-id-22 .page-title {
+  color: $red;
+}
+
+.page-id-22 .main p:first-of-type {
+  @extend .intro;  
+}
+
+.donate-form-block {
+  @include cf;
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto $base*2;
+  background: $lt-grey-3;
+  border: 1px solid $lt-grey;
+}
+
+.donate-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: $pic-donate-01 no-repeat center center;
+  background-size: cover;
+
+  @include bp-min-width($medium) {
+    width: 48%;
+  }
+
+}
+
+.donate-form {
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    padding: $base*2 2% $base*2 50%;
+  }
+  
+  h3 {
+    margin-bottom: $base;
+  }
+}
+
+.donate-form .amount {
+  display: inline-block;
+  position: relative;
+  max-width: 360px;
+  margin-bottom: $base;
+  background: #fff;
+  border: 1px solid $lt-grey-2;
+  
+  input {
+    @include font-size(36px);
+    height: 60px;
+    padding: 0 100px 0 40px;
+    
+    @include input-placeholder {
+      color: $turq;
+    }
+  }
+  
+  placeholder {
+    color: $turq;
+  }
+  
+  .dollar-sign {
+    @include font-size(24px);
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  
+  .currency {
+    @include font-size(24px);
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: $lt-grey;
+  }
+}
+
+.donate-form .recurring {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: $base;
+  text-align: left;
+  
+  label {
+    @include font-size(14px);
+  }
+}
+
+.donate-form .btn {
+  @include font-size(24px);
+  width: 100%;
+  max-width: 360px;
+  margin-bottom: $base;
+  background: $turq;
+  line-height: 1;
+  
+  &:hover {
+    background: $dk-turq;
+  }
+}
+
+.donate-form .by-check a {
+  @include font-size(14px);
+  color: $grey;
+  border-bottom: 1px solid $lt-grey;
+  
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+
+

@@ -10,6 +10,7 @@ $base:  24px;
 
 body {
   font: $reg 1em/1.5em $sans;
+  color: $grey;
 }
 
 h1,h2,h3,h4,h5 {
@@ -50,9 +51,26 @@ p {
   @include font-size(17px);
 }
 
+.page-title {
+  margin-bottom: $base;
+  text-align: center;
+}
+
 .section-title {
   margin-bottom: $base*2.5;
   text-align: center;
+}
+
+.intro {
+  max-width: 680px;
+  margin-bottom: $base;
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    @include font-size(24px);
+    @include line-height(30px);
+    margin: 0 auto $base*2;
+  }
 }
 
 strong {

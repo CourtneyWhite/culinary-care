@@ -34,7 +34,7 @@
   			  </form>
   			</div>
     		<nav id="nav" class="nav">
-    			<?php wp_nav_menu( array('menu' => 'primary') ); ?>
+    			<?php wp_nav_menu( array('menu' => '2') ); ?>
     		</nav>
 		  </div>
 		</header>
