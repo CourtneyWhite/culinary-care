@@ -44,6 +44,7 @@
 
 	<?php wp_footer(); ?>
 	
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/owl.carousel2.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/scripts.js"></script>
 </body>
 </html>

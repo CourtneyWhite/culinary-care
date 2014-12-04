@@ -66,38 +66,46 @@
 		  </div>
 		</section>
 
-		<section id="popcorn" class="popcorn">
+		<section id="our-partners" class="our-partners section">
 		  <div class="wrapper">
-  			<?php the_field('the_popcorn'); ?>
+		    <h2 class="section-title">Our Partners</h2>
+		    
 		  </div>
 		</section>
 
-		<section id="where-to-buy" class="where-to-buy">
+		<section id="meal-tracker" class="meal-tracker section">
 		  <div class="wrapper">
-  			<div class="content">
-    			<?php the_field('where_to_buy'); ?>
-  			</div>
-  			<div class="grid location-grid">
+		    <h2>Meal Tracker</h2>
+		    <?php the_field('meal_tracker'); ?>
+		  </div>
+		</section>
+
+		<section id="testimonials" class="testimonials section">
+		  <div class="wrapper">
+		    <h2 class="section-title">Testimonials</h2>
+		    <div class="testimonials-slider">
         <?php
-        $args = array( 'post_type' => 'location' );
+        $args = array( 'post_type' => 'testimonials' );
         $myposts = get_posts( $args );
         foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-        	<div class="col-1-3">
-        	  <h3><?php the_title(); ?></h3>
-        		<p class="address"><?php the_field('address'); ?></p>
-        		<p class="city-state"><?php echo get_field('city') . ', ' . get_field('state') . ' ' . get_field('zip'); ?></p>
-        		<p><a href="<?php the_field('map_link'); ?>" target="_blank">Map</a></p>
+        	<div class="testimonial">
+        		<div class="quote"><?php the_content(); ?></div>
+        		<div class="quote-info">
+          		<div class="thumb">
+          		  <?php
+          		    $image = get_field('testimonial_image');
+                  $size = 'thumb';
+                  if( $image ) {
+                  	echo '<img src="' . $image['url'] . '">';
+                  }
+                  ?>
+          		</div>
+          		<div class="name"><?php the_field('testimonial_name'); ?></div>
+        		</div>
         	</div>
         <?php endforeach; 
         wp_reset_postdata();?>
-  			</div>
-		  </div>
-		</section>
-
-		<section id="contact" class="contact">
-		  <div class="wrapper">
-  			<?php the_field('contact_us'); ?>
-  			<?php // echo do_shortcode( '[contact-form-7 id="16" title="Contact Us"]' ); ?>
+		    </div>
 		  </div>
 		</section>
 

@@ -37,6 +37,11 @@
   @return $remSize * 1rem;
 }
 
+@function calculateEm($size) {
+  $emSize: $size / 16px;
+  @return $emSize * 1rem;
+}
+
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculateRem($size);
@@ -44,7 +49,7 @@
 
 @mixin line-height($size) {
   line-height: $size;
-  line-height: calculateRem($size);
+  line-height: calculateEm($size);
 }
 
 

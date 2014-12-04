@@ -40,40 +40,68 @@
 	}
 	add_action( 'wp_enqueue_scripts', 'culinary_scripts_styles' );
 	
-	// Location Post Type
-	add_action('init', 'location_register');
- 
-  function location_register() {
-   
+	// Partners Post Type
+	add_action('init', 'partners_register');
+  function partners_register() {
   	$labels = array(
-  		'name' => _x('Locations', 'post type general name'),
-  		'singular_name' => _x('Location Item', 'post type singular name'),
-  		'add_new' => _x('Add New', 'location item'),
-  		'add_new_item' => __('Add New Location Item'),
-  		'edit_item' => __('Edit Location Item'),
-  		'new_item' => __('New Location Item'),
-  		'view_item' => __('View Location Item'),
-  		'search_items' => __('Search Location'),
+  		'name' => _x('Partners', 'post type general name'),
+  		'singular_name' => _x('Partners Item', 'post type singular name'),
+  		'add_new' => _x('Add New', 'partners item'),
+  		'add_new_item' => __('Add New Partners Item'),
+  		'edit_item' => __('Edit Partners Item'),
+  		'new_item' => __('New Partners Item'),
+  		'view_item' => __('View Partners Item'),
+  		'search_items' => __('Search Partners'),
   		'not_found' =>  __('Nothing found'),
   		'not_found_in_trash' => __('Nothing found in Trash'),
   		'parent_item_colon' => ''
   	);
-   
   	$args = array(
   		'labels' => $labels,
   		'public' => true,
   		'publicly_queryable' => true,
   		'show_ui' => true,
   		'query_var' => true,
-  		'menu_icon' => 'dashicons-location',
+  		'menu_icon' => 'dashicons-groups',
   		'rewrite' => true,
   		'capability_type' => 'post',
   		'hierarchical' => false,
   		'menu_position' => null,
   		'supports' => array('title','editor','thumbnail')
   	  ); 
-   
-  	register_post_type( 'location' , $args );
+  	register_post_type( 'partners' , $args );
+  }
+
+	// Testimonials Post Type
+	add_action('init', 'testimonials_register');
+  function testimonials_register() {
+  	$labels = array(
+  		'name' => _x('Testimonials', 'post type general name'),
+  		'singular_name' => _x('Testimonials Item', 'post type singular name'),
+  		'add_new' => _x('Add New', 'testimonials item'),
+  		'add_new_item' => __('Add New Testimonials Item'),
+  		'edit_item' => __('Edit Testimonials Item'),
+  		'new_item' => __('New Testimonials Item'),
+  		'view_item' => __('View Testimonials Item'),
+  		'search_items' => __('Search Testimonials'),
+  		'not_found' =>  __('Nothing found'),
+  		'not_found_in_trash' => __('Nothing found in Trash'),
+  		'parent_item_colon' => ''
+  	);
+  	$args = array(
+  		'labels' => $labels,
+  		'public' => true,
+  		'publicly_queryable' => true,
+  		'show_ui' => true,
+  		'query_var' => true,
+  		'menu_icon' => 'dashicons-format-quote',
+  		'rewrite' => true,
+  		'capability_type' => 'post',
+  		'hierarchical' => false,
+  		'menu_position' => null,
+  		'supports' => array('title','editor','thumbnail')
+  	  ); 
+  	register_post_type( 'testimonials' , $args );
   }
 
 	// WP Title (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)

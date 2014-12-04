@@ -21,3 +21,95 @@
     padding: 0 24px;
   }
 }
+
+.our-partners {
+  border-top: 1px solid $lt-grey;
+}
+
+.meal-tracker {
+  background: $red;
+  color: #fff;
+  text-align: center;
+  
+  h2 {
+    margin-bottom: $base;
+    color: #fff;
+    font-weight: $reg;
+  }
+  
+  h3 {
+    @include font-size(84px);
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: $heavy;
+    line-height: 1;
+  }
+  
+  p {
+    @include font-size(18px);
+  }
+}
+
+.testimonials {
+  background: $yellow $bg-testimonials no-repeat;
+  background-size: cover;
+  text-align: center;
+  
+  .section-title {
+    margin-bottom: $base;
+    color: #fff;
+  }
+}
+
+.testimonials-slider {
+  max-width: 680px;
+  margin: 0 auto;
+  
+  .quote-info {
+    @include cf;
+  }
+}
+
+.testimonials-slider .quote {
+  margin-bottom: $base*1.5;
+
+  p {
+    @include font-size(30px);
+    @include line-height(36px);
+    font-style: italic;
+  }
+}
+
+.testimonials-slider .thumb {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  width: 96px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.testimonials-slider .name {
+  @include font-size(18px);
+  display: inline-block;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 30%;
+  width: 60px;
+  height: 60px;
+  background: $red;
+  border-radius: 50%;
+}
+
+.owl-prev {
+  left: -100px;
+}
+
+.owl-next {
+  right: -100px;
+}
