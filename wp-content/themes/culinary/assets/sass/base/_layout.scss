@@ -38,3 +38,24 @@ body {
     padding: $base*2.5 0;
   }
 }
+
+.page-template-default .body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-top: $base;
+}
+
+.width-10-col {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.width-8-col {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.width-6-col {
+  max-width: 680px;
+  margin: 0 auto;
+}

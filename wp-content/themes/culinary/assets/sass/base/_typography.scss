@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5 {
 
 h1 {
   @include font-size(48px);
-  color: #fff;
+  color: $green;
   font-weight: $heavy;
   text-transform: uppercase;
   letter-spacing: 0.025em;
@@ -52,10 +52,13 @@ p {
 }
 
 .page-title {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto $base;
   text-align: center;
-  color: $green;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*2;
+  }
 }
 
 .section-title {
@@ -85,6 +88,11 @@ em {
 
 .label {
   font-weight: $bold;
+}
+
+.body h2,
+.body h3 {
+  margin-bottom: 12px;
 }
 
 .body p,

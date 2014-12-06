@@ -1,11 +1,16 @@
 
 .hero-slider {
   @include cf;
+  overflow: hidden;
   
   .slides {
     @include cf;
     max-width: 1800px;
     background: lighten($lt-grey, 15%);
+  }
+  
+  h1 {
+    color: #fff;
   }
 }
 

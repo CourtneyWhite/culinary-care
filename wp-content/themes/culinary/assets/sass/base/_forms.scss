@@ -31,11 +31,11 @@ input[type="email"],
 input[type="password"],
 textarea,
 select {
-  @include font-size(16px);
+  @include font-size(17px);
   width: 100%;
   padding: 8px 10px;
   background: #fff;
-  border: 1px solid #fff;
+  border: 1px solid $lt-grey;
   color: $black;
   font-family: $sans;
 
@@ -48,21 +48,20 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-  border: 1px solid #fff;
+  border: 1px solid $grey;
 }
 
 textarea {
   width: 100%;
   height: $base*4;
   padding: 0.5em 0.75em;
-  border: 1px solid $grey;
+  border: 1px solid $lt-grey;
   color: #fff;
   font: 400 1em/1em $sans;
   resize: none;
   
   @include bp-min-width($medium) {
     height: $base*6;
-    max-width: 540px;
   }
 }
 
@@ -178,12 +177,9 @@ textarea {
 /** Buttons ============**/
 
 input[type="submit"], button {
-  @include transition(background 0.15s ease-in);
+	@include transition(all 0.15s ease-in);
+  @extend .btn;
   border: none;
   cursor: pointer;
   font-family: $sans;
-  
-  &.btn {
-    padding: 1em 2em;
-  }
 }

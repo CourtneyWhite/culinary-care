@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 48px;
   font-size: 3rem;
-  color: #fff;
+  color: #8aad64;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.025em;
@@ -131,10 +131,14 @@ p {
 }
 
 .page-title {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto 24px;
   text-align: center;
-  color: #8aad64;
+}
+@media (min-width: 740px) {
+  .page-title {
+    margin-bottom: 48px;
+  }
 }
 
 .section-title {
@@ -167,6 +171,11 @@ em {
 
 .label {
   font-weight: 700;
+}
+
+.body h2,
+.body h3 {
+  margin-bottom: 12px;
 }
 
 .body p,
@@ -311,6 +320,27 @@ body {
   }
 }
 
+.page-template-default .body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+
+.width-10-col, .volunteer-form-grid {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.width-8-col {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.width-6-col {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 a {
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
@@ -319,7 +349,7 @@ a {
   color: #8aad64;
 }
 
-.btn, .nav li:last-child a, .volunteer-grid a, .hero-slider .slide-content a {
+.btn, input[type="submit"], button, .nav li:last-child a, .volunteer-grid a, .hero-slider .slide-content a {
   font-size: 18px;
   font-size: 1.125rem;
   display: inline-block;
@@ -330,25 +360,25 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.btn:hover, .nav li:last-child a:hover, .volunteer-grid a:hover, .hero-slider .slide-content a:hover {
+.btn:hover, input[type="submit"]:hover, button:hover, .nav li:last-child a:hover, .volunteer-grid a:hover, .hero-slider .slide-content a:hover {
   background: #567931;
 }
-.btn.red, .nav li:last-child a, .volunteer-grid a.red, .hero-slider .slide-content a.red {
+.btn.red, input.red[type="submit"], button.red, .nav li:last-child a, .volunteer-grid a.red, .hero-slider .slide-content a.red {
   background: #ec6e6a;
 }
-.btn.red:hover, .nav li:last-child a:hover, .volunteer-grid a.red:hover, .hero-slider .slide-content a.red:hover {
+.btn.red:hover, input.red[type="submit"]:hover, button.red:hover, .nav li:last-child a:hover, .volunteer-grid a.red:hover, .hero-slider .slide-content a.red:hover {
   background: #d15352;
 }
-.btn.yellow, .nav li:last-child a.yellow, .nav li:last-child .volunteer-grid a, .volunteer-grid .nav li:last-child a, .volunteer-grid a, .hero-slider .slide-content a.yellow, .hero-slider .slide-content .volunteer-grid a, .volunteer-grid .hero-slider .slide-content a {
+.btn.yellow, input.yellow[type="submit"], button.yellow, .nav li:last-child a.yellow, .nav li:last-child .volunteer-grid a, .volunteer-grid .nav li:last-child a, .volunteer-grid a, .hero-slider .slide-content a.yellow, .hero-slider .slide-content .volunteer-grid a, .volunteer-grid .hero-slider .slide-content a {
   background: #fcd268;
 }
-.btn.yellow:hover, .nav li:last-child a.yellow:hover, .nav li:last-child .volunteer-grid a:hover, .volunteer-grid .nav li:last-child a:hover, .volunteer-grid a:hover, .hero-slider .slide-content a.yellow:hover {
+.btn.yellow:hover, input.yellow[type="submit"]:hover, button.yellow:hover, .nav li:last-child a.yellow:hover, .nav li:last-child .volunteer-grid a:hover, .volunteer-grid .nav li:last-child a:hover, .volunteer-grid a:hover, .hero-slider .slide-content a.yellow:hover {
   background: #d4a737;
 }
-.btn.grey, .header .top .newsletter .btn, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .volunteer-grid a, .volunteer-grid .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a, .nav li:last-child a.grey, .volunteer-grid a.grey, .hero-slider .slide-content a.grey {
+.btn.grey, input.grey[type="submit"], button.grey, .header .top .newsletter .btn, .header .top .newsletter input[type="submit"], .header .top .newsletter button, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .volunteer-grid a, .volunteer-grid .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a, .nav li:last-child a.grey, .volunteer-grid a.grey, .hero-slider .slide-content a.grey {
   background: #818282;
 }
-.btn.grey:hover, .header .top .newsletter .btn:hover, .header .top .newsletter .nav li:last-child a:hover, .nav li:last-child .header .top .newsletter a:hover, .header .top .newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .newsletter a:hover, .header .top .newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .newsletter a:hover, .nav li:last-child a.grey:hover, .volunteer-grid a.grey:hover, .hero-slider .slide-content a.grey:hover {
+.btn.grey:hover, input.grey[type="submit"]:hover, button.grey:hover, .header .top .newsletter .btn:hover, .header .top .newsletter input[type="submit"]:hover, .header .top .newsletter button:hover, .header .top .newsletter .nav li:last-child a:hover, .nav li:last-child .header .top .newsletter a:hover, .header .top .newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .newsletter a:hover, .header .top .newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .newsletter a:hover, .nav li:last-child a.grey:hover, .volunteer-grid a.grey:hover, .hero-slider .slide-content a.grey:hover {
   background: #363636;
 }
 
@@ -388,12 +418,12 @@ input[type="email"],
 input[type="password"],
 textarea,
 select {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
   width: 100%;
   padding: 8px 10px;
   background: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #c0c0c0;
   color: #363636;
   font-family: "Lato", Helvetica, arial, sans-serif;
 }
@@ -409,14 +439,14 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-  border: 1px solid #fff;
+  border: 1px solid #818282;
 }
 
 textarea {
   width: 100%;
   height: 96px;
   padding: 0.5em 0.75em;
-  border: 1px solid #818282;
+  border: 1px solid #c0c0c0;
   color: #fff;
   font: 400 1em/1em "Lato", Helvetica, arial, sans-serif;
   resize: none;
@@ -424,7 +454,6 @@ textarea {
 @media (min-width: 740px) {
   textarea {
     height: 144px;
-    max-width: 540px;
   }
 }
 
@@ -528,16 +557,13 @@ textarea {
 
 /** Buttons ============**/
 input[type="submit"], button {
-  -moz-transition: background 0.15s ease-in;
-  -o-transition: background 0.15s ease-in;
-  -webkit-transition: background 0.15s ease-in;
-  transition: background 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
   border: none;
   cursor: pointer;
   font-family: "Lato", Helvetica, arial, sans-serif;
-}
-input[type="submit"].btn, button.btn {
-  padding: 1em 2em;
 }
 
 .header {
@@ -595,7 +621,7 @@ input[type="submit"].btn, button.btn {
   left: 10px;
   color: #818282;
 }
-.header .top .newsletter .btn, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .volunteer-grid a, .volunteer-grid .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a {
+.header .top .newsletter .btn, .header .top .newsletter input[type="submit"], .header .top .newsletter button, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .volunteer-grid a, .volunteer-grid .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a {
   font-size: 14px;
   font-size: 0.875rem;
   position: absolute;
@@ -720,7 +746,7 @@ input[type="submit"].btn, button.btn {
 .footer .newsletter input {
   height: 42px;
 }
-.footer .newsletter .btn, .footer .newsletter .nav li:last-child a, .nav li:last-child .footer .newsletter a, .footer .newsletter .volunteer-grid a, .volunteer-grid .footer .newsletter a, .footer .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .footer .newsletter a {
+.footer .newsletter .btn, .footer .newsletter input[type="submit"], .footer .newsletter button, .footer .newsletter .nav li:last-child a, .nav li:last-child .footer .newsletter a, .footer .newsletter .volunteer-grid a, .volunteer-grid .footer .newsletter a, .footer .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .footer .newsletter a {
   font-size: 18px;
   font-size: 1.125rem;
   position: absolute;
@@ -1038,7 +1064,7 @@ input[type="submit"].btn, button.btn {
   font-size: 0.875rem;
 }
 
-.donate-form .btn, .donate-form .nav li:last-child a, .nav li:last-child .donate-form a, .donate-form .volunteer-grid a, .volunteer-grid .donate-form a, .donate-form .hero-slider .slide-content a, .hero-slider .slide-content .donate-form a {
+.donate-form .btn, .donate-form input[type="submit"], .donate-form button, .donate-form .nav li:last-child a, .nav li:last-child .donate-form a, .donate-form .volunteer-grid a, .volunteer-grid .donate-form a, .donate-form .hero-slider .slide-content a, .hero-slider .slide-content .donate-form a {
   font-size: 24px;
   font-size: 1.5rem;
   width: 100%;
@@ -1047,7 +1073,7 @@ input[type="submit"].btn, button.btn {
   background: #97d4c9;
   line-height: 1;
 }
-.donate-form .btn:hover, .donate-form .nav li:last-child a:hover, .nav li:last-child .donate-form a:hover, .donate-form .volunteer-grid a:hover, .volunteer-grid .donate-form a:hover, .donate-form .hero-slider .slide-content a:hover, .hero-slider .slide-content .donate-form a:hover {
+.donate-form .btn:hover, .donate-form input[type="submit"]:hover, .donate-form button:hover, .donate-form .nav li:last-child a:hover, .nav li:last-child .donate-form a:hover, .donate-form .volunteer-grid a:hover, .volunteer-grid .donate-form a:hover, .donate-form .hero-slider .slide-content a:hover, .hero-slider .slide-content .donate-form a:hover {
   background: #66a196;
 }
 
@@ -1334,6 +1360,7 @@ input[type="submit"].btn, button.btn {
 
 .hero-slider {
   *zoom: 1;
+  overflow: hidden;
 }
 .hero-slider:before, .hero-slider:after {
   content: " ";
@@ -1353,6 +1380,9 @@ input[type="submit"].btn, button.btn {
 }
 .hero-slider .slides:after {
   clear: both;
+}
+.hero-slider h1 {
+  color: #fff;
 }
 
 .hero-slider .slide-content {

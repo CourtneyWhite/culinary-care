@@ -19,7 +19,7 @@
 
 		<header id="header" class="header">
 		  <div class="wrapper">
-  			<div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Culinary Care"></div>
+  			<div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Culinary Care"></a></div>
   			<div class="top">
   			  <ul class="social-links">
   			    <li><a href="">tw</a></li>
