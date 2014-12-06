@@ -52,7 +52,8 @@ p {
 }
 
 .page-title {
-  margin-bottom: $base;
+  max-width: 900px;
+  margin: 0 auto $base;
   text-align: center;
   color: $green;
 }

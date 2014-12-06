@@ -1,0 +1,31 @@
+
+.volunteer-grid {
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    padding-top: $base;
+  }
+  
+  [class*="col-"] {
+    margin-bottom: $base*2;
+  }
+  
+  .volunteer-image {
+    margin-bottom: $base;
+  }
+  
+  h2 {
+    @include font-size(24px);
+    margin-bottom: 12px;
+    color: $grey;
+  }
+  
+  p:first-of-type {
+    margin-bottom: $base;
+  }
+}
+
+.volunteer-grid a {
+  @extend .btn;
+  @extend .yellow;
+}
