@@ -2,6 +2,21 @@ body {
   background: $lt-grey;
 }
 
+.width-10-col {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.width-8-col {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.width-6-col {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 .page {
   background: #fff;
 
@@ -40,22 +55,5 @@ body {
 }
 
 .page-template-default .body {
-  max-width: 680px;
-  margin: 0 auto;
-  padding-top: $base;
-}
-
-.width-10-col {
-  max-width: 1160px;
-  margin: 0 auto;
-}
-
-.width-8-col {
-  max-width: 920px;
-  margin: 0 auto;
-}
-
-.width-6-col {
-  max-width: 680px;
-  margin: 0 auto;
+  @extend .width-6-col;
 }

@@ -5,7 +5,6 @@ Description: A custom theme based on HTML 5 Reset theme
 Author URI: http://bradsawicki.com
 Version: 1.0
 */
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900,700,400italic);
 * {
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: 100%;
@@ -83,11 +82,12 @@ a {
 }
 
 body {
-  font: 400 1em/1.5em "Lato", Helvetica, arial, sans-serif;
+  font: 400 1em/1.5em "Gotham SSm A", "Gotham SSm B", Helvetica, arial, sans-serif;
   color: #818282;
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
   line-height: 1;
 }
 
@@ -95,7 +95,7 @@ h1 {
   font-size: 48px;
   font-size: 3rem;
   color: #8aad64;
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
@@ -105,7 +105,7 @@ h2 {
   font-size: 2.25rem;
   margin-bottom: 24px;
   color: #8aad64;
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
@@ -114,7 +114,7 @@ h3 {
   font-size: 24px;
   font-size: 1.5rem;
   color: #818282;
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
@@ -122,7 +122,7 @@ h3 {
 h4 {
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 p {
@@ -265,6 +265,21 @@ body {
   background: #c0c0c0;
 }
 
+.width-10-col, .volunteer-form-grid {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.width-8-col {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.width-6-col, .page-template-default .body {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 .page {
   background: #fff;
 }
@@ -320,27 +335,6 @@ body {
   }
 }
 
-.page-template-default .body {
-  max-width: 680px;
-  margin: 0 auto;
-  padding-top: 24px;
-}
-
-.width-10-col, .volunteer-form-grid {
-  max-width: 1160px;
-  margin: 0 auto;
-}
-
-.width-8-col {
-  max-width: 920px;
-  margin: 0 auto;
-}
-
-.width-6-col {
-  max-width: 680px;
-  margin: 0 auto;
-}
-
 a {
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
@@ -356,7 +350,7 @@ a {
   padding: 0.75em 1.25em;
   background: #8aad64;
   color: #fff;
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -425,7 +419,7 @@ select {
   background: #fff;
   border: 1px solid #c0c0c0;
   color: #363636;
-  font-family: "Lato", Helvetica, arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
 }
 input[type="text"].error,
 input[type="email"].error,
@@ -448,7 +442,7 @@ textarea {
   padding: 0.5em 0.75em;
   border: 1px solid #c0c0c0;
   color: #fff;
-  font: 400 1em/1em "Lato", Helvetica, arial, sans-serif;
+  font: 400 1em/1em "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
   resize: none;
 }
 @media (min-width: 740px) {
@@ -563,7 +557,7 @@ input[type="submit"], button {
   transition: all 0.15s ease-in;
   border: none;
   cursor: pointer;
-  font-family: "Lato", Helvetica, arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
 }
 
 .header {
@@ -621,6 +615,9 @@ input[type="submit"], button {
   left: 10px;
   color: #818282;
 }
+.header .top .newsletter input {
+  border: none;
+}
 .header .top .newsletter .btn, .header .top .newsletter input[type="submit"], .header .top .newsletter button, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .volunteer-grid a, .volunteer-grid .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a {
   font-size: 14px;
   font-size: 0.875rem;
@@ -663,7 +660,7 @@ input[type="submit"], button {
 
 .nav a {
   color: #818282;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 51px;
   text-transform: uppercase;
 }
@@ -774,7 +771,7 @@ input[type="submit"], button {
   }
 }
 .footer-nav a {
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -857,7 +854,7 @@ input[type="submit"], button {
   font-size: 5.25rem;
   margin-bottom: 12px;
   color: #fff;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1;
 }
 .meal-tracker p {
@@ -868,6 +865,7 @@ input[type="submit"], button {
 .testimonials {
   background: #fcd268 url('assets/images/bg-testimonials.jpg?1417655264') no-repeat;
   background-size: cover;
+  color: #363636;
   text-align: center;
 }
 .testimonials .section-title {
@@ -938,11 +936,6 @@ input[type="submit"], button {
 
 .volunteer-grid {
   text-align: center;
-}
-@media (min-width: 740px) {
-  .volunteer-grid {
-    padding-top: 24px;
-  }
 }
 .volunteer-grid [class*="col-"] {
   margin-bottom: 48px;
@@ -1090,11 +1083,6 @@ input[type="submit"], button {
 .give-grid {
   max-width: 1160px;
   margin: 0 auto;
-}
-@media (min-width: 740px) {
-  .give-grid {
-    padding-top: 24px;
-  }
 }
 .give-grid [class*="col-"] {
   margin-bottom: 48px;
@@ -1476,7 +1464,7 @@ input[type="submit"], button {
   padding: 16px 0;
   background: #8aad64;
   color: #fff;
-  font-weight: 900;
+  font-weight: 800;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);

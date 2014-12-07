@@ -2,10 +2,6 @@
 .give-grid {
   max-width: 1160px;
   margin: 0 auto;
-
-  @include bp-min-width($medium) {
-    padding-top: $base;
-  }
   
   [class*="col-"] {
     margin-bottom: $base*2;

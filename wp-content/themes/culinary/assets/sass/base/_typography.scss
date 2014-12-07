@@ -1,19 +1,20 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900,700,400italic);
 
-$sans: 'Lato', Helvetica, arial, sans-serif;
+$sans: 'Gotham A', 'Gotham B', Helvetica, arial, sans-serif;
+$sans-ss: 'Gotham SSm A', 'Gotham SSm B', Helvetica, arial, sans-serif;
 
 $reg:   400;
 $bold:  700;
-$heavy: 900;
+$heavy: 800;
 
 $base:  24px;
 
 body {
-  font: $reg 1em/1.5em $sans;
+  font: $reg 1em/1.5em $sans-ss;
   color: $grey;
 }
 
 h1,h2,h3,h4,h5 {
+  font-family: $sans;
   line-height: 1;
 }
 

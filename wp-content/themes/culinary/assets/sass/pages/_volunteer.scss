@@ -1,10 +1,6 @@
 
 .volunteer-grid {
   text-align: center;
-
-  @include bp-min-width($medium) {
-    padding-top: $base;
-  }
   
   [class*="col-"] {
     margin-bottom: $base*2;

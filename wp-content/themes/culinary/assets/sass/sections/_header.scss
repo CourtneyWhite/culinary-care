@@ -46,6 +46,10 @@
     color: $grey;
   }
   
+  input {
+    border: none;
+  }
+  
   .btn {
     @extend .grey;
     @include font-size(14px);
