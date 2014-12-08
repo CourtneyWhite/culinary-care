@@ -81,6 +81,7 @@
 		<section id="our-partners" class="our-partners section">
 		  <div class="wrapper">
 		    <h2 class="section-title">Our Partners</h2>
+		    <div class="icon-fork"><div class="icon-fork-yellow"></div></div>
 		    
 		  </div>
 		</section>

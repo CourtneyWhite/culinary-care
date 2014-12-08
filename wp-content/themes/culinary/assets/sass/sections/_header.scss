@@ -32,10 +32,10 @@
   }
 }
 
-.header .top .newsletter {
+.header .top .form-newsletter {
   position: relative;
   float: right;
-  padding-right: 88px;
+  padding-right: 92px;
   border: 1px solid $lt-grey;
   
   label {
@@ -61,7 +61,6 @@
 }
 
 .nav {
-
   @include bp-min-width($medium) {
     float: right;
     clear: right;
@@ -69,7 +68,6 @@
 }
 
 .nav li {
-
   @include bp-min-width($medium) {
     position: relative;
     float: left;

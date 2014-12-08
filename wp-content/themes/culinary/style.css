@@ -205,6 +205,13 @@ em {
   list-style: decimal;
 }
 
+.icon-fork-yellow {
+  width: 190px;
+  height: 30px;
+  background: url('assets/images/icon-fork-yellow.png?1418007358') no-repeat;
+  background-size: 190px auto;
+}
+
 .grid {
   *zoom: 1;
   margin: 0 0 24px 0;
@@ -370,10 +377,10 @@ a {
 .btn.yellow:hover, input.yellow[type="submit"]:hover, button.yellow:hover, .nav li:last-child a.yellow:hover, .nav li:last-child .volunteer-grid a:hover, .volunteer-grid .nav li:last-child a:hover, .volunteer-grid a:hover, .hero-slider .slide-content a.yellow:hover {
   background: #d4a737;
 }
-.btn.grey, input.grey[type="submit"], button.grey, .header .top .newsletter .btn, .header .top .newsletter input[type="submit"], .header .top .newsletter button, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .volunteer-grid a, .volunteer-grid .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a, .nav li:last-child a.grey, .volunteer-grid a.grey, .hero-slider .slide-content a.grey {
+.btn.grey, input.grey[type="submit"], button.grey, .header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .nav li:last-child a, .nav li:last-child .header .top .form-newsletter a, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a, .nav li:last-child a.grey, .volunteer-grid a.grey, .hero-slider .slide-content a.grey {
   background: #818282;
 }
-.btn.grey:hover, input.grey[type="submit"]:hover, button.grey:hover, .header .top .newsletter .btn:hover, .header .top .newsletter input[type="submit"]:hover, .header .top .newsletter button:hover, .header .top .newsletter .nav li:last-child a:hover, .nav li:last-child .header .top .newsletter a:hover, .header .top .newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .newsletter a:hover, .header .top .newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .newsletter a:hover, .nav li:last-child a.grey:hover, .volunteer-grid a.grey:hover, .hero-slider .slide-content a.grey:hover {
+.btn.grey:hover, input.grey[type="submit"]:hover, button.grey:hover, .header .top .form-newsletter .btn:hover, .header .top .form-newsletter input[type="submit"]:hover, .header .top .form-newsletter button:hover, .header .top .form-newsletter .nav li:last-child a:hover, .nav li:last-child .header .top .form-newsletter a:hover, .header .top .form-newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .form-newsletter a:hover, .header .top .form-newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .form-newsletter a:hover, .nav li:last-child a.grey:hover, .volunteer-grid a.grey:hover, .hero-slider .slide-content a.grey:hover {
   background: #363636;
 }
 
@@ -419,6 +426,7 @@ select {
   padding: 8px 10px;
   background: #fff;
   border: 1px solid #c0c0c0;
+  box-shadow: none;
   color: #363636;
   font-family: "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
 }
@@ -561,6 +569,7 @@ input[type="submit"], button {
   font-family: "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
 }
 
+/** Errors ============**/
 input.wpcf7-not-valid {
   border-color: #ec6e6a !important;
 }
@@ -580,6 +589,13 @@ span.wpcf7-not-valid-tip {
   background: #ec6e6a;
   color: #fff;
   border: none !important;
+}
+
+/** Newsletter ============**/
+.form-newsletter input {
+  position: relative;
+  z-index: 10;
+  background: transparent;
 }
 
 .header {
@@ -623,13 +639,13 @@ span.wpcf7-not-valid-tip {
   margin-left: 12px;
 }
 
-.header .top .newsletter {
+.header .top .form-newsletter {
   position: relative;
   float: right;
-  padding-right: 88px;
+  padding-right: 92px;
   border: 1px solid #c0c0c0;
 }
-.header .top .newsletter label {
+.header .top .form-newsletter label {
   font-size: 14px;
   font-size: 0.875rem;
   position: absolute;
@@ -637,10 +653,10 @@ span.wpcf7-not-valid-tip {
   left: 10px;
   color: #818282;
 }
-.header .top .newsletter input {
+.header .top .form-newsletter input {
   border: none;
 }
-.header .top .newsletter .btn, .header .top .newsletter input[type="submit"], .header .top .newsletter button, .header .top .newsletter .nav li:last-child a, .nav li:last-child .header .top .newsletter a, .header .top .newsletter .volunteer-grid a, .volunteer-grid .header .top .newsletter a, .header .top .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .newsletter a {
+.header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .nav li:last-child a, .nav li:last-child .header .top .form-newsletter a, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a {
   font-size: 14px;
   font-size: 0.875rem;
   position: absolute;
@@ -754,7 +770,8 @@ span.wpcf7-not-valid-tip {
 .footer .newsletter .form-newsletter {
   position: relative;
   max-width: 360px;
-  padding-right: 112px;
+  padding-right: 118px;
+  background: #fff;
 }
 .footer .newsletter label {
   position: absolute;
@@ -883,7 +900,27 @@ span.wpcf7-not-valid-tip {
 }
 
 .our-partners {
-  border-top: 1px solid #c0c0c0;
+  position: relative;
+  border-top: 1px solid #d9d9d9;
+}
+.our-partners .wrapper {
+  padding-top: 24px;
+}
+@media (min-width: 740px) {
+  .our-partners .wrapper {
+    padding-top: 72px;
+  }
+}
+.our-partners .icon-fork {
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  background: #fff;
+  padding: 0 20px;
 }
 
 .meal-tracker {

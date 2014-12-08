@@ -49,7 +49,23 @@
 }
 
 .our-partners {
-  border-top: 1px solid $lt-grey;
+  position: relative;
+  border-top: 1px solid $lt-grey-2;
+  
+  .wrapper {
+    padding-top: $base;
+    
+    @include bp-min-width($medium) {
+      padding-top: $base*3;
+    }
+  }
+  
+  .icon-fork {
+    @include horizontal-center(absolute);
+    top: -15px;
+    background: #fff;
+    padding: 0 20px;
+  }
 }
 
 .meal-tracker {

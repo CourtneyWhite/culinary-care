@@ -26,7 +26,7 @@
   			    <li><a href="">tw</a></li>
   			    <li><a href="">fb</a></li>
   			  </ul>
-  			  <form class="newsletter">
+  			  <form class="form-newsletter">
   			    <div class="form-item">
   			      <label for="email">Get Email Updates</label>
   			      <input type="email" id="email">

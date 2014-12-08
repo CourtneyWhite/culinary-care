@@ -36,6 +36,7 @@ select {
   padding: 8px 10px;
   background: #fff;
   border: 1px solid $lt-grey;
+  box-shadow: none;
   color: $black;
   font-family: $sans;
 
@@ -184,7 +185,7 @@ input[type="submit"], button {
   font-family: $sans;
 }
 
-
+/** Errors ============**/
 
 input.wpcf7-not-valid {
   border-color: $red !important;
@@ -204,3 +205,12 @@ span.wpcf7-not-valid-tip {
   color: #fff;
   border: none !important;
 }
+
+/** Newsletter ============**/
+
+.form-newsletter input {
+  position: relative;
+  z-index: 10;
+  background: transparent;
+}
+
