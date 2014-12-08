@@ -183,3 +183,24 @@ input[type="submit"], button {
   cursor: pointer;
   font-family: $sans;
 }
+
+
+
+input.wpcf7-not-valid {
+  border-color: $red !important;
+}
+
+span.wpcf7-not-valid-tip {
+  color: $red !important;
+  font-size: 12px !important;
+}
+
+.wpcf7-validation-errors {
+  @include font-size(14px);
+  @include line-height(20px);
+  margin: 0 !important;
+  padding: 12px 16px !important;
+  background: $red;
+  color: #fff;
+  border: none !important;
+}

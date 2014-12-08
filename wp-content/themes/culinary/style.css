@@ -561,6 +561,27 @@ input[type="submit"], button {
   font-family: "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
 }
 
+input.wpcf7-not-valid {
+  border-color: #ec6e6a !important;
+}
+
+span.wpcf7-not-valid-tip {
+  color: #ec6e6a !important;
+  font-size: 12px !important;
+}
+
+.wpcf7-validation-errors {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  margin: 0 !important;
+  padding: 12px 16px !important;
+  background: #ec6e6a;
+  color: #fff;
+  border: none !important;
+}
+
 .header {
   padding: 18px 0 24px;
   border-bottom: 2px solid #d9d9d9;
@@ -1467,7 +1488,7 @@ input[type="submit"], button {
 }
 
 .hero-slider .slide-4 .slide-content {
-  background: #f7a489 url('assets/images/pattern-utensils-pink.png');
+  background: #f7a489 url('assets/images/pattern-utensils-pink.png?1417997064');
 }
 .hero-slider .slide-4 .slide-content a {
   background: #da7554;
