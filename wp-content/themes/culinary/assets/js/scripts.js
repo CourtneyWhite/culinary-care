@@ -4,7 +4,7 @@ $(function(){
     loop: true,
     items: 1,
     nav: true,
-    navText: []
+    navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>']
   });
 
   $('.hero-slider .slides').owlCarousel({
@@ -12,7 +12,8 @@ $(function(){
     items: 1,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
-    URLhashListener: true
+    URLhashListener: true,
+    navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>']
   });
 
   sliderTabActive = function() {

@@ -1,5 +1,58 @@
 
+$sprite: image-url("sprite.svg");
 $icon-fork-yellow: image-url("icon-fork-yellow.png");
+
+.social-links [class*="icon-"] {
+  display: block;
+  background: $sprite no-repeat;
+}
+
+.header .social-links [class*="icon-"] {
+  width: 36px;
+  height: 36px;
+}
+
+.footer .social-links [class*="icon-"] {
+  width: 42px;
+  height: 42px;
+}
+
+.social-links .icon-twitter-grey {
+  background-position: -46px 0;
+}
+
+.social-links .icon-facebook-grey {
+  background-position: -46px -40px;
+}
+
+.social-links .icon-facebook-white {
+  background-position: 0 -46px;
+}
+
+.social-links .icon-instagram-white {
+  background-position: 0 -92px;
+}
+
+.social-links .icon-email-white {
+  background-position: 0 -138px;
+}
+
+.owl-nav [class*="icon-"] {
+  display: block;
+  width: 27px;
+  height: 40px;
+  background: $sprite no-repeat;
+}
+
+.owl-nav .icon-prev {
+  background-position: 0 -184px;
+  margin-left: -1px;
+}
+
+.owl-nav .icon-next {
+  background-position: -31px -184px;
+  margin-right: -1px;
+}
 
 .icon-fork-yellow {
   width: 190px;

@@ -23,8 +23,8 @@
   			<div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Culinary Care"></a></div>
   			<div class="top">
   			  <ul class="social-links">
-  			    <li><a href="">tw</a></li>
-  			    <li><a href="">fb</a></li>
+  			    <li><a href="" class="icon-twitter-grey"></a></li>
+  			    <li><a href="" class="icon-facebook-grey"></a></li>
   			  </ul>
   			  <form class="form-newsletter">
   			    <div class="form-item">

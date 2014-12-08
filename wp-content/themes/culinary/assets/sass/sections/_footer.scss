@@ -81,9 +81,13 @@
     width: 20%;
   }
   
+  h4 {
+    margin-bottom: $base;
+  }
+  
   li {
     float: left;
-    margin-right: 12px;
+    margin-right: 20px;
   }
 }
 

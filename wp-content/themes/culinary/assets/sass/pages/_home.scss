@@ -145,8 +145,12 @@
   top: 30%;
   width: 60px;
   height: 60px;
-  background: $red;
+  background: $turq;
   border-radius: 50%;
+  
+  [class*="icon-"] {
+    @include absolute-center;
+  }
 }
 
 .owl-prev {
@@ -156,3 +160,14 @@
 .owl-next {
   right: -100px;
 }
+
+.testimonials-slider .owl-prev,
+.testimonials-slider .owl-next {
+  @include global-transition;
+  background: $red;
+  
+  &:hover {
+    background: $dk-red;
+  }
+}
+

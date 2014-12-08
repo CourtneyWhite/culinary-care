@@ -205,6 +205,58 @@ em {
   list-style: decimal;
 }
 
+.social-links [class*="icon-"] {
+  display: block;
+  background: url('assets/images/sprite.svg?1418010220') no-repeat;
+}
+
+.header .social-links [class*="icon-"] {
+  width: 36px;
+  height: 36px;
+}
+
+.footer .social-links [class*="icon-"] {
+  width: 42px;
+  height: 42px;
+}
+
+.social-links .icon-twitter-grey {
+  background-position: -46px 0;
+}
+
+.social-links .icon-facebook-grey {
+  background-position: -46px -40px;
+}
+
+.social-links .icon-facebook-white {
+  background-position: 0 -46px;
+}
+
+.social-links .icon-instagram-white {
+  background-position: 0 -92px;
+}
+
+.social-links .icon-email-white {
+  background-position: 0 -138px;
+}
+
+.owl-nav [class*="icon-"] {
+  display: block;
+  width: 27px;
+  height: 40px;
+  background: url('assets/images/sprite.svg?1418010220') no-repeat;
+}
+
+.owl-nav .icon-prev {
+  background-position: 0 -184px;
+  margin-left: -1px;
+}
+
+.owl-nav .icon-next {
+  background-position: -31px -184px;
+  margin-right: -1px;
+}
+
 .icon-fork-yellow {
   width: 190px;
   height: 30px;
@@ -636,7 +688,7 @@ span.wpcf7-not-valid-tip {
 }
 .header .top .social-links li {
   float: left;
-  margin-left: 12px;
+  margin-left: 20px;
 }
 
 .header .top .form-newsletter {
@@ -797,9 +849,12 @@ span.wpcf7-not-valid-tip {
     width: 20%;
   }
 }
+.footer .social-links h4 {
+  margin-bottom: 24px;
+}
 .footer .social-links li {
   float: left;
-  margin-right: 12px;
+  margin-right: 20px;
 }
 
 @media (min-width: 740px) {
@@ -1006,8 +1061,18 @@ span.wpcf7-not-valid-tip {
   top: 30%;
   width: 60px;
   height: 60px;
-  background: #ec6e6a;
+  background: #97d4c9;
   border-radius: 50%;
+}
+.owl-prev [class*="icon-"],
+.owl-next [class*="icon-"] {
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .owl-prev {
@@ -1016,6 +1081,19 @@ span.wpcf7-not-valid-tip {
 
 .owl-next {
   right: -100px;
+}
+
+.testimonials-slider .owl-prev,
+.testimonials-slider .owl-next {
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  background: #ec6e6a;
+}
+.testimonials-slider .owl-prev:hover,
+.testimonials-slider .owl-next:hover {
+  background: #d15352;
 }
 
 .volunteer-grid {

@@ -20,10 +20,10 @@
           <div class="social-links">
             <h4>Spread One Less Worry</h4>
             <ul>
-              <li><a href="">fb</a></li>
-              <li><a href="">tw</a></li>
-              <li><a href="">in</a></li>
-              <li><a href="">em</a></li>
+              <li><a href="" class="icon-facebook-white"></a></li>
+              <li><a href="" class="icon-twitter-white"></a></li>
+              <li><a href="" class="icon-instagram-white"></a></li>
+              <li><a href="" class="icon-email-white"></a></li>
             </ul>
           </div>
           
