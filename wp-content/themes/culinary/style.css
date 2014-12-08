@@ -97,7 +97,7 @@ h1 {
   color: #8aad64;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.015em;
 }
 
 h2 {
@@ -126,12 +126,12 @@ h4 {
 }
 
 p {
-  font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 .page-title {
-  max-width: 920px;
+  max-width: 960px;
   margin: 0 auto 24px;
   text-align: center;
 }
@@ -157,6 +157,7 @@ p {
     font-size: 1.5rem;
     line-height: 30px;
     line-height: 1.875rem;
+    font-family: "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
     margin: 0 auto 48px;
   }
 }
@@ -815,14 +816,22 @@ input[type="submit"], button {
   color: #818282;
 }
 
-.how-it-works h3 {
+.how-it-works .how-image {
   position: relative;
   height: 192px;
   margin-bottom: 18px;
-  color: #fff;
-  background: #363636;
+  background-size: cover;
 }
-.how-it-works h3 span {
+.how-it-works .how-image .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+}
+.how-it-works .how-image h3 {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -833,6 +842,23 @@ input[type="submit"], button {
   display: block;
   width: 100%;
   padding: 0 24px;
+  color: #fff;
+}
+
+.how-it-works .col-1-4:nth-child(1) .how-image {
+  background: url('assets/images/pic-how-01.jpg?1417990217') no-repeat;
+}
+
+.how-it-works .col-1-4:nth-child(2) .how-image {
+  background: url('assets/images/pic-how-02.jpg?1417990211') no-repeat;
+}
+
+.how-it-works .col-1-4:nth-child(3) .how-image {
+  background: url('assets/images/pic-how-03.jpg?1417990205') no-repeat;
+}
+
+.how-it-works .col-1-4:nth-child(4) .how-image {
+  background: url('assets/images/pic-how-04.jpg?1417990198') no-repeat;
 }
 
 .our-partners {
@@ -840,7 +866,7 @@ input[type="submit"], button {
 }
 
 .meal-tracker {
-  background: #ec6e6a;
+  background: #ec6e6a url('assets/images/pattern-spoons-red.png?1417991026');
   color: #fff;
   text-align: center;
 }
@@ -954,6 +980,7 @@ input[type="submit"], button {
 }
 
 .page-id-22 .page-title {
+  margin-bottom: 24px;
   color: #ec6e6a;
 }
 
@@ -1374,7 +1401,7 @@ input[type="submit"], button {
 }
 
 .hero-slider .slide-content {
-  background: #8aad64;
+  background: #8aad64 url('assets/images/pattern-utensils-green.png?1417996254');
   color: #fff;
 }
 @media (min-width: 740px) {
@@ -1426,21 +1453,21 @@ input[type="submit"], button {
 }
 
 .hero-slider .slide-2 .slide-content {
-  background: #97d4c9;
+  background: #97d4c9 url('assets/images/pattern-utensils-turq.png?1417996753');
 }
 .hero-slider .slide-2 .slide-content a {
   background: #66a196;
 }
 
 .hero-slider .slide-3 .slide-content {
-  background: #fcd268;
+  background: #fcd268 url('assets/images/pattern-utensils-yellow.png?1417996876');
 }
 .hero-slider .slide-3 .slide-content a {
   background: #d4a737;
 }
 
 .hero-slider .slide-4 .slide-content {
-  background: #f7a489;
+  background: #f7a489 url('assets/images/pattern-utensils-pink.png');
 }
 .hero-slider .slide-4 .slide-content a {
   background: #da7554;

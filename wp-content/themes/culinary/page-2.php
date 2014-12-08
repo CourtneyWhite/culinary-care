@@ -47,19 +47,31 @@
 		    <h2 class="section-title">How It Works</h2>
 		    <div class="grid">
   			  <div class="col-1-4">
-  			    <h3><span><?php the_field('how_it_works_block_1_title'); ?><span></h3>
+  			    <div class="how-image">
+  			      <div class="overlay"></div>
+  			      <h3><?php the_field('how_it_works_block_1_title'); ?></h3>
+  			     </div>
   			    <?php the_field('how_it_works_block_1'); ?>
   			  </div>
   			  <div class="col-1-4">
-  			    <h3><span><?php the_field('how_it_works_block_2_title'); ?></span></h3>
+  			    <div class="how-image">
+  			      <div class="overlay"></div>
+  			      <h3><?php the_field('how_it_works_block_2_title'); ?></h3>
+  			     </div>
   			    <?php the_field('how_it_works_block_2'); ?>
   			  </div>
   			  <div class="col-1-4">
-  			    <h3><span><?php the_field('how_it_works_block_3_title'); ?></span></h3>
+  			    <div class="how-image">
+  			      <div class="overlay"></div>
+  			      <h3><?php the_field('how_it_works_block_3_title'); ?></h3>
+  			     </div>
   			    <?php the_field('how_it_works_block_3'); ?>
   			  </div>
   			  <div class="col-1-4">
-  			    <h3><span><?php the_field('how_it_works_block_4_title'); ?></span></h3>
+  			    <div class="how-image">
+  			      <div class="overlay"></div>
+  			      <h3><?php the_field('how_it_works_block_4_title'); ?></h3>
+  			     </div>
   			    <?php the_field('how_it_works_block_4'); ?>
   			  </div>
 		    </div>

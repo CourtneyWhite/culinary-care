@@ -23,7 +23,7 @@ h1 {
   color: $green;
   font-weight: $heavy;
   text-transform: uppercase;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.015em;
 }
 
 h2 {
@@ -49,11 +49,11 @@ h4 {
 }
 
 p {
-  @include font-size(17px);
+  @include font-size(16px);
 }
 
 .page-title {
-  max-width: 920px;
+  max-width: 960px;
   margin: 0 auto $base;
   text-align: center;
 
@@ -75,6 +75,7 @@ p {
   @include bp-min-width($medium) {
     @include font-size(24px);
     @include line-height(30px);
+    font-family: $sans;
     margin: 0 auto $base*2;
   }
 }

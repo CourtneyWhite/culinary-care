@@ -7,19 +7,45 @@
   }
 }
 
-.how-it-works h3 {
+.how-it-works .how-image {
   position: relative;
   height: $base*8;
   margin-bottom: 18px;
-  color: #fff;
-  background: $black;
+  background-size: cover;
   
-  span {
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+  }
+  
+  h3 {
     @include absolute-center;
     display: block;
     width: 100%;
     padding: 0 24px;
+    color: #fff;
   }
+}
+
+.how-it-works .col-1-4:nth-child(1) .how-image {
+  background: $pic-how-01 no-repeat;
+}
+
+.how-it-works .col-1-4:nth-child(2) .how-image {
+  background: $pic-how-02 no-repeat;
+}
+
+.how-it-works .col-1-4:nth-child(3) .how-image {
+  background: $pic-how-03 no-repeat;
+}
+
+.how-it-works .col-1-4:nth-child(4) .how-image {
+  background: $pic-how-04 no-repeat;
 }
 
 .our-partners {
@@ -27,7 +53,7 @@
 }
 
 .meal-tracker {
-  background: $red;
+  background: $red $pattern-spoons-red ;
   color: #fff;
   text-align: center;
   

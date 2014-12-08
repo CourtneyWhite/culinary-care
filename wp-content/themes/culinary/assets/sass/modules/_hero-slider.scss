@@ -15,7 +15,7 @@
 }
 
 .hero-slider .slide-content {
-  background: $green;
+  background: $green $pattern-utensils-green;
   color: #fff;
 
   @include bp-min-width($medium) {
@@ -57,7 +57,7 @@
 }
 
 .hero-slider .slide-2 .slide-content {
-  background: $turq;
+  background: $turq $pattern-utensils-turq;
   
   a {
     background: $dk-turq;
@@ -65,7 +65,7 @@
 }
 
 .hero-slider .slide-3 .slide-content {
-  background: $yellow;
+  background: $yellow $pattern-utensils-yellow;
   
   a {
     background: $gold;
@@ -73,7 +73,7 @@
 }
 
 .hero-slider .slide-4 .slide-content {
-  background: $pink;
+  background: $pink $pattern-utensils-pink;
   
   a {
     background: $dk-pink;
