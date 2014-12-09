@@ -207,7 +207,7 @@ em {
 
 .social-links [class*="icon-"] {
   display: block;
-  background: url('assets/images/sprite.svg?1418155244') no-repeat;
+  background: url('assets/images/sprite.svg?1418155478') no-repeat;
 }
 
 .header .social-links [class*="icon-"] {
@@ -244,7 +244,7 @@ em {
   display: block;
   width: 27px;
   height: 40px;
-  background: url('assets/images/sprite.svg?1418155244') no-repeat;
+  background: url('assets/images/sprite.svg?1418155478') no-repeat;
 }
 
 .owl-nav .icon-prev {
@@ -267,7 +267,13 @@ em {
 .icon-checkmark, .form-checkbox input[type="checkbox"]:checked + label:after {
   width: 16px;
   height: 13px;
-  background: url('assets/images/sprite.svg?1418155244') no-repeat -46px -80px;
+  background: url('assets/images/sprite.svg?1418155478') no-repeat -46px -80px;
+}
+
+.icon-arrow-right, .give-grid a:after {
+  width: 11px;
+  height: 16px;
+  background: url('assets/images/sprite.svg?1418155478') no-repeat -46px -96px;
 }
 
 .grid {
@@ -1306,9 +1312,16 @@ span.wpcf7-not-valid-tip {
 }
 
 .give-grid a {
+  position: relative;
   color: #ec6e6a;
   font-weight: 700;
   text-transform: uppercase;
+}
+.give-grid a:after {
+  content: "";
+  display: inline-block;
+  vertical-align: -1px;
+  margin-left: 8px;
 }
 
 .page-id-85 .page-title {
