@@ -146,13 +146,13 @@ p {
   text-align: center;
 }
 
-.intro, .page-id-22 .main p:first-of-type {
+.intro, .page-id-22 .main p:first-of-type, .page-id-85 .body p:first-of-type {
   max-width: 680px;
   margin-bottom: 24px;
   text-align: center;
 }
 @media (min-width: 740px) {
-  .intro, .page-id-22 .main p:first-of-type {
+  .intro, .page-id-22 .main p:first-of-type, .page-id-85 .body p:first-of-type {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 30px;
@@ -325,7 +325,7 @@ body {
   background: #c0c0c0;
 }
 
-.width-10-col, .volunteer-form-grid {
+.width-10-col, .volunteer-form-grid, .events-grid {
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -428,6 +428,12 @@ a {
 }
 .btn.yellow:hover, input.yellow[type="submit"]:hover, button.yellow:hover, .nav li:last-child a.yellow:hover, .nav li:last-child .volunteer-grid a:hover, .volunteer-grid .nav li:last-child a:hover, .volunteer-grid a:hover, .hero-slider .slide-content a.yellow:hover {
   background: #d4a737;
+}
+.btn.turq, input.turq[type="submit"], button.turq, .nav li:last-child a.turq, .volunteer-grid a.turq, .event-register .btn, .event-register input[type="submit"], .event-register button, .event-register .nav li:last-child a, .nav li:last-child .event-register a, .event-register .volunteer-grid a, .volunteer-grid .event-register a, .event-register .hero-slider .slide-content a, .hero-slider .slide-content .event-register a, .hero-slider .slide-content a.turq {
+  background: #97d4c9;
+}
+.btn.turq:hover, input.turq[type="submit"]:hover, button.turq:hover, .nav li:last-child a.turq:hover, .volunteer-grid a.turq:hover, .event-register .btn:hover, .event-register input[type="submit"]:hover, .event-register button:hover, .event-register .nav li:last-child a:hover, .nav li:last-child .event-register a:hover, .event-register .volunteer-grid a:hover, .volunteer-grid .event-register a:hover, .event-register .hero-slider .slide-content a:hover, .hero-slider .slide-content .event-register a:hover, .hero-slider .slide-content a.turq:hover {
+  background: #66a196;
 }
 .btn.grey, input.grey[type="submit"], button.grey, .header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .nav li:last-child a, .nav li:last-child .header .top .form-newsletter a, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a, .nav li:last-child a.grey, .volunteer-grid a.grey, .hero-slider .slide-content a.grey {
   background: #818282;
@@ -1300,6 +1306,47 @@ span.wpcf7-not-valid-tip {
   color: #ec6e6a;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.page-id-85 .page-title {
+  margin-bottom: 24px;
+}
+
+.events-grid {
+  margin: 0 auto;
+}
+.events-grid .event {
+  *zoom: 1;
+}
+.events-grid .event:before, .events-grid .event:after {
+  content: " ";
+  display: block;
+}
+.events-grid .event:after {
+  clear: both;
+}
+
+.event-image {
+  float: left;
+  width: 36%;
+}
+
+.event-info {
+  float: left;
+  width: 64%;
+  padding-left: 20px;
+}
+
+.event-date {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  color: #ec6e6a;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.event-time {
+  margin-bottom: 24px;
 }
 
 /* 

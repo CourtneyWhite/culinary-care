@@ -104,6 +104,38 @@
   	register_post_type( 'testimonials' , $args );
   }
 
+	// Event Post Type
+	add_action('init', 'events_register');
+  function events_register() {
+  	$labels = array(
+  		'name' => _x('Events', 'post type general name'),
+  		'singular_name' => _x('Events Item', 'post type singular name'),
+  		'add_new' => _x('Add New', 'events item'),
+  		'add_new_item' => __('Add New Events Item'),
+  		'edit_item' => __('Edit Events Item'),
+  		'new_item' => __('New Events Item'),
+  		'view_item' => __('View Events Item'),
+  		'search_items' => __('Search Events'),
+  		'not_found' =>  __('Nothing found'),
+  		'not_found_in_trash' => __('Nothing found in Trash'),
+  		'parent_item_colon' => ''
+  	);
+  	$args = array(
+  		'labels' => $labels,
+  		'public' => true,
+  		'publicly_queryable' => true,
+  		'show_ui' => true,
+  		'query_var' => true,
+  		'menu_icon' => 'dashicons-awards',
+  		'rewrite' => true,
+  		'capability_type' => 'post',
+  		'hierarchical' => false,
+  		'menu_position' => null,
+  		'supports' => array('title','editor','thumbnail')
+  	  ); 
+  	register_post_type( 'events' , $args );
+  }
+
 	// WP Title (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 	function culinary_wp_title( $title, $sep ) {
 		global $paged, $page;
@@ -198,5 +230,6 @@
 	// Image Sizes
 	add_image_size( 'partner-thumb', 160, 144 );
 	add_image_size( 'testimonial-thumb', 96, 96, true );
+	add_image_size( 'event-thumb', 200, 200, true );
 
 ?>

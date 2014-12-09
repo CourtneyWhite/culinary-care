@@ -33,7 +33,15 @@ a {
     background: $yellow;
     
     &:hover {
-      background: $gold
+      background: $gold;
+    }
+  }
+
+  &.turq {
+    background: $turq;
+    
+    &:hover {
+      background: $dk-turq;
     }
   }
 

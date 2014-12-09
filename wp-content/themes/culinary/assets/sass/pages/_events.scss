@@ -1,0 +1,46 @@
+
+.page-id-85 .page-title {
+  margin-bottom: $base;
+}
+
+.page-id-85 .body {
+
+  p:first-of-type {
+    @extend .intro;
+  }
+}
+
+.events-grid {
+  @extend .width-10-col;
+  margin: 0 auto;
+  
+  .event {
+    @include cf;
+  }
+}
+
+.event-image {
+  float: left;
+  width: 36%;
+}
+
+.event-info {
+  float: left;
+  width: 64%;
+  padding-left: 20px;
+}
+
+.event-date {
+  @include font-size(21px);
+  color: $red;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+.event-time {
+  margin-bottom: $base;
+}
+
+.event-register .btn {
+  @extend .turq;
+}
