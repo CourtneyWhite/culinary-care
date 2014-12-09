@@ -207,7 +207,7 @@ em {
 
 .social-links [class*="icon-"] {
   display: block;
-  background: url('assets/images/sprite.svg?1418010220') no-repeat;
+  background: url('assets/images/sprite.svg?1418155244') no-repeat;
 }
 
 .header .social-links [class*="icon-"] {
@@ -244,7 +244,7 @@ em {
   display: block;
   width: 27px;
   height: 40px;
-  background: url('assets/images/sprite.svg?1418010220') no-repeat;
+  background: url('assets/images/sprite.svg?1418155244') no-repeat;
 }
 
 .owl-nav .icon-prev {
@@ -262,6 +262,12 @@ em {
   height: 30px;
   background: url('assets/images/icon-fork-yellow.png?1418007358') no-repeat;
   background-size: 190px auto;
+}
+
+.icon-checkmark, .form-checkbox input[type="checkbox"]:checked + label:after {
+  width: 16px;
+  height: 13px;
+  background: url('assets/images/sprite.svg?1418155244') no-repeat -46px -80px;
 }
 
 .grid {
@@ -575,11 +581,8 @@ textarea {
 .form-checkbox input[type="checkbox"]:checked + label:after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 13px;
-  height: 15px;
-  background: #97d4c9;
+  top: 6px;
+  left: 5px;
 }
 
 .checkboxes input {

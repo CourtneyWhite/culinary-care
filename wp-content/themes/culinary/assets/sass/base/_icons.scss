@@ -60,3 +60,9 @@ $icon-fork-yellow: image-url("icon-fork-yellow.png");
   background: $icon-fork-yellow no-repeat;
   background-size: 190px auto;
 }
+
+.icon-checkmark {
+  width: 16px;
+  height: 13px;
+  background: $sprite no-repeat -46px -80px;
+}

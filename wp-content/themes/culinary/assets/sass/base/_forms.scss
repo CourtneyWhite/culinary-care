@@ -128,13 +128,11 @@ textarea {
 }
 
 .form-checkbox input[type="checkbox"]:checked + label:after {
+  @extend .icon-checkmark;
   content: "";
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 13px;
-  height: 15px;
-  background: $turq;
+  top: 6px;
+  left: 5px;
 }
 
 .checkboxes input {
@@ -175,6 +173,7 @@ textarea {
   }
 }
 
+
 /** Buttons ============**/
 
 input[type="submit"], button {
@@ -184,6 +183,7 @@ input[type="submit"], button {
   cursor: pointer;
   font-family: $sans;
 }
+
 
 /** Errors ============**/
 
