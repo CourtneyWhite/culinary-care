@@ -82,7 +82,22 @@
 		  <div class="wrapper">
 		    <h2 class="section-title">Our Partners</h2>
 		    <div class="icon-fork"><div class="icon-fork-yellow"></div></div>
-		    
+		    <div class="partners-slider">
+        <?php
+        $args = array( 'post_type' => 'partners', 'posts_per_page' => -1 );
+        $myposts = get_posts( $args );
+        foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+        	<div class="partner">
+    		  <?php
+    		    $image = get_field('partner_logo');
+            if( $image ) {
+            	echo '<span class="logo"><img src="' . $image['sizes']['partner-thumb'] . '"></span>';
+            }
+          ?>
+        	</div>
+        <?php endforeach; 
+        wp_reset_postdata();?>
+		    </div>
 		  </div>
 		</section>
 
@@ -98,7 +113,7 @@
 		    <h2 class="section-title">Testimonials</h2>
 		    <div class="testimonials-slider">
         <?php
-        $args = array( 'post_type' => 'testimonials' );
+        $args = array( 'post_type' => 'testimonials', 'posts_per_page' => -1 );
         $myposts = get_posts( $args );
         foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
         	<div class="testimonial">

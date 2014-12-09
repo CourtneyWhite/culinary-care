@@ -7,6 +7,27 @@ $(function(){
     navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>']
   });
 
+  $('.partners-slider').owlCarousel({
+    loop: true,
+    items: 6,
+    nav: true,
+    navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>'],
+    responsive: {
+      0:{
+        items: 2
+      },
+      600:{
+        items: 3
+      },
+      840:{
+        items: 4
+      },
+      1200:{
+        items: 6
+      }
+    }
+  });
+  
   $('.hero-slider .slides').owlCarousel({
     loop: false,
     items: 1,

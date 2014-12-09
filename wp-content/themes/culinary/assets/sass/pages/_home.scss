@@ -68,6 +68,30 @@
   }
 }
 
+.partners-slider {
+  padding: 0 80px;
+
+  .partner {
+    position: relative;
+    min-height: 144px;
+    text-align: center;
+  }
+  
+  .logo {
+    @include absolute-center;
+    width: 100%;
+    padding: 0 12px;
+  }
+}
+
+.partners-slider .owl-prev {
+  left: 0;
+}
+
+.partners-slider .owl-next {
+  right: 0;
+}
+
 .meal-tracker {
   background: $red $pattern-spoons-red ;
   color: #fff;
@@ -153,11 +177,11 @@
   }
 }
 
-.owl-prev {
+.testimonials-slider .owl-prev {
   left: -100px;
 }
 
-.owl-next {
+.testimonials-slider .owl-next {
   right: -100px;
 }
 

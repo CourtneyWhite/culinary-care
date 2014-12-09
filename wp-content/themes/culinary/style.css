@@ -978,6 +978,34 @@ span.wpcf7-not-valid-tip {
   padding: 0 20px;
 }
 
+.partners-slider {
+  padding: 0 80px;
+}
+.partners-slider .partner {
+  position: relative;
+  min-height: 144px;
+  text-align: center;
+}
+.partners-slider .logo {
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.partners-slider .owl-prev {
+  left: 0;
+}
+
+.partners-slider .owl-next {
+  right: 0;
+}
+
 .meal-tracker {
   background: #ec6e6a url('assets/images/pattern-spoons-red.png?1417991026');
   color: #fff;
@@ -1075,11 +1103,11 @@ span.wpcf7-not-valid-tip {
   left: 50%;
 }
 
-.owl-prev {
+.testimonials-slider .owl-prev {
   left: -100px;
 }
 
-.owl-next {
+.testimonials-slider .owl-next {
   right: -100px;
 }
 

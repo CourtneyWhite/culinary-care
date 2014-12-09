@@ -194,5 +194,9 @@
 			esc_attr( get_the_author() )
 		);
 	}
+	
+	// Image Sizes
+	add_image_size( 'partner-thumb', 160, 144 );
+	add_image_size( 'testimonial-thumb', 96, 96, true );
 
 ?>
