@@ -2,6 +2,10 @@
       <div class="wrapper">
       
         <div class="top">
+          <nav class="footer-nav">
+            <?php wp_nav_menu( array('menu'=>'Footer Menu') ); ?>
+          </nav>
+
           <div class="logo">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.png" alt="Culinary Care">
           </div>
@@ -26,10 +30,6 @@
               <li><a href="" class="icon-email-white"></a></li>
             </ul>
           </div>
-          
-          <nav class="footer-nav">
-          <?php wp_nav_menu( array('menu'=>'Footer Menu') ); ?>
-          </nav>
         </div>
     
         <div class="bottom">

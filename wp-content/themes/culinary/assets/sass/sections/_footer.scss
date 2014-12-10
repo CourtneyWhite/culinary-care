@@ -1,26 +1,26 @@
 
 .footer {
-  padding: $base*2 0 $base;
+  padding: $base*1.5 0 $base;
   background: $green;
   color: #fff;
 
-  @include bp-max-width($medium) {
-    text-align: center;
+  @include bp-min-width($large) {
+    padding-top: $base*2;
   }
   
   a {
     color: #fff;
-    
-    &:hover {
-      color: $lt-grey;
-    }
   }
 }
 
 .footer .top {
   @include cf;
   width: 100%;
-  padding-bottom: $base*2;
+  padding-bottom: $base*1.5;
+  
+  @include bp-min-width($large) {
+    padding-bottom: $base*2;
+  }
 }
 
 .footer h4 {
@@ -28,32 +28,44 @@
 }
 
 .footer .logo {
+  @include bp-max-width($xlarge) {
+    display: none;
+  }
 
-  @include bp-min-width($medium) {
+  @include bp-min-width($xlarge) {
     float: left;
     width: 24%;
     margin-top: -6px;
+    padding-right: 40px;
   }
 }
 
 .footer .newsletter {
 
-  @include bp-min-width($medium) {
+  @include bp-max-width($large) {
+    margin-bottom: $base*1.5;
+    text-align: center;
+  }
+
+  @include bp-min-max($large, $xlarge) {
+    float: left;
+    width: 50%;
+  }
+
+  @include bp-min-width($xlarge) {
     float: left;
     width: 39%;
+    padding-right: 20px;
   }
   
   h4 {
-    margin-bottom: $base;
+    margin-bottom: 16px;
+
+    @include bp-min-width($large) {
+      margin-bottom: $base;
+    }
   }
-  
-  .form-newsletter {
-    position: relative;
-    max-width: 360px;
-    padding-right: 118px;
-    background: #fff;
-  }
-  
+    
   label {
     position: absolute;
     top: 8px;
@@ -74,28 +86,71 @@
   }
 }
 
-.footer .social-links {
+.footer .newsletter .form-newsletter {
+  position: relative;
+  max-width: 360px;
+  padding-right: 118px;
+  background: #fff;
 
-  @include bp-min-width($medium) {
+  @include bp-max-width($large) {
+    margin: 0 auto;
+  }
+}
+
+
+.footer .social-links {
+  @include bp-max-width($large) {
+    text-align: center;
+  }
+
+  @include bp-min-max($large, $xlarge) {
     float: left;
-    width: 20%;
+    width: 28%;
+  }
+  
+  @include bp-min-width($xlarge) {
+    float: left;
+    width: 24%;
   }
   
   h4 {
-    margin-bottom: $base;
+    margin-bottom: 16px;
+
+    @include bp-min-width($large) {
+      margin-bottom: $base;
+    }
   }
+}
+
+.footer .social-links li {
+  display: inline-block;
+  margin: 0 10px;
   
-  li {
+  @include bp-min-width($large) {
     float: left;
-    margin-right: 20px;
+    margin: 0 20px 12px 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }
 
 .footer-nav {
+  @include bp-max-width($large) {
+    margin-bottom: $base*1.5;
+    text-align: center;
+  }
 
-  @include bp-min-width($medium) {
-    float: left;
-    width: 17%;
+  @include bp-min-max($large, $xlarge) {
+    float: right;
+    width: 22%;
+    text-align: right;
+  }
+
+  @include bp-min-width($xlarge) {
+    float: right;
+    width: 13%;
     text-align: right;
   }
   
@@ -111,12 +166,17 @@
   width: 100%;
   padding-top: $base;
   border-top: 1px solid #fff;
+  text-align: center;
   
   .copyright {
-    float: left;
+    @include bp-min-width($xsmall) {
+      float: left;
+    }
   }
   
   .site-by {
-    float: right;
+    @include bp-min-width($xsmall) {
+      float: right;
+    }
   }
 }
