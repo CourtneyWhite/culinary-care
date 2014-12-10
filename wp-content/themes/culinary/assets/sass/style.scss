@@ -25,7 +25,10 @@ Version: 1.0
 @import "sections/nav";
 @import "sections/hero";
 
-@import "pages/home";
+@import "pages/home/how-it-works";
+@import "pages/home/partners";
+@import "pages/home/meal-tracker";
+@import "pages/home/testimonials";
 @import "pages/volunteer";
 @import "pages/donate";
 @import "pages/ways-to-give";

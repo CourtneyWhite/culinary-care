@@ -1,0 +1,44 @@
+
+.our-partners {
+  position: relative;
+  border-top: 1px solid $lt-grey-2;
+  
+  .wrapper {
+    padding-top: $base;
+    
+    @include bp-min-width($medium) {
+      padding-top: $base*3;
+    }
+  }
+  
+  .icon-fork {
+    @include horizontal-center(absolute);
+    top: -15px;
+    background: #fff;
+    padding: 0 20px;
+  }
+}
+
+.partners-slider {
+  padding: 0 80px;
+
+  .partner {
+    position: relative;
+    min-height: 144px;
+    text-align: center;
+  }
+  
+  .logo {
+    @include absolute-center;
+    width: 100%;
+    padding: 0 12px;
+  }
+}
+
+.partners-slider .owl-prev {
+  left: 0;
+}
+
+.partners-slider .owl-next {
+  right: 0;
+}

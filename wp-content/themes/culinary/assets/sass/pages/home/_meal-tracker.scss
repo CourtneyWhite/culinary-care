@@ -1,0 +1,24 @@
+
+.meal-tracker {
+  background: $red $pattern-spoons-red ;
+  color: #fff;
+  text-align: center;
+  
+  h2 {
+    margin-bottom: $base;
+    color: #fff;
+    font-weight: $reg;
+  }
+  
+  h3 {
+    @include font-size(84px);
+    margin-bottom: 12px;
+    color: #fff;
+    font-weight: $heavy;
+    line-height: 1;
+  }
+  
+  p {
+    @include font-size(18px);
+  }
+}
