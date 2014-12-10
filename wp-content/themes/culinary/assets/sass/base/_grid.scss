@@ -11,6 +11,10 @@ $pad: 20px;
 
 [class*='col-'] {
   width: 100%;
+
+  @include bp-max-width($medium) {
+    margin-bottom: $base*1.5;
+  }
   
   @include bp-min-width($medium) {
     float: left;
@@ -44,6 +48,11 @@ $pad: 20px;
 
 .col-1-4 {
   @include bp-min-width($medium) {
+    width: 50%;
+    margin-bottom: $base*1.5;
+  }
+
+  @include bp-min-width($large) {
     width: 25%;
   }
 }
