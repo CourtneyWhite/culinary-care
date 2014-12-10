@@ -381,7 +381,7 @@ body {
 
 .wrapper {
   *zoom: 1;
-  margin: 0 5%;
+  margin: 0 4%;
 }
 .wrapper:before, .wrapper:after {
   content: " ";
@@ -415,7 +415,7 @@ a {
   color: #8aad64;
 }
 
-.btn, input[type="submit"], button, .nav li:last-child a, .volunteer-grid a, .hero-slider .slide-content a {
+.btn, input[type="submit"], button, .volunteer-grid a, .hero-slider .slide-content a {
   font-size: 18px;
   font-size: 1.125rem;
   display: inline-block;
@@ -426,31 +426,31 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.btn:hover, input[type="submit"]:hover, button:hover, .nav li:last-child a:hover, .volunteer-grid a:hover, .hero-slider .slide-content a:hover {
+.btn:hover, input[type="submit"]:hover, button:hover, .volunteer-grid a:hover, .hero-slider .slide-content a:hover {
   background: #567931;
 }
-.btn.red, input.red[type="submit"], button.red, .nav li:last-child a, .volunteer-grid a.red, .hero-slider .slide-content a.red {
+.btn.red, input.red[type="submit"], .nav input[type="submit"].btn-donate, button.red, .nav button.btn-donate, .nav .btn.btn-donate, .nav .volunteer-grid a.btn-donate, .volunteer-grid .nav a.btn-donate, .nav .hero-slider .slide-content a.btn-donate, .hero-slider .slide-content .nav a.btn-donate, .volunteer-grid a.red, .hero-slider .slide-content a.red {
   background: #ec6e6a;
 }
-.btn.red:hover, input.red[type="submit"]:hover, button.red:hover, .nav li:last-child a:hover, .volunteer-grid a.red:hover, .hero-slider .slide-content a.red:hover {
+.btn.red:hover, input.red[type="submit"]:hover, .nav input[type="submit"].btn-donate:hover, button.red:hover, .nav button.btn-donate:hover, .nav .btn.btn-donate:hover, .nav .volunteer-grid a.btn-donate:hover, .volunteer-grid .nav a.btn-donate:hover, .nav .hero-slider .slide-content a.btn-donate:hover, .hero-slider .slide-content .nav a.btn-donate:hover, .volunteer-grid a.red:hover, .hero-slider .slide-content a.red:hover {
   background: #d15352;
 }
-.btn.yellow, input.yellow[type="submit"], button.yellow, .nav li:last-child a.yellow, .nav li:last-child .volunteer-grid a, .volunteer-grid .nav li:last-child a, .volunteer-grid a, .hero-slider .slide-content a.yellow, .hero-slider .slide-content .volunteer-grid a, .volunteer-grid .hero-slider .slide-content a {
+.btn.yellow, input.yellow[type="submit"], button.yellow, .volunteer-grid a, .hero-slider .slide-content a.yellow, .hero-slider .slide-content .volunteer-grid a, .volunteer-grid .hero-slider .slide-content a {
   background: #fcd268;
 }
-.btn.yellow:hover, input.yellow[type="submit"]:hover, button.yellow:hover, .nav li:last-child a.yellow:hover, .nav li:last-child .volunteer-grid a:hover, .volunteer-grid .nav li:last-child a:hover, .volunteer-grid a:hover, .hero-slider .slide-content a.yellow:hover {
+.btn.yellow:hover, input.yellow[type="submit"]:hover, button.yellow:hover, .volunteer-grid a:hover, .hero-slider .slide-content a.yellow:hover {
   background: #d4a737;
 }
-.btn.turq, input.turq[type="submit"], button.turq, .nav li:last-child a.turq, .volunteer-grid a.turq, .event-register .btn, .event-register input[type="submit"], .event-register button, .event-register .nav li:last-child a, .nav li:last-child .event-register a, .event-register .volunteer-grid a, .volunteer-grid .event-register a, .event-register .hero-slider .slide-content a, .hero-slider .slide-content .event-register a, .hero-slider .slide-content a.turq {
+.btn.turq, input.turq[type="submit"], button.turq, .volunteer-grid a.turq, .event-register .btn, .event-register input[type="submit"], .event-register button, .event-register .volunteer-grid a, .volunteer-grid .event-register a, .event-register .hero-slider .slide-content a, .hero-slider .slide-content .event-register a, .hero-slider .slide-content a.turq {
   background: #97d4c9;
 }
-.btn.turq:hover, input.turq[type="submit"]:hover, button.turq:hover, .nav li:last-child a.turq:hover, .volunteer-grid a.turq:hover, .event-register .btn:hover, .event-register input[type="submit"]:hover, .event-register button:hover, .event-register .nav li:last-child a:hover, .nav li:last-child .event-register a:hover, .event-register .volunteer-grid a:hover, .volunteer-grid .event-register a:hover, .event-register .hero-slider .slide-content a:hover, .hero-slider .slide-content .event-register a:hover, .hero-slider .slide-content a.turq:hover {
+.btn.turq:hover, input.turq[type="submit"]:hover, button.turq:hover, .volunteer-grid a.turq:hover, .event-register .btn:hover, .event-register input[type="submit"]:hover, .event-register button:hover, .event-register .volunteer-grid a:hover, .volunteer-grid .event-register a:hover, .event-register .hero-slider .slide-content a:hover, .hero-slider .slide-content .event-register a:hover, .hero-slider .slide-content a.turq:hover {
   background: #66a196;
 }
-.btn.grey, input.grey[type="submit"], button.grey, .header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .nav li:last-child a, .nav li:last-child .header .top .form-newsletter a, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a, .nav li:last-child a.grey, .volunteer-grid a.grey, .hero-slider .slide-content a.grey {
+.btn.grey, input.grey[type="submit"], button.grey, .header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a, .volunteer-grid a.grey, .hero-slider .slide-content a.grey {
   background: #818282;
 }
-.btn.grey:hover, input.grey[type="submit"]:hover, button.grey:hover, .header .top .form-newsletter .btn:hover, .header .top .form-newsletter input[type="submit"]:hover, .header .top .form-newsletter button:hover, .header .top .form-newsletter .nav li:last-child a:hover, .nav li:last-child .header .top .form-newsletter a:hover, .header .top .form-newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .form-newsletter a:hover, .header .top .form-newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .form-newsletter a:hover, .nav li:last-child a.grey:hover, .volunteer-grid a.grey:hover, .hero-slider .slide-content a.grey:hover {
+.btn.grey:hover, input.grey[type="submit"]:hover, button.grey:hover, .header .top .form-newsletter .btn:hover, .header .top .form-newsletter input[type="submit"]:hover, .header .top .form-newsletter button:hover, .header .top .form-newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .form-newsletter a:hover, .header .top .form-newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .form-newsletter a:hover, .volunteer-grid a.grey:hover, .hero-slider .slide-content a.grey:hover {
   background: #363636;
 }
 
@@ -666,34 +666,66 @@ span.wpcf7-not-valid-tip {
 }
 
 .header {
-  padding: 18px 0 24px;
+  position: relative;
+  padding-top: 18px;
   border-bottom: 2px solid #d9d9d9;
+}
+@media (min-width: 500px) {
+  .header {
+    padding-bottom: 66px;
+  }
+}
+@media (min-width: 1000px) {
+  .header {
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .wrapper {
+    margin: 0;
+  }
 }
 
 .header .logo {
   float: left;
-  width: 266px;
+  width: 160px;
+}
+@media (max-width: 500px) {
+  .header .logo {
+    margin-left: 4%;
+  }
 }
 @media (min-width: 740px) {
   .header .logo {
+    width: 200px;
+    margin-top: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .header .logo {
+    width: 266px;
     margin-top: 6px;
   }
 }
 
-.header .top {
-  *zoom: 1;
-}
-.header .top:before, .header .top:after {
-  content: " ";
-  display: block;
-}
-.header .top:after {
-  clear: both;
+@media (max-width: 740px) {
+  .header .top {
+    display: none;
+  }
 }
 @media (min-width: 740px) {
   .header .top {
+    *zoom: 1;
     float: right;
     margin-bottom: 24px;
+  }
+  .header .top:before, .header .top:after {
+    content: " ";
+    display: block;
+  }
+  .header .top:after {
+    clear: both;
   }
 }
 
@@ -712,6 +744,11 @@ span.wpcf7-not-valid-tip {
   padding-right: 92px;
   border: 1px solid #c0c0c0;
 }
+@media (max-width: 1000px) {
+  .header .top .form-newsletter {
+    width: 280px;
+  }
+}
 .header .top .form-newsletter label {
   font-size: 14px;
   font-size: 0.875rem;
@@ -723,64 +760,13 @@ span.wpcf7-not-valid-tip {
 .header .top .form-newsletter input {
   border: none;
 }
-.header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .nav li:last-child a, .nav li:last-child .header .top .form-newsletter a, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a {
+.header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a {
   font-size: 14px;
   font-size: 0.875rem;
   position: absolute;
   top: 0;
   right: 0;
   padding: 0.75em 1em;
-}
-
-@media (min-width: 740px) {
-  .nav {
-    float: right;
-    clear: right;
-  }
-}
-
-@media (min-width: 740px) {
-  .nav li {
-    position: relative;
-    float: left;
-    margin-left: 50px;
-  }
-}
-.nav li:after {
-  -moz-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: -25px;
-  width: 2px;
-  height: 38px;
-  background: #fcd268;
-}
-.nav li:first-child:after, .nav li:last-child:after {
-  display: none;
-}
-
-.nav a {
-  color: #818282;
-  font-weight: 800;
-  line-height: 51px;
-  text-transform: uppercase;
-}
-@media (min-width: 740px) {
-  .nav a {
-    font-size: 21px;
-    font-size: 1.3125rem;
-  }
-}
-.nav a:hover {
-  color: #363636;
-}
-
-.nav li:last-child a {
-  line-height: 1.5;
 }
 
 .footer {
@@ -849,7 +835,7 @@ span.wpcf7-not-valid-tip {
 .footer .newsletter input {
   height: 42px;
 }
-.footer .newsletter .btn, .footer .newsletter input[type="submit"], .footer .newsletter button, .footer .newsletter .nav li:last-child a, .nav li:last-child .footer .newsletter a, .footer .newsletter .volunteer-grid a, .volunteer-grid .footer .newsletter a, .footer .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .footer .newsletter a {
+.footer .newsletter .btn, .footer .newsletter input[type="submit"], .footer .newsletter button, .footer .newsletter .volunteer-grid a, .volunteer-grid .footer .newsletter a, .footer .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .footer .newsletter a {
   font-size: 18px;
   font-size: 1.125rem;
   position: absolute;
@@ -904,6 +890,214 @@ span.wpcf7-not-valid-tip {
 }
 .footer .bottom .site-by {
   float: right;
+}
+
+.nav {
+  clear: both;
+}
+@media (min-width: 500px) {
+  .nav {
+    float: right;
+    clear: right;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-main-menu-container {
+    display: none;
+  }
+  .menu-main-menu-container.show {
+    display: block;
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .menu-main-menu-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    width: 100%;
+    background: #fcd268;
+    text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  .menu-main-menu-container {
+    float: left;
+  }
+}
+
+@media (min-width: 500px) {
+  .nav li {
+    display: inline-block;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .nav li {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .nav li {
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    padding-top: 2px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav li {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .nav li:after {
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -20px;
+    width: 2px;
+    height: 38px;
+    background: #fcd268;
+  }
+}
+@media (min-width: 1200px) {
+  .nav li:after {
+    left: -25px;
+  }
+}
+.nav li:first-child:after {
+  display: none;
+}
+
+.nav li a {
+  color: #818282;
+  font-weight: 800;
+  line-height: 51px;
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  .nav li a {
+    display: block;
+    background: #fcd268;
+    text-align: center;
+  }
+}
+@media (min-width: 740px) {
+  .nav li a {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1200px) {
+  .nav li a {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
+}
+.nav li a:hover {
+  color: #363636;
+}
+
+.nav .btn-donate {
+  color: #fff;
+  line-height: 1.5;
+}
+@media (max-width: 740px) {
+  .nav .btn-donate {
+    position: absolute;
+    top: 30px;
+    right: 4%;
+    font-size: 1em;
+  }
+}
+@media (min-width: 1000px) {
+  .nav .btn-donate {
+    margin-left: 30px;
+    float: right;
+  }
+}
+.nav .btn-donate:hover {
+  color: #fff;
+}
+
+/** Mobile Menu Button **/
+.nav .btn-mobile {
+  width: 100%;
+  background: #fcd268;
+  margin-top: 24px;
+  color: #818282;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .nav .btn-mobile {
+    display: none;
+    margin-left: 30px;
+  }
+}
+
+.btn-mobile .icon-menu {
+  position: relative;
+  display: inline-block;
+  vertical-align: -2px;
+  width: 20px;
+  height: 16px;
+  margin-right: 5px;
+  background: none;
+}
+.btn-mobile .icon-menu .bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 3px;
+  background: #818282;
+  border-radius: 2px;
+}
+
+.btn-mobile.active .icon-menu {
+  height: 9px;
+}
+
+.btn-mobile.active .bar {
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #818282;
+}
+.btn-mobile.active .bar:nth-child(1) {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btn-mobile.active .bar:nth-child(2) {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.btn-mobile.active .bar:nth-child(3) {
+  opacity: 0;
+}
+
+.btn-mobile.active .bar:nth-child(2) {
+  position: absolute;
+  left: 0;
+  background-color: #818282;
+}
+
+.btn-mobile.active .bar:nth-child(3) {
+  display: none;
 }
 
 .hero {
@@ -1263,7 +1457,7 @@ span.wpcf7-not-valid-tip {
   font-size: 0.875rem;
 }
 
-.donate-form .btn, .donate-form input[type="submit"], .donate-form button, .donate-form .nav li:last-child a, .nav li:last-child .donate-form a, .donate-form .volunteer-grid a, .volunteer-grid .donate-form a, .donate-form .hero-slider .slide-content a, .hero-slider .slide-content .donate-form a {
+.donate-form .btn, .donate-form input[type="submit"], .donate-form button, .donate-form .volunteer-grid a, .volunteer-grid .donate-form a, .donate-form .hero-slider .slide-content a, .hero-slider .slide-content .donate-form a {
   font-size: 24px;
   font-size: 1.5rem;
   width: 100%;
@@ -1272,7 +1466,7 @@ span.wpcf7-not-valid-tip {
   background: #97d4c9;
   line-height: 1;
 }
-.donate-form .btn:hover, .donate-form input[type="submit"]:hover, .donate-form button:hover, .donate-form .nav li:last-child a:hover, .nav li:last-child .donate-form a:hover, .donate-form .volunteer-grid a:hover, .volunteer-grid .donate-form a:hover, .donate-form .hero-slider .slide-content a:hover, .hero-slider .slide-content .donate-form a:hover {
+.donate-form .btn:hover, .donate-form input[type="submit"]:hover, .donate-form button:hover, .donate-form .volunteer-grid a:hover, .volunteer-grid .donate-form a:hover, .donate-form .hero-slider .slide-content a:hover, .hero-slider .slide-content .donate-form a:hover {
   background: #66a196;
 }
 

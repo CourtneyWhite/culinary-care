@@ -1,22 +1,50 @@
 
 .header {
-  padding: 18px 0 $base;
+  position: relative;
+  padding-top: 18px;
   border-bottom: 2px solid $lt-grey-2;
+
+  @include bp-min-width($xsmall) {
+    padding-bottom: 66px;
+  }
+
+  @include bp-min-width($large) {
+    padding-bottom: $base;
+  }
+}
+
+.header .wrapper {
+  @include bp-max-width($xsmall) {
+    margin: 0;
+  }
 }
 
 .header .logo {
   float: left;
-  width: 266px;
+  width: 160px;
+
+  @include bp-max-width($xsmall) {
+    margin-left: 4%;
+  }
 
   @include bp-min-width($medium) {
+    width: 200px;
+    margin-top: 16px;
+  }
+
+  @include bp-min-width($xlarge) {
+    width: 266px;
     margin-top: 6px;
   }
 }
 
 .header .top {
-  @include cf;
-  
+  @include bp-max-width($medium) {
+    display: none;
+  }
+    
   @include bp-min-width($medium) {
+    @include cf;
     float: right;
     margin-bottom: $base;
   }
@@ -37,6 +65,10 @@
   float: right;
   padding-right: 92px;
   border: 1px solid $lt-grey;
+
+  @include bp-max-width($large) {
+    width: 280px;
+  }
   
   label {
     @include font-size(14px);
@@ -58,57 +90,4 @@
     right: 0;
     padding: 0.75em 1em;
   }
-}
-
-.nav {
-  @include bp-min-width($medium) {
-    float: right;
-    clear: right;
-  }
-}
-
-.nav li {
-  @include bp-min-width($medium) {
-    position: relative;
-    float: left;
-    margin-left: 50px;
-  }
-  
-  &:after {
-    @include rotate(30deg);
-    content: "";
-    position: absolute;
-    top: 7px;
-    left: -25px;
-    width: 2px;
-    height: 38px;
-    background: $yellow;
-  }
-  
-  &:first-child:after,
-  &:last-child:after {
-    display: none;
-  }
-}
-
-
-.nav a {
-  color: $grey;
-  font-weight: $heavy;
-  line-height: 51px;
-  text-transform: uppercase;
-
-  @include bp-min-width($medium) {
-    @include font-size(21px);
-  }
-  
-  &:hover {
-    color: $black;
-  }
-}
-
-.nav li:last-child a {
-  @extend .btn;
-  @extend .red;
-  line-height: 1.5;
 }

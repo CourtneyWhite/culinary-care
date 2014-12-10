@@ -35,7 +35,16 @@
   			  </form>
   			</div>
     		<nav id="nav" class="nav">
+          <a href="" class="btn btn-mobile">
+            <span class="icon-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </span>
+            Menu
+          </a>
     			<?php wp_nav_menu( array('menu' => '2') ); ?>
+    			<a href="" class="btn btn-donate">Donate</a>
     		</nav>
 		  </div>
 		</header>
