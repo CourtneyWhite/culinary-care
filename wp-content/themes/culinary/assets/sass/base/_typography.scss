@@ -19,11 +19,15 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-  @include font-size(48px);
+  @include font-size(36px);
   color: $green;
   font-weight: $heavy;
   text-transform: uppercase;
   letter-spacing: 0.015em;
+
+  @include bp-min-width($medium) {
+    @include font-size(48px);
+  }
 }
 
 h2 {

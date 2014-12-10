@@ -84,8 +84,11 @@ $(function(){
     });
   }
   
+  $(window).on("resize", function(){
+    sliderContentHeight();
+  }).resize();
+  
   sliderTabActive();
-  sliderContentHeight();
   labelFade();
   mobileNav();
 

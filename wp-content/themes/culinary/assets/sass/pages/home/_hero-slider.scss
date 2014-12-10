@@ -15,6 +15,7 @@
 }
 
 .hero-slider .slide-content {
+  padding: $base*1.5 4%;
   background: $green $pattern-utensils-green;
   color: #fff;
 
@@ -30,12 +31,26 @@
 }
 
 .hero-slider .slide-content p {
-  @include font-size(24px);
-  @include line-height(30px);
+  @include font-size(21px);
+  @include line-height(28px);
   margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    @include font-size(24px);
+    @include line-height(30px);
+  }
+  
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
 }
 
 .hero-slider .slide-img {
+  @include bp-max-width($medium) {
+    display: none;
+  }
+
   @include bp-min-width($medium) {
     float: right;
     width: 56%;
@@ -88,6 +103,9 @@
 
 .slider-tabs a {
   position: relative;
+  display: block;
+  float: left;
+  width: 25%;
   padding: 16px 0;
   background: $green;
   color: #fff;
@@ -96,11 +114,15 @@
   text-transform: uppercase;
   text-shadow: 0 0 1px rgba(#000, 0.1);
 
-  @include bp-min-width($medium) {
+
+  @include bp-min-width($large) {
     @include font-size(21px);
-    display: block;
-    float: left;
-    width: 25%;
+  }
+  
+  .tab-label {
+    @include bp-max-width($medium) {
+      display: none;
+    }
   }
   
   &.active, &:hover {

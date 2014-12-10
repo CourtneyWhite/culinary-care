@@ -92,12 +92,18 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 48px;
-  font-size: 3rem;
+  font-size: 36px;
+  font-size: 2.25rem;
   color: #8aad64;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.015em;
+}
+@media (min-width: 740px) {
+  h1 {
+    font-size: 48px;
+    font-size: 3rem;
+  }
 }
 
 h2 {
@@ -443,7 +449,7 @@ a {
   color: #8aad64;
 }
 
-.btn, input[type="submit"], button, .volunteer-grid a, .hero-slider .slide-content a {
+.btn, input[type="submit"], button, .hero-slider .slide-content a, .volunteer-grid a {
   font-size: 18px;
   font-size: 1.125rem;
   display: inline-block;
@@ -454,31 +460,31 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.btn:hover, input[type="submit"]:hover, button:hover, .volunteer-grid a:hover, .hero-slider .slide-content a:hover {
+.btn:hover, input[type="submit"]:hover, button:hover, .hero-slider .slide-content a:hover, .volunteer-grid a:hover {
   background: #567931;
 }
-.btn.red, input.red[type="submit"], .nav input[type="submit"].btn-donate, button.red, .nav button.btn-donate, .nav .btn.btn-donate, .nav .volunteer-grid a.btn-donate, .volunteer-grid .nav a.btn-donate, .nav .hero-slider .slide-content a.btn-donate, .hero-slider .slide-content .nav a.btn-donate, .volunteer-grid a.red, .hero-slider .slide-content a.red {
+.btn.red, input.red[type="submit"], .nav input[type="submit"].btn-donate, button.red, .nav button.btn-donate, .nav .btn.btn-donate, .nav .hero-slider .slide-content a.btn-donate, .hero-slider .slide-content .nav a.btn-donate, .nav .volunteer-grid a.btn-donate, .volunteer-grid .nav a.btn-donate, .hero-slider .slide-content a.red, .volunteer-grid a.red {
   background: #ec6e6a;
 }
-.btn.red:hover, input.red[type="submit"]:hover, .nav input[type="submit"].btn-donate:hover, button.red:hover, .nav button.btn-donate:hover, .nav .btn.btn-donate:hover, .nav .volunteer-grid a.btn-donate:hover, .volunteer-grid .nav a.btn-donate:hover, .nav .hero-slider .slide-content a.btn-donate:hover, .hero-slider .slide-content .nav a.btn-donate:hover, .volunteer-grid a.red:hover, .hero-slider .slide-content a.red:hover {
+.btn.red:hover, input.red[type="submit"]:hover, .nav input[type="submit"].btn-donate:hover, button.red:hover, .nav button.btn-donate:hover, .nav .btn.btn-donate:hover, .nav .hero-slider .slide-content a.btn-donate:hover, .hero-slider .slide-content .nav a.btn-donate:hover, .nav .volunteer-grid a.btn-donate:hover, .volunteer-grid .nav a.btn-donate:hover, .hero-slider .slide-content a.red:hover, .volunteer-grid a.red:hover {
   background: #d15352;
 }
-.btn.yellow, input.yellow[type="submit"], button.yellow, .volunteer-grid a, .hero-slider .slide-content a.yellow, .hero-slider .slide-content .volunteer-grid a, .volunteer-grid .hero-slider .slide-content a {
+.btn.yellow, input.yellow[type="submit"], button.yellow, .hero-slider .slide-content a.yellow, .hero-slider .slide-content .volunteer-grid a, .volunteer-grid .hero-slider .slide-content a, .volunteer-grid a {
   background: #fcd268;
 }
-.btn.yellow:hover, input.yellow[type="submit"]:hover, button.yellow:hover, .volunteer-grid a:hover, .hero-slider .slide-content a.yellow:hover {
+.btn.yellow:hover, input.yellow[type="submit"]:hover, button.yellow:hover, .hero-slider .slide-content a.yellow:hover, .volunteer-grid a:hover {
   background: #d4a737;
 }
-.btn.turq, input.turq[type="submit"], button.turq, .volunteer-grid a.turq, .event-register .btn, .event-register input[type="submit"], .event-register button, .event-register .volunteer-grid a, .volunteer-grid .event-register a, .event-register .hero-slider .slide-content a, .hero-slider .slide-content .event-register a, .hero-slider .slide-content a.turq {
+.btn.turq, input.turq[type="submit"], button.turq, .hero-slider .slide-content a.turq, .volunteer-grid a.turq, .event-register .btn, .event-register input[type="submit"], .event-register button, .event-register .hero-slider .slide-content a, .hero-slider .slide-content .event-register a, .event-register .volunteer-grid a, .volunteer-grid .event-register a {
   background: #97d4c9;
 }
-.btn.turq:hover, input.turq[type="submit"]:hover, button.turq:hover, .volunteer-grid a.turq:hover, .event-register .btn:hover, .event-register input[type="submit"]:hover, .event-register button:hover, .event-register .volunteer-grid a:hover, .volunteer-grid .event-register a:hover, .event-register .hero-slider .slide-content a:hover, .hero-slider .slide-content .event-register a:hover, .hero-slider .slide-content a.turq:hover {
+.btn.turq:hover, input.turq[type="submit"]:hover, button.turq:hover, .hero-slider .slide-content a.turq:hover, .volunteer-grid a.turq:hover, .event-register .btn:hover, .event-register input[type="submit"]:hover, .event-register button:hover, .event-register .hero-slider .slide-content a:hover, .hero-slider .slide-content .event-register a:hover, .event-register .volunteer-grid a:hover, .volunteer-grid .event-register a:hover {
   background: #66a196;
 }
-.btn.grey, input.grey[type="submit"], button.grey, .header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a, .volunteer-grid a.grey, .hero-slider .slide-content a.grey {
+.btn.grey, input.grey[type="submit"], button.grey, .header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .hero-slider .slide-content a.grey, .volunteer-grid a.grey {
   background: #818282;
 }
-.btn.grey:hover, input.grey[type="submit"]:hover, button.grey:hover, .header .top .form-newsletter .btn:hover, .header .top .form-newsletter input[type="submit"]:hover, .header .top .form-newsletter button:hover, .header .top .form-newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .form-newsletter a:hover, .header .top .form-newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .form-newsletter a:hover, .volunteer-grid a.grey:hover, .hero-slider .slide-content a.grey:hover {
+.btn.grey:hover, input.grey[type="submit"]:hover, button.grey:hover, .header .top .form-newsletter .btn:hover, .header .top .form-newsletter input[type="submit"]:hover, .header .top .form-newsletter button:hover, .header .top .form-newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .form-newsletter a:hover, .header .top .form-newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .form-newsletter a:hover, .hero-slider .slide-content a.grey:hover, .volunteer-grid a.grey:hover {
   background: #363636;
 }
 
@@ -788,7 +794,7 @@ span.wpcf7-not-valid-tip {
 .header .top .form-newsletter input {
   border: none;
 }
-.header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a {
+.header .top .form-newsletter .btn, .header .top .form-newsletter input[type="submit"], .header .top .form-newsletter button, .header .top .form-newsletter .hero-slider .slide-content a, .hero-slider .slide-content .header .top .form-newsletter a, .header .top .form-newsletter .volunteer-grid a, .volunteer-grid .header .top .form-newsletter a {
   font-size: 14px;
   font-size: 0.875rem;
   position: absolute;
@@ -883,7 +889,7 @@ span.wpcf7-not-valid-tip {
 .footer .newsletter input {
   height: 42px;
 }
-.footer .newsletter .btn, .footer .newsletter input[type="submit"], .footer .newsletter button, .footer .newsletter .volunteer-grid a, .volunteer-grid .footer .newsletter a, .footer .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .footer .newsletter a {
+.footer .newsletter .btn, .footer .newsletter input[type="submit"], .footer .newsletter button, .footer .newsletter .hero-slider .slide-content a, .hero-slider .slide-content .footer .newsletter a, .footer .newsletter .volunteer-grid a, .volunteer-grid .footer .newsletter a {
   font-size: 18px;
   font-size: 1.125rem;
   position: absolute;
@@ -1213,6 +1219,207 @@ span.wpcf7-not-valid-tip {
 }
 .hero h1 {
   max-width: 600px;
+}
+
+.hero-slider {
+  *zoom: 1;
+  overflow: hidden;
+}
+.hero-slider:before, .hero-slider:after {
+  content: " ";
+  display: block;
+}
+.hero-slider:after {
+  clear: both;
+}
+.hero-slider .slides {
+  *zoom: 1;
+  max-width: 1800px;
+  background: #e6e6e6;
+}
+.hero-slider .slides:before, .hero-slider .slides:after {
+  content: " ";
+  display: block;
+}
+.hero-slider .slides:after {
+  clear: both;
+}
+.hero-slider h1 {
+  color: #fff;
+}
+
+.hero-slider .slide-content {
+  padding: 36px 4%;
+  background: #8aad64 url('assets/images/pattern-utensils-green.png?1417996254');
+  color: #fff;
+}
+@media (min-width: 740px) {
+  .hero-slider .slide-content {
+    float: left;
+    width: 44%;
+    padding: 72px 4%;
+  }
+}
+
+.hero-slider .slide-content h1 {
+  margin-bottom: 12px;
+}
+
+.hero-slider .slide-content p {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  line-height: 28px;
+  line-height: 1.75rem;
+  margin-bottom: 24px;
+}
+@media (min-width: 740px) {
+  .hero-slider .slide-content p {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
+}
+.hero-slider .slide-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 740px) {
+  .hero-slider .slide-img {
+    display: none;
+  }
+}
+@media (min-width: 740px) {
+  .hero-slider .slide-img {
+    float: right;
+    width: 56%;
+    height: 100%;
+    padding: 72px 4%;
+    background: url('assets/images/pic-hero-01.jpg?1417661759') no-repeat center center;
+    background-size: auto 100%;
+  }
+}
+
+.hero-slider .slide {
+  *zoom: 1;
+}
+.hero-slider .slide:before, .hero-slider .slide:after {
+  content: " ";
+  display: block;
+}
+.hero-slider .slide:after {
+  clear: both;
+}
+
+.hero-slider .slide-content a {
+  font-size: 24px;
+  font-size: 1.5rem;
+  background: #567931;
+}
+
+.hero-slider .slide-2 .slide-content {
+  background: #97d4c9 url('assets/images/pattern-utensils-turq.png?1417996753');
+}
+.hero-slider .slide-2 .slide-content a {
+  background: #66a196;
+}
+
+.hero-slider .slide-3 .slide-content {
+  background: #fcd268 url('assets/images/pattern-utensils-yellow.png?1417996876');
+}
+.hero-slider .slide-3 .slide-content a {
+  background: #d4a737;
+}
+
+.hero-slider .slide-4 .slide-content {
+  background: #f7a489 url('assets/images/pattern-utensils-pink.png?1417997064');
+}
+.hero-slider .slide-4 .slide-content a {
+  background: #da7554;
+}
+
+.slider-tabs {
+  *zoom: 1;
+  padding: 0 4%;
+  background: #f3f3f3;
+}
+.slider-tabs:before, .slider-tabs:after {
+  content: " ";
+  display: block;
+}
+.slider-tabs:after {
+  clear: both;
+}
+
+.slider-tabs a {
+  position: relative;
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 16px 0;
+  background: #8aad64;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1000px) {
+  .slider-tabs a {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
+}
+@media (max-width: 740px) {
+  .slider-tabs a .tab-label {
+    display: none;
+  }
+}
+.slider-tabs a.active, .slider-tabs a:hover {
+  box-shadow: inset 0 4px 0 #567931;
+}
+.slider-tabs a.active:before {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #567931;
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  z-index: 10;
+  margin-left: -6px;
+}
+
+.slider-tabs .tab-2 {
+  background: #97d4c9;
+}
+.slider-tabs .tab-2.active, .slider-tabs .tab-2:hover {
+  box-shadow: inset 0 4px 0 #66a196;
+}
+.slider-tabs .tab-2.active:before {
+  border-bottom-color: #66a196;
+}
+
+.slider-tabs .tab-3 {
+  background: #fcd268;
+}
+.slider-tabs .tab-3.active, .slider-tabs .tab-3:hover {
+  box-shadow: inset 0 4px 0 #d4a737;
+}
+.slider-tabs .tab-3.active:before {
+  border-bottom-color: #d4a737;
+}
+
+.slider-tabs .tab-4 {
+  background: #f7a489;
+}
+.slider-tabs .tab-4.active, .slider-tabs .tab-4:hover {
+  box-shadow: inset 0 4px 0 #da7554;
+}
+.slider-tabs .tab-4.active:before {
+  border-bottom-color: #da7554;
 }
 
 .how-it-works {
@@ -1601,7 +1808,7 @@ span.wpcf7-not-valid-tip {
   font-size: 0.875rem;
 }
 
-.donate-form .btn, .donate-form input[type="submit"], .donate-form button, .donate-form .volunteer-grid a, .volunteer-grid .donate-form a, .donate-form .hero-slider .slide-content a, .hero-slider .slide-content .donate-form a {
+.donate-form .btn, .donate-form input[type="submit"], .donate-form button, .donate-form .hero-slider .slide-content a, .hero-slider .slide-content .donate-form a, .donate-form .volunteer-grid a, .volunteer-grid .donate-form a {
   font-size: 24px;
   font-size: 1.5rem;
   width: 100%;
@@ -1610,7 +1817,7 @@ span.wpcf7-not-valid-tip {
   background: #97d4c9;
   line-height: 1;
 }
-.donate-form .btn:hover, .donate-form input[type="submit"]:hover, .donate-form button:hover, .donate-form .volunteer-grid a:hover, .volunteer-grid .donate-form a:hover, .donate-form .hero-slider .slide-content a:hover, .hero-slider .slide-content .donate-form a:hover {
+.donate-form .btn:hover, .donate-form input[type="submit"]:hover, .donate-form button:hover, .donate-form .hero-slider .slide-content a:hover, .hero-slider .slide-content .donate-form a:hover, .donate-form .volunteer-grid a:hover, .volunteer-grid .donate-form a:hover {
   background: #66a196;
 }
 
@@ -1885,183 +2092,4 @@ span.wpcf7-not-valid-tip {
 
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
-}
-
-.hero-slider {
-  *zoom: 1;
-  overflow: hidden;
-}
-.hero-slider:before, .hero-slider:after {
-  content: " ";
-  display: block;
-}
-.hero-slider:after {
-  clear: both;
-}
-.hero-slider .slides {
-  *zoom: 1;
-  max-width: 1800px;
-  background: #e6e6e6;
-}
-.hero-slider .slides:before, .hero-slider .slides:after {
-  content: " ";
-  display: block;
-}
-.hero-slider .slides:after {
-  clear: both;
-}
-.hero-slider h1 {
-  color: #fff;
-}
-
-.hero-slider .slide-content {
-  background: #8aad64 url('assets/images/pattern-utensils-green.png?1417996254');
-  color: #fff;
-}
-@media (min-width: 740px) {
-  .hero-slider .slide-content {
-    float: left;
-    width: 44%;
-    padding: 72px 4%;
-  }
-}
-
-.hero-slider .slide-content h1 {
-  margin-bottom: 12px;
-}
-
-.hero-slider .slide-content p {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 30px;
-  line-height: 1.875rem;
-  margin-bottom: 24px;
-}
-
-@media (min-width: 740px) {
-  .hero-slider .slide-img {
-    float: right;
-    width: 56%;
-    height: 100%;
-    padding: 72px 4%;
-    background: url('assets/images/pic-hero-01.jpg?1417661759') no-repeat center center;
-    background-size: auto 100%;
-  }
-}
-
-.hero-slider .slide {
-  *zoom: 1;
-}
-.hero-slider .slide:before, .hero-slider .slide:after {
-  content: " ";
-  display: block;
-}
-.hero-slider .slide:after {
-  clear: both;
-}
-
-.hero-slider .slide-content a {
-  font-size: 24px;
-  font-size: 1.5rem;
-  background: #567931;
-}
-
-.hero-slider .slide-2 .slide-content {
-  background: #97d4c9 url('assets/images/pattern-utensils-turq.png?1417996753');
-}
-.hero-slider .slide-2 .slide-content a {
-  background: #66a196;
-}
-
-.hero-slider .slide-3 .slide-content {
-  background: #fcd268 url('assets/images/pattern-utensils-yellow.png?1417996876');
-}
-.hero-slider .slide-3 .slide-content a {
-  background: #d4a737;
-}
-
-.hero-slider .slide-4 .slide-content {
-  background: #f7a489 url('assets/images/pattern-utensils-pink.png?1417997064');
-}
-.hero-slider .slide-4 .slide-content a {
-  background: #da7554;
-}
-
-.slider-tabs {
-  *zoom: 1;
-  padding: 0 4%;
-  background: #f3f3f3;
-}
-.slider-tabs:before, .slider-tabs:after {
-  content: " ";
-  display: block;
-}
-.slider-tabs:after {
-  clear: both;
-}
-
-.slider-tabs a {
-  position: relative;
-  padding: 16px 0;
-  background: #8aad64;
-  color: #fff;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-}
-@media (min-width: 740px) {
-  .slider-tabs a {
-    font-size: 21px;
-    font-size: 1.3125rem;
-    display: block;
-    float: left;
-    width: 25%;
-  }
-}
-.slider-tabs a.active, .slider-tabs a:hover {
-  box-shadow: inset 0 4px 0 #567931;
-}
-.slider-tabs a.active:before {
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid #567931;
-  content: "";
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  z-index: 10;
-  margin-left: -6px;
-}
-
-.slider-tabs .tab-2 {
-  background: #97d4c9;
-}
-.slider-tabs .tab-2.active, .slider-tabs .tab-2:hover {
-  box-shadow: inset 0 4px 0 #66a196;
-}
-.slider-tabs .tab-2.active:before {
-  border-bottom-color: #66a196;
-}
-
-.slider-tabs .tab-3 {
-  background: #fcd268;
-}
-.slider-tabs .tab-3.active, .slider-tabs .tab-3:hover {
-  box-shadow: inset 0 4px 0 #d4a737;
-}
-.slider-tabs .tab-3.active:before {
-  border-bottom-color: #d4a737;
-}
-
-.slider-tabs .tab-4 {
-  background: #f7a489;
-}
-.slider-tabs .tab-4.active, .slider-tabs .tab-4:hover {
-  box-shadow: inset 0 4px 0 #da7554;
-}
-.slider-tabs .tab-4.active:before {
-  border-bottom-color: #da7554;
 }
