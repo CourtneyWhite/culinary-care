@@ -3,14 +3,6 @@
 .owl-next {
   @include global-transition;
   position: absolute;
-
-  @include bp-min-width($small) {
-    top: 30%;
-    width: 60px;
-    height: 60px;
-    background: $turq;
-    border-radius: 50%;
-  }
   
   [class*="icon-"] {
     @include absolute-center;

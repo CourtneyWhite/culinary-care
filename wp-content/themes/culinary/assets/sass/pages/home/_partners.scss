@@ -4,7 +4,7 @@
   border-top: 1px solid $lt-grey-2;
   
   .wrapper {
-    padding-top: $base;
+    padding-top: $base*2;
     
     @include bp-min-width($medium) {
       padding-top: $base*3;
@@ -33,6 +33,15 @@
     width: 100%;
     padding: 0 12px;
   }
+}
+
+.partners-slider .owl-prev,
+.partners-slider .owl-next {
+  top: 30%;
+  width: 60px;
+  height: 60px;
+  background: $turq;
+  border-radius: 50%;
 }
 
 .partners-slider .owl-prev {

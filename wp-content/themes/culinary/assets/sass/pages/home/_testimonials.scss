@@ -71,10 +71,13 @@
 .testimonials-slider .owl-prev,
 .testimonials-slider .owl-next {
   top: 43%;
-  
+
   @include bp-min-width($small) {
     top: 30%;
+    width: 60px;
+    height: 60px;
     background: $red;
+    border-radius: 50%;
     
     &:hover {
       background: $dk-red;

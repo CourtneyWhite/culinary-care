@@ -14,6 +14,9 @@ $(function(){
     navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>'],
     responsive: {
       0:{
+        items: 1
+      },
+      460:{
         items: 2
       },
       600:{

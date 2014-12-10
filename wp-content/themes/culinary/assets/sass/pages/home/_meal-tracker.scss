@@ -11,11 +11,15 @@
   }
   
   h3 {
-    @include font-size(84px);
+    @include font-size(66px);
     margin-bottom: 12px;
     color: #fff;
     font-weight: $heavy;
     line-height: 1;
+
+    @include bp-min-width($small) {
+      @include font-size(84px);
+    }
   }
   
   p {

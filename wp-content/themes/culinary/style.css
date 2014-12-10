@@ -101,13 +101,19 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   margin-bottom: 24px;
   color: #8aad64;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+}
+@media (min-width: 740px) {
+  h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
 }
 
 h3 {
@@ -117,6 +123,12 @@ h3 {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+}
+@media (min-width: 740px) {
+  h3 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
 }
 
 h4 {
@@ -142,8 +154,13 @@ p {
 }
 
 .section-title {
-  margin-bottom: 60px;
+  margin-bottom: 36px;
   text-align: center;
+}
+@media (min-width: 740px) {
+  .section-title {
+    margin-bottom: 60px;
+  }
 }
 
 .intro, .page-id-22 .main p:first-of-type, .page-id-85 .body p:first-of-type {
@@ -371,7 +388,7 @@ body {
 }
 
 .main .wrapper {
-  padding: 24px 0;
+  padding: 36px 0;
 }
 @media (min-width: 740px) {
   .main .wrapper {
@@ -399,7 +416,7 @@ body {
 }
 
 .section .wrapper {
-  padding: 24px 0;
+  padding: 36px 0;
 }
 @media (min-width: 740px) {
   .section .wrapper {
@@ -1244,7 +1261,7 @@ span.wpcf7-not-valid-tip {
   border-top: 1px solid #d9d9d9;
 }
 .our-partners .wrapper {
-  padding-top: 24px;
+  padding-top: 48px;
 }
 @media (min-width: 740px) {
   .our-partners .wrapper {
@@ -1283,6 +1300,15 @@ span.wpcf7-not-valid-tip {
   padding: 0 12px;
 }
 
+.partners-slider .owl-prev,
+.partners-slider .owl-next {
+  top: 30%;
+  width: 60px;
+  height: 60px;
+  background: #97d4c9;
+  border-radius: 50%;
+}
+
 .partners-slider .owl-prev {
   left: 0;
 }
@@ -1302,12 +1328,18 @@ span.wpcf7-not-valid-tip {
   font-weight: 400;
 }
 .meal-tracker h3 {
-  font-size: 84px;
-  font-size: 5.25rem;
+  font-size: 66px;
+  font-size: 4.125rem;
   margin-bottom: 12px;
   color: #fff;
   font-weight: 800;
   line-height: 1;
+}
+@media (min-width: 600px) {
+  .meal-tracker h3 {
+    font-size: 84px;
+    font-size: 5.25rem;
+  }
 }
 .meal-tracker p {
   font-size: 18px;
@@ -1407,7 +1439,10 @@ span.wpcf7-not-valid-tip {
   .testimonials-slider .owl-prev,
   .testimonials-slider .owl-next {
     top: 30%;
+    width: 60px;
+    height: 60px;
     background: #ec6e6a;
+    border-radius: 50%;
   }
   .testimonials-slider .owl-prev:hover,
   .testimonials-slider .owl-next:hover {
@@ -1656,16 +1691,6 @@ span.wpcf7-not-valid-tip {
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
   position: absolute;
-}
-@media (min-width: 600px) {
-  .owl-prev,
-  .owl-next {
-    top: 30%;
-    width: 60px;
-    height: 60px;
-    background: #97d4c9;
-    border-radius: 50%;
-  }
 }
 .owl-prev [class*="icon-"],
 .owl-next [class*="icon-"] {
