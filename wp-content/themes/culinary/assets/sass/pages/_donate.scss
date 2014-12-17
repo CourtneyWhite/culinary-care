@@ -18,23 +18,26 @@
 }
 
 .donate-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  width: 100%;
+  height: $base*10;
   background: $pic-donate-01 no-repeat center center;
   background-size: cover;
 
   @include bp-min-width($medium) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 48%;
   }
 }
 
 .donate-form {
   text-align: center;
+  padding: $base*1.5 4%;
 
   @include bp-min-width($medium) {
-    padding: $base*2 2% $base*2 50%;
+    padding: $base*2 4% $base*2 52%;
   }
   
   h3 {

@@ -2,13 +2,13 @@
 .header {
   position: relative;
   padding-top: 18px;
-  border-bottom: 2px solid $lt-grey-2;
 
   @include bp-min-width($xsmall) {
     padding-bottom: 66px;
   }
 
   @include bp-min-width($large) {
+    border-bottom: 2px solid $lt-grey-2;
     padding-bottom: $base;
   }
 }

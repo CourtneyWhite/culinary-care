@@ -4,7 +4,6 @@
 }
 
 .page-id-85 .body {
-
   p:first-of-type {
     @extend .intro;
   }
@@ -14,6 +13,15 @@
   @extend .width-10-col;
   margin: 0 auto;
   
+  [class*="col-"] {
+    @include bp-max-width($large) {
+      float: none;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .event {
     @include cf;
   }
