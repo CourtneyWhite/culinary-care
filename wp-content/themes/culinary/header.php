@@ -5,6 +5,7 @@
 	<!--[if IE ]>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
