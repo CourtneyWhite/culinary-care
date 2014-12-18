@@ -388,20 +388,20 @@ body {
   margin: 0 auto;
 }
 
-.page {
+.container {
   background: #fff;
 }
 @media (min-width: 740px) {
-  .page {
+  .container {
     *zoom: 1;
-    max-width: 1800px;
+    max-width: 1500px;
     margin: 0 auto;
   }
-  .page:before, .page:after {
+  .container:before, .container:after {
     content: " ";
     display: block;
   }
-  .page:after {
+  .container:after {
     clear: both;
   }
 }
@@ -884,7 +884,7 @@ span.wpcf7-not-valid-tip {
 }
 .footer .newsletter label {
   position: absolute;
-  top: 8px;
+  top: 9px;
   left: 12px;
   color: #818282;
 }
@@ -898,6 +898,7 @@ span.wpcf7-not-valid-tip {
   top: 0;
   right: 0;
   padding: 0.55em 1em;
+  height: 42px;
 }
 
 .footer .newsletter .form-newsletter {
@@ -1648,6 +1649,9 @@ span.wpcf7-not-valid-tip {
   vertical-align: middle;
   width: 96px;
   margin-right: 12px;
+  border-radius: 50%;
+}
+.testimonials-slider .thumb img {
   border-radius: 50%;
 }
 

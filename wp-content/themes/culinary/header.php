@@ -17,7 +17,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="page">
+	<div class="container">
 
 		<header id="header" class="header">
 		  <div class="wrapper">

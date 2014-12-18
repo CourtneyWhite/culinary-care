@@ -17,12 +17,12 @@ body {
   margin: 0 auto;
 }
 
-.page {
+.container {
   background: #fff;
 
   @include bp-min-width($medium) {
     @include cf;
-    max-width: 1800px;
+    max-width: 1500px;
     margin: 0 auto;
   }
 }
