@@ -61,7 +61,7 @@ $(function(){
   }
   
   labelFade = function() {
-    var emailField = $('.form-newsletter #email');
+    var emailField = $('.form-newsletter #mce-EMAIL');
     var emailLabel = $('.form-newsletter label');
     $(emailField).bind('focus', function(){
       emailLabel.fadeOut();

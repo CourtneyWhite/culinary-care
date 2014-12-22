@@ -26,14 +26,15 @@
   			  <ul class="social-links">
   			    <li><a href="https://twitter.com/culinarycare" target="_blank" class="icon-twitter-grey"></a></li>
   			    <li><a href="https://www.facebook.com/CulinaryCare/" target="_blank" class="icon-facebook-grey"></a></li>
-  			  </ul>
-  			  <form class="form-newsletter">
-  			    <div class="form-item">
-  			      <label for="email">Get Email Updates</label>
-  			      <input type="email" id="email">
-  			    </div>
-  			    <button class="btn">Sign Up</button>
-  			  </form>
+  			  </ul>  			  
+          <form action="//culinarycare.us3.list-manage.com/subscribe/post?u=15b99d5d95daff6914d18c0e0&amp;id=67184f55fc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-newsletter" target="_blank" novalidate>
+            <div class="form-item">
+            	<label for="mce-EMAIL">Get Email Updates</label>
+            	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required>
+            </div>
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_15b99d5d95daff6914d18c0e0_67184f55fc" tabindex="-1" value=""></div>
+            <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn button">
+          </form>
   			</div>
     		<nav id="nav" class="nav">
           <a href="" class="btn btn-mobile">

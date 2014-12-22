@@ -70,6 +70,10 @@
     width: 280px;
   }
   
+  .form-item {
+    margin-bottom: 0;
+  }
+  
   label {
     @include font-size(14px);
     position: absolute;

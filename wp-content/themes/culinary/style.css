@@ -785,6 +785,9 @@ span.wpcf7-not-valid-tip {
     width: 280px;
   }
 }
+.header .top .form-newsletter .form-item {
+  margin-bottom: 0;
+}
 .header .top .form-newsletter label {
   font-size: 14px;
   font-size: 0.875rem;
@@ -899,6 +902,7 @@ span.wpcf7-not-valid-tip {
   right: 0;
   padding: 0.55em 1em;
   height: 42px;
+  background: #818282;
 }
 
 .footer .newsletter .form-newsletter {
