@@ -24,10 +24,10 @@
           <div class="social-links">
             <h4>Spread One Less Worry</h4>
             <ul>
-              <li><a href="" class="icon-facebook-white"></a></li>
-              <li><a href="" class="icon-twitter-white"></a></li>
-              <li><a href="" class="icon-instagram-white"></a></li>
-              <li><a href="" class="icon-email-white"></a></li>
+              <li><a href="https://www.facebook.com/CulinaryCare/" target="_blank" class="icon-facebook-white"></a></li>
+              <li><a href="https://twitter.com/culinarycare" target="_blank" class="icon-twitter-white"></a></li>
+              <li><a href="http://instagram.com/culinarycare" target="_blank" class="icon-instagram-white"></a></li>
+              <li><a href="/contact-us/" class="icon-email-white"></a></li>
             </ul>
           </div>
         </div>

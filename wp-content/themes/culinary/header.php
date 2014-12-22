@@ -24,8 +24,8 @@
   			<div class="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Culinary Care"></a></div>
   			<div class="top">
   			  <ul class="social-links">
-  			    <li><a href="" class="icon-twitter-grey"></a></li>
-  			    <li><a href="" class="icon-facebook-grey"></a></li>
+  			    <li><a href="https://twitter.com/culinarycare" target="_blank" class="icon-twitter-grey"></a></li>
+  			    <li><a href="https://www.facebook.com/CulinaryCare/" target="_blank" class="icon-facebook-grey"></a></li>
   			  </ul>
   			  <form class="form-newsletter">
   			    <div class="form-item">
