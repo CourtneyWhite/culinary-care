@@ -118,7 +118,7 @@
 
 		<section id="testimonials" class="testimonials section">
 		  <div class="wrapper">
-		    <h2 class="section-title">Testimonials</h2>
+		    <h2 class="section-title">Our Impact</h2>
 		    <div class="testimonials-slider">
         <?php
         $args = array( 'post_type' => 'testimonials', 'posts_per_page' => -1 );
@@ -133,6 +133,8 @@
                   $size = 'thumb';
                   if( $image ) {
                   	echo '<img src="' . $image['url'] . '">';
+                  } else {
+                    echo '<img src="/wp-content/themes/culinary/assets/images/icon-testimonial.png">';
                   }
                   ?>
           		</div>
