@@ -36,3 +36,7 @@
 .volunteer-form-grid {
   @extend .width-10-col;
 }
+
+.volunteer-form p {
+  margin-bottom: $base;
+}
