@@ -4,8 +4,10 @@
   <section class="main">
     <div class="wrapper">
   
-  		<h1 class="page-title"><?php the_title(); ?></h1>
-  		<?php the_content(); ?>
+      <div class="page-header">
+    		<h1 class="page-title"><?php the_title(); ?></h1>
+    		<?php the_content(); ?>
+      </div>
   		
   		<div class="donate-form-block">
   		
@@ -24,7 +26,8 @@
   		    </div>
   		    <button class="btn">Donate</button>
   		    <div class="by-check">
-  		      <a href="">Donate by Check</a>
+  		      <p>Donate by Check</p>
+  		      <p>Mail your donation to Culinary Care, 1920 Birchwood, Wilmette, IL, 60091</p>
   		    </div>
   		  </form>
   		  

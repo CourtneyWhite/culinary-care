@@ -84,16 +84,7 @@ p {
 }
 
 .intro {
-  max-width: 680px;
-  margin-bottom: $base;
-  text-align: center;
-
-  @include bp-min-width($medium) {
-    @include font-size(24px);
-    @include line-height(30px);
-    font-family: $sans;
-    margin: 0 auto $base*2;
-  }
+  @include intro;
 }
 
 strong {

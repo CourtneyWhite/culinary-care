@@ -4,10 +4,6 @@
   color: $red;
 }
 
-.page-id-22 .main p:first-of-type {
-  @extend .intro;  
-}
-
 .donate-form-block {
   @include cf;
   position: relative;
@@ -109,13 +105,14 @@
   }
 }
 
-.donate-form .by-check a {
+.donate-form .by-check p {
   @include font-size(14px);
+  max-width: 360px;
+  margin: 0 auto;
   color: $grey;
-  border-bottom: 1px solid $lt-grey;
   
-  &:hover {
-    border-bottom: none;
+  &:first-of-type {
+    font-weight: $bold;
   }
 }
 

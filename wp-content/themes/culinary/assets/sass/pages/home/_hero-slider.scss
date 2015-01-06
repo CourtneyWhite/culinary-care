@@ -55,15 +55,30 @@
     float: right;
     width: 56%;
     height: 100%;
-    padding: $base*3 4%;
-    background: $pic-hero-01 no-repeat center center;
-    background-size: auto 100%;
+    padding: $base*3 0;
+    background: $hero-home-01 no-repeat center center / cover;
   }
+}
+
+.hero-slider .slide-2 .slide-img {
+  background: $hero-home-02 no-repeat center center / cover;
+}
+
+.hero-slider .slide-3 .slide-img {
+  background: $hero-home-03 no-repeat center center / cover;
+}
+
+.hero-slider .slide-4 .slide-img {
+  background: $hero-home-04 no-repeat bottom center / cover;
 }
 
 .hero-slider .slide {
   @include cf;
 }
+
+
+
+/** Slide Content ****/
 
 .hero-slider .slide-content a {
   @extend .btn;

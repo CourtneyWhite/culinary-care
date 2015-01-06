@@ -169,13 +169,13 @@ p {
   }
 }
 
-.intro, .page-id-22 .main p:first-of-type, .page-id-85 .body p:first-of-type {
+.intro, .page-id-85 .body p:first-of-type {
   max-width: 680px;
   margin-bottom: 24px;
   text-align: center;
 }
 @media (min-width: 740px) {
-  .intro, .page-id-22 .main p:first-of-type, .page-id-85 .body p:first-of-type {
+  .intro, .page-id-85 .body p:first-of-type {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 30px;
@@ -1301,10 +1301,21 @@ span.wpcf7-not-valid-tip {
     float: right;
     width: 56%;
     height: 100%;
-    padding: 72px 4%;
-    background: url('assets/images/pic-hero-01.jpg?1417661759') no-repeat center center;
-    background-size: auto 100%;
+    padding: 72px 0;
+    background: url('assets/images/hero-home-01.jpg?1417661759') no-repeat center center/cover;
   }
+}
+
+.hero-slider .slide-2 .slide-img {
+  background: url('assets/images/hero-home-02.jpg?1420562610') no-repeat center center/cover;
+}
+
+.hero-slider .slide-3 .slide-img {
+  background: url('assets/images/hero-home-03.jpg?1420562397') no-repeat center center/cover;
+}
+
+.hero-slider .slide-4 .slide-img {
+  background: url('assets/images/hero-home-04.jpg?1420562514') no-repeat bottom center/cover;
 }
 
 .hero-slider .slide {
@@ -1318,6 +1329,7 @@ span.wpcf7-not-valid-tip {
   clear: both;
 }
 
+/** Slide Content ****/
 .hero-slider .slide-content a {
   font-size: 24px;
   font-size: 1.5rem;
@@ -1842,14 +1854,15 @@ span.wpcf7-not-valid-tip {
   background: #66a196;
 }
 
-.donate-form .by-check a {
+.donate-form .by-check p {
   font-size: 14px;
   font-size: 0.875rem;
+  max-width: 360px;
+  margin: 0 auto;
   color: #818282;
-  border-bottom: 1px solid #c0c0c0;
 }
-.donate-form .by-check a:hover {
-  border-bottom: none;
+.donate-form .by-check p:first-of-type {
+  font-weight: 700;
 }
 
 .give-grid {
@@ -2129,4 +2142,30 @@ span.wpcf7-not-valid-tip {
 
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
+}
+
+.page-header {
+  *zoom: 1;
+}
+.page-header:before, .page-header:after {
+  content: " ";
+  display: block;
+}
+.page-header:after {
+  clear: both;
+}
+.page-header p {
+  max-width: 680px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+@media (min-width: 740px) {
+  .page-header p {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    font-family: "Gotham A", "Gotham B", Helvetica, arial, sans-serif;
+    margin: 0 auto 48px;
+  }
 }
