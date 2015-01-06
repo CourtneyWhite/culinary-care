@@ -1855,13 +1855,17 @@ span.wpcf7-not-valid-tip {
 }
 
 .donate-form .by-check p {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 18px;
+  line-height: 1.125rem;
   max-width: 360px;
   margin: 0 auto;
   color: #818282;
 }
 .donate-form .by-check p:first-of-type {
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 

@@ -106,12 +106,14 @@
 }
 
 .donate-form .by-check p {
-  @include font-size(14px);
+  @include font-size(12px);
+  @include line-height(18px);
   max-width: 360px;
   margin: 0 auto;
   color: $grey;
   
   &:first-of-type {
+    @include font-size(14px);
     font-weight: $bold;
   }
 }
