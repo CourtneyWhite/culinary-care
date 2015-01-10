@@ -311,7 +311,7 @@ em {
 }
 @media (min-width: 740px) {
   .grid {
-    margin: 0 -20px 24px -20px;
+    margin: 0 -20px;
   }
 }
 
@@ -1305,7 +1305,7 @@ span.wpcf7-not-valid-tip {
     width: 56%;
     height: 100%;
     padding: 72px 0;
-    background: url('assets/images/hero-home-01.jpg?1417661759') no-repeat center center/cover;
+    background: url('assets/images/hero-home-01.jpg?1420910580') no-repeat center center/cover;
   }
 }
 
@@ -1314,11 +1314,11 @@ span.wpcf7-not-valid-tip {
 }
 
 .hero-slider .slide-3 .slide-img {
-  background: url('assets/images/hero-home-03.jpg?1420562397') no-repeat center center/cover;
+  background: url('assets/images/hero-home-03.jpg?1420910642') no-repeat center center/cover;
 }
 
 .hero-slider .slide-4 .slide-img {
-  background: url('assets/images/hero-home-04.jpg?1420562514') no-repeat bottom center/cover;
+  background: url('assets/images/hero-home-04.jpg?1420910632') no-repeat bottom center/cover;
 }
 
 .hero-slider .slide {

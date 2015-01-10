@@ -4,7 +4,7 @@ $pad: 20px;
   @include cf;
   
   @include bp-min-width($medium) {
-    margin: 0 -20px $base -20px;
+    margin: 0 -20px;
   }
 }
 
