@@ -33,10 +33,11 @@
   @extend .yellow;
 }
 
-.volunteer-form-grid {
-  @extend .width-10-col;
+.volunteer-form-page .body,
+.volunteer-form-page .volunteer-form {
+  @extend .width-6-col;
 }
 
-.volunteer-form p {
+.volunteer-form-page .body {
   margin-bottom: $base;
 }

@@ -373,7 +373,7 @@ body {
   background: #c0c0c0;
 }
 
-.width-10-col, .volunteer-form-grid, .events-grid {
+.width-10-col, .events-grid {
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -383,7 +383,8 @@ body {
   margin: 0 auto;
 }
 
-.width-6-col, .page-template-default .body {
+.width-6-col, .page-template-default .body, .volunteer-form-page .body,
+.volunteer-form-page .volunteer-form {
   max-width: 680px;
   margin: 0 auto;
 }
@@ -519,6 +520,7 @@ a {
 label {
   display: block;
   margin-bottom: 4px;
+  font-weight: 700;
 }
 
 input[type="text"],
@@ -1736,7 +1738,7 @@ span.wpcf7-not-valid-tip {
   margin-bottom: 24px;
 }
 
-.volunteer-form p {
+.volunteer-form-page .body {
   margin-bottom: 24px;
 }
 
