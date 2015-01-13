@@ -13,6 +13,7 @@
   		
   		  <div class="donate-image"></div>
   		
+<!--
   		  <form class="donate-form">
   		    <h3>Donate where it's needed most</h3>
   		    <div class="amount">
@@ -30,6 +31,27 @@
   		      <p>Mail your donation to Culinary Care, 1920 Birchwood, Wilmette, IL, 60091</p>
   		    </div>
   		  </form>
+-->
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="donate-form">
+          <input type="hidden" name="cmd" value="_donations">
+          <input type="hidden" name="business" value="courtney@culinarycare.org">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="hidden" name="item_name" value="Culinary Care Donation">
+    
+  		    <h3>Donate where it's needed most</h3>
+  		    <div class="amount">
+  		      <span class="dollar-sign">$</span>
+  		      <span class="currency">USD</span>
+  		      <input type="text" name="amount" placeholder="25">
+  		    </div>
+  		    <button type="submit" class="btn">Donate</button>
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  		    <div class="by-check">
+  		      <p>Donate by Check</p>
+  		      <p>Mail your donation to Culinary Care, 1920 Birchwood, Wilmette, IL, 60091</p>
+  		    </div>
+        </form>  
   		  
   		</div>
 
