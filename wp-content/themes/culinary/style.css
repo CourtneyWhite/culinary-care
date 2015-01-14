@@ -101,8 +101,8 @@ h1 {
 }
 @media (min-width: 740px) {
   h1 {
-    font-size: 48px;
-    font-size: 3rem;
+    font-size: 44px;
+    font-size: 2.75rem;
   }
 }
 
@@ -489,6 +489,11 @@ a {
 }
 .btn.grey:hover, input.grey[type="submit"]:hover, button.grey:hover, .header .top .form-newsletter .btn:hover, .header .top .form-newsletter input[type="submit"]:hover, .header .top .form-newsletter button:hover, .header .top .form-newsletter .hero-slider .slide-content a:hover, .hero-slider .slide-content .header .top .form-newsletter a:hover, .header .top .form-newsletter .volunteer-grid a:hover, .volunteer-grid .header .top .form-newsletter a:hover, .hero-slider .slide-content a.grey:hover, .volunteer-grid a.grey:hover {
   background: #363636;
+}
+
+.wpcf7-form {
+  max-width: 440px;
+  margin: 0 auto;
 }
 
 .form-item {
@@ -1453,9 +1458,17 @@ span.wpcf7-not-valid-tip {
 .how-it-works {
   text-align: center;
 }
+
+@media (max-width: 740px) {
+  .how-it-works .wrapper {
+    padding-bottom: 72px;
+  }
+}
+
 .how-it-works p {
   color: #818282;
 }
+
 @media (max-width: 740px) {
   .how-it-works .col-1-4 {
     max-width: 440px;
@@ -1756,7 +1769,7 @@ span.wpcf7-not-valid-tip {
   *zoom: 1;
   position: relative;
   max-width: 1160px;
-  margin: 0 auto 48px;
+  margin: 0 auto;
   background: #f6f6f6;
   border: 1px solid #c0c0c0;
 }
@@ -1766,6 +1779,11 @@ span.wpcf7-not-valid-tip {
 }
 .donate-form-block:after {
   clear: both;
+}
+@media (min-width: 740px) {
+  .donate-form-block {
+    margin-bottom: 48px;
+  }
 }
 
 .donate-image {

@@ -14,6 +14,26 @@
   }
 }
 
+@mixin width-10-col {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+@mixin width-8-col {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+@mixin width-6-col {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+@mixin width-4-col {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
 // CLEARFIX
 @mixin cf {
   &:before, &:after {

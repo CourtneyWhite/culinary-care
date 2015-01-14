@@ -8,9 +8,13 @@
   @include cf;
   position: relative;
   max-width: 1160px;
-  margin: 0 auto $base*2;
+  margin: 0 auto;
   background: $lt-grey-3;
   border: 1px solid $lt-grey;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*2;
+  }
 }
 
 .donate-image {

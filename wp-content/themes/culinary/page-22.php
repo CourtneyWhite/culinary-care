@@ -12,26 +12,6 @@
   		<div class="donate-form-block">
   		
   		  <div class="donate-image"></div>
-  		
-<!--
-  		  <form class="donate-form">
-  		    <h3>Donate where it's needed most</h3>
-  		    <div class="amount">
-  		      <span class="dollar-sign">$</span>
-  		      <span class="currency">USD</span>
-  		      <input type="text" placeholder="25">
-  		    </div>
-  		    <div class="recurring form-checkbox">
-  		      <input type="checkbox" checked="checked" id="recurring" name="recurring" value="recurring">
-  		      <label for="recurring">Make this a recurring monthly donation</label>
-  		    </div>
-  		    <button class="btn">Donate</button>
-  		    <div class="by-check">
-  		      <p>Donate by Check</p>
-  		      <p>Mail your donation to Culinary Care, 1920 Birchwood, Wilmette, IL, 60091</p>
-  		    </div>
-  		  </form>
--->
 
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="donate-form" class="donate-form">
           <input type="hidden" name="cmd" value="_donations">
