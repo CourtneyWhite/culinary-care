@@ -22,7 +22,7 @@
   @include bp-min-width($medium) {
     float: left;
     width: 44%;
-    padding: $base*3 4%;
+    padding: $base*3 4% $base*3 5%;
   }
 }
 
@@ -114,6 +114,10 @@
   @include cf;
   padding: 0 4%;
   background: lighten($lt-grey, 20%);
+
+  @include bp-min-width($medium) {
+    padding: 0 5%;
+  }
 }
 
 .slider-tabs a {

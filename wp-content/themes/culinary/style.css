@@ -407,15 +407,6 @@ body {
   }
 }
 
-.main .wrapper {
-  padding: 36px 0;
-}
-@media (min-width: 740px) {
-  .main .wrapper {
-    padding: 48px 0;
-  }
-}
-
 .wrapper {
   *zoom: 1;
   margin: 0 4%;
@@ -429,9 +420,18 @@ body {
 }
 @media (min-width: 740px) {
   .wrapper {
-    width: 92%;
+    width: 90%;
     max-width: 1400px;
     margin: 0 auto;
+  }
+}
+
+.main .wrapper {
+  padding: 36px 0;
+}
+@media (min-width: 740px) {
+  .main .wrapper {
+    padding: 48px 0;
   }
 }
 
@@ -1278,7 +1278,7 @@ span.wpcf7-not-valid-tip {
   .hero-slider .slide-content {
     float: left;
     width: 44%;
-    padding: 72px 4%;
+    padding: 72px 4% 72px 5%;
   }
 }
 
@@ -1382,6 +1382,11 @@ span.wpcf7-not-valid-tip {
 }
 .slider-tabs:after {
   clear: both;
+}
+@media (min-width: 740px) {
+  .slider-tabs {
+    padding: 0 5%;
+  }
 }
 
 .slider-tabs a {
