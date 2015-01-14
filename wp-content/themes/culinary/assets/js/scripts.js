@@ -84,12 +84,47 @@ $(function(){
     });
   }
   
-  $(window).on("resize", function(){
+  donateFormCheck = function() {
+    var donateForm = $('#donate-form');
+    var donateAmount = $('#amount');
+    var recurringCheckbox = $('#recurring');
+    var hiddenDonateType = $('input[name="cmd"]');
+    var hiddenDonateTitle = $('input[name="item_name"]');
+    var hiddenDonateDuration = $('<input/>',{type:'hidden',name:'p3',value:'12'});
+    var hiddenDonateUnits = $('<input/>',{type:'hidden',name:'t3',value:'M'});
+    
+    if (recurringCheckbox.is(':checked')) {
+      hiddenDonateType.val('_xclick-subscriptions');
+      hiddenDonateTitle.val('Culinary Care Monthly Donation');
+      donateAmount.attr('name', 'a3');
+      donateForm.prepend(hiddenDonateDuration);
+      donateForm.prepend(hiddenDonateUnits);
+    }
+    
+    $(recurringCheckbox).click(function() {
+      if (recurringCheckbox.is(':checked')) {
+        hiddenDonateType.val('_xclick-subscriptions');
+        hiddenDonateTitle.val('Culinary Care Monthly Donation');
+        donateAmount.attr('name', 'a3');
+        donateForm.prepend(hiddenDonateDuration);
+        donateForm.prepend(hiddenDonateUnits);
+      } else {
+        hiddenDonateType.val('_donations');
+        hiddenDonateTitle.val('Culinary Care Donation');
+        donateAmount.attr('name', 'amount');
+        donateForm.find(hiddenDonateDuration).remove();
+        donateForm.find(hiddenDonateUnits).remove();
+      }
+    });
+  }
+  
+  $(window).on("resize", function() {
     sliderContentHeight();
   }).resize();
   
   sliderTabActive();
   labelFade();
   mobileNav();
+  donateFormCheck();
 
 });

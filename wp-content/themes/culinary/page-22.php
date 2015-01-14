@@ -33,7 +33,7 @@
   		  </form>
 -->
 
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="donate-form">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="donate-form" class="donate-form">
           <input type="hidden" name="cmd" value="_donations">
           <input type="hidden" name="business" value="courtney@culinarycare.org">
           <input type="hidden" name="currency_code" value="USD">
@@ -43,7 +43,11 @@
   		    <div class="amount">
   		      <span class="dollar-sign">$</span>
   		      <span class="currency">USD</span>
-  		      <input type="text" name="amount" placeholder="25">
+  		      <input type="text" name="amount" id="amount" value="25">
+  		    </div>
+  		    <div class="recurring form-checkbox">
+  		      <input type="checkbox" checked="checked" id="recurring" name="recurring" value="recurring">
+  		      <label for="recurring">Make this a recurring monthly donation</label>
   		    </div>
   		    <button type="submit" class="btn">Donate</button>
           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
