@@ -39,7 +39,7 @@
   		'publicly_queryable' => true,
   		'show_ui' => true,
   		'query_var' => true,
-  		'menu_icon' => 'dashicons-groups',
+  		'menu_icon' => 'dashicons-heart',
   		'rewrite' => true,
   		'capability_type' => 'post',
   		'hierarchical' => false,
@@ -111,6 +111,38 @@
   		'supports' => array('title','editor','thumbnail')
   	  ); 
   	register_post_type( 'events' , $args );
+  }
+
+	// Team Members Post Type
+	add_action('init', 'team_members_register');
+  function team_members_register() {
+  	$labels = array(
+  		'name' => _x('Team Members', 'post type general name'),
+  		'singular_name' => _x('Team Members Item', 'post type singular name'),
+  		'add_new' => _x('Add New', 'Team Members Item'),
+  		'add_new_item' => __('Add New Team Members Item'),
+  		'edit_item' => __('Edit Team Members Item'),
+  		'new_item' => __('New Team Members Item'),
+  		'view_item' => __('View Events Item'),
+  		'search_items' => __('Search Team Members'),
+  		'not_found' =>  __('Nothing found'),
+  		'not_found_in_trash' => __('Nothing found in Trash'),
+  		'parent_item_colon' => ''
+  	);
+  	$args = array(
+  		'labels' => $labels,
+  		'public' => true,
+  		'publicly_queryable' => true,
+  		'show_ui' => true,
+  		'query_var' => true,
+  		'menu_icon' => 'dashicons-groups',
+  		'rewrite' => true,
+  		'capability_type' => 'post',
+  		'hierarchical' => false,
+  		'menu_position' => null,
+  		'supports' => array('title','editor','thumbnail')
+  	  ); 
+  	register_post_type( 'team_members' , $args );
   }
 
 	// WP Title (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)

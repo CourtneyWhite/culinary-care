@@ -55,5 +55,5 @@ body {
 }
 
 .page-template-default .body {
-  @extend .width-6-col;
+  @include width-6-col;
 }
