@@ -23,7 +23,7 @@
   		    <div class="amount">
   		      <span class="dollar-sign">$</span>
   		      <span class="currency">USD</span>
-  		      <input type="text" name="amount" id="amount" value="25">
+  		      <input type="text" name="amount" id="amount" value="35">
   		    </div>
   		    <div class="recurring form-checkbox">
   		      <input type="checkbox" checked="checked" id="recurring" name="recurring" value="recurring">
