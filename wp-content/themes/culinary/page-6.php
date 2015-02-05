@@ -15,15 +15,29 @@
 	
 	<section class="team">
 	  <div class="wrapper">
+
+	    <div class="icon-fork"><div class="icon-fork-yellow"></div></div>
 	  
-	    <h2 class="section-title">Our Team</h2>
+	    <h2 class="section-title">Meet Our Team</h2>
       <?php
       $args = array( 'post_type' => 'team_members', 'posts_per_page' => -1 );
       $myposts = get_posts( $args );
       foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
       	<div class="member">
-      	  <h3><?php the_title(); ?></h3>
-      		<div class="bio"><?php the_content(); ?></div>
+      	  <div class="member-image">
+    		  <?php
+    		    $image = get_field('member_image');
+            if( $image ) {
+            	echo '<img src="' . $image['sizes']['team-thumb'] . '">';
+            } else {
+              echo '<img src="/wp-content/themes/culinary/assets/images/thumb-events.png">';
+            }
+          ?>
+      	  </div>
+      	  <div class="member-info">
+        	  <h3><?php the_title(); ?></h3>
+        		<div class="bio"><?php the_content(); ?></div>
+      	  </div>
       	</div>
       <?php endforeach; 
       wp_reset_postdata();?>

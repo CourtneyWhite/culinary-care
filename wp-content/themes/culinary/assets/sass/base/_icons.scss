@@ -54,13 +54,6 @@ $icon-fork-yellow: image-url("icon-fork-yellow.png");
   margin-right: -1px;
 }
 
-.icon-fork-yellow {
-  width: 190px;
-  height: 30px;
-  background: $icon-fork-yellow no-repeat;
-  background-size: 190px auto;
-}
-
 .icon-checkmark {
   width: 16px;
   height: 13px;
@@ -71,4 +64,21 @@ $icon-fork-yellow: image-url("icon-fork-yellow.png");
   width: 11px;
   height: 16px;
   background: $sprite no-repeat -46px -96px;
+}
+
+
+/** Fork Icon **/
+
+.icon-fork-yellow {
+  width: 190px;
+  height: 30px;
+  background: $icon-fork-yellow no-repeat;
+  background-size: 190px auto;
+}
+
+.icon-fork {
+  @include horizontal-center(absolute);
+  top: -15px;
+  background: #fff;
+  padding: 0 20px;
 }

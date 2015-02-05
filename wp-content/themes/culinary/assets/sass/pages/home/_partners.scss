@@ -10,13 +10,6 @@
       padding-top: $base*3;
     }
   }
-  
-  .icon-fork {
-    @include horizontal-center(absolute);
-    top: -15px;
-    background: #fff;
-    padding: 0 20px;
-  }
 }
 
 .partners-slider {

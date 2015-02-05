@@ -240,5 +240,6 @@
 	add_image_size( 'partner-thumb', 160, 144 );
 	add_image_size( 'testimonial-thumb', 96, 96, true );
 	add_image_size( 'event-thumb', 200, 200, true );
+	add_image_size( 'team-thumb', 180, 180, true );
 
 ?>

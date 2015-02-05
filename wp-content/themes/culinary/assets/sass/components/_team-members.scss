@@ -1,19 +1,21 @@
 
+.page-id-6 .main .wrapper {
+  padding-bottom: $base*3;
+}
+
 .team {
-  background: $yellow $pattern-utensils-yellow;
-  color: $black;
+  position: relative;
+  border-top: 1px solid $lt-grey;
   
   .wrapper {
-    padding: $base*2 5%;
-  }
-  
-  h2 {
-    color: #fff;
+    padding: $base*3 5%;
   }
 }
 
 .team .member {
+  @include cf;
   @include width-6-col;
+  position: relative;
   margin-bottom: $base*2;
 
   @include bp-min-width($medium) {
@@ -23,6 +25,21 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.member-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  
+  img {
+    border-radius: 50%;
+  }
+}
+
+.member-info {
+  padding-left: 200px;
 }
 
 .team .member h3 {
