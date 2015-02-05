@@ -1,11 +1,32 @@
 $(function(){
 
+  $('.hero-slider .slides').bxSlider({
+    mode: 'fade',
+    auto: true,
+    controls: false,
+    pagerCustom: '.slider-tabs'
+  });
+
+/*
+  $('.partners-slider .slides').bxSlider({
+    pager: false,
+    minSlides: 1,
+    maxSlides: 6,
+    moveSlides: 1,
+    slideWidth: 160,
+    slideMargin: 10,
+    nextText: '<span class="icon-next"></span>',
+    prevText: '<span class="icon-prev"></span>'
+  });
+*/
+  
   $('.testimonials-slider').owlCarousel({
     loop: true,
     items: 1,
     nav: true,
     navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>']
   });
+
 
   $('.partners-slider').owlCarousel({
     loop: true,
@@ -29,15 +50,6 @@ $(function(){
         items: 6
       }
     }
-  });
-  
-  $('.hero-slider .slides').owlCarousel({
-    loop: false,
-    items: 1,
-    animateIn: 'fadeIn',
-    animateOut: 'fadeOut',
-    URLhashListener: true,
-    navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>']
   });
 
   sliderTabActive = function() {

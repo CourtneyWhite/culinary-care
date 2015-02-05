@@ -34,16 +34,16 @@
   		  </div>
 		  </div>
 		  <div class="slider-tabs">
-		    <a href="#slide-1" class="tab-1 active">
+		    <a href="" class="tab-1 active" data-slide-index="0">
 		      <span class="tab-label"><?php the_field('slide_1_tab'); ?></span>
 		    </a>
-		    <a href="#slide-2" class="tab-2">
+		    <a href="" class="tab-2" data-slide-index="1">
 		       <span class="tab-label"><?php the_field('slide_2_tab'); ?></span>
 		    </a>
-		    <a href="#slide-3" class="tab-3">
+		    <a href="" class="tab-3" data-slide-index="2">
 		       <span class="tab-label"><?php the_field('slide_3_tab'); ?></span>
 		    </a>
-		    <a href="#slide-4" class="tab-4">
+		    <a href="" class="tab-4" data-slide-index="3">
   		     <span class="tab-label"><?php the_field('slide_4_tab'); ?></span>
   		  </a>
 		  </div>

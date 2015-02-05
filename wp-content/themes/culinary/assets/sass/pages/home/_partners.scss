@@ -13,8 +13,8 @@
 }
 
 .partners-slider {
-  padding: 0 80px;
-
+  padding: 0 60px;
+  
   .partner {
     position: relative;
     min-height: 144px;
@@ -28,8 +28,8 @@
   }
 }
 
-.partners-slider .owl-prev,
-.partners-slider .owl-next {
+.our-partners .owl-prev,
+.our-partners .owl-next {
   top: 30%;
   width: 60px;
   height: 60px;
@@ -37,10 +37,10 @@
   border-radius: 50%;
 }
 
-.partners-slider .owl-prev {
+.our-partners .owl-prev {
   left: 0;
 }
 
-.partners-slider .owl-next {
+.our-partners .owl-next {
   right: 0;
 }

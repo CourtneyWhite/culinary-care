@@ -37,19 +37,19 @@ $icon-fork-yellow: image-url("icon-fork-yellow.png");
   background-position: 0 -138px;
 }
 
-.owl-nav [class*="icon-"] {
+.owl-controls [class*="icon-"] {
   display: block;
   width: 27px;
   height: 40px;
   background: $sprite no-repeat;
 }
 
-.owl-nav .icon-prev {
+.owl-controls .icon-prev {
   background-position: 0 -184px;
   margin-left: -1px;
 }
 
-.owl-nav .icon-next {
+.owl-controls .icon-next {
   background-position: -31px -184px;
   margin-right: -1px;
 }
