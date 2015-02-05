@@ -19,7 +19,7 @@
   background: $green $pattern-utensils-green;
   color: #fff;
 
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     float: left;
     width: 44%;
     padding: $base*3 4% $base*3 5%;
@@ -47,11 +47,11 @@
 }
 
 .hero-slider .slide-img {
-  @include bp-max-width($medium) {
+  @include bp-max-width($large) {
     display: none;
   }
 
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     float: right;
     width: 56%;
     height: 100%;
@@ -77,13 +77,15 @@
 }
 
 
-
 /** Slide Content ****/
 
 .hero-slider .slide-content a {
   @extend .btn;
-  @include font-size(24px);
   background: $dk-green;
+
+  @include bp-min-width($large) {
+    @include font-size(21px);
+  }
 }
 
 .hero-slider .slide-2 .slide-content {
@@ -112,6 +114,8 @@
 
 .slider-tabs {  
   @include cf;
+  position: relative;
+  z-index: 100;
   padding: 0 4%;
   background: lighten($lt-grey, 20%);
 
@@ -122,6 +126,7 @@
 
 .slider-tabs a {
   position: relative;
+  z-index: 20;
   display: block;
   float: left;
   width: 25%;
@@ -132,7 +137,6 @@
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 1px rgba(#000, 0.1);
-
 
   @include bp-min-width($large) {
     @include font-size(21px);
@@ -148,14 +152,20 @@
     box-shadow: inset 0 4px 0 $dk-green;
   }
   
-  &.active:before {
+  &:before {
+    @include global-transition;
     @include up-triangle(12px, $dk-green);
     content: "";
+    opacity: 0;
     position: absolute;
     top: -12px;
     left: 50%;
     z-index: 10;
     margin-left: -6px;
+  }
+
+  &.active:before {
+    opacity: 1;
   }
 }
 
