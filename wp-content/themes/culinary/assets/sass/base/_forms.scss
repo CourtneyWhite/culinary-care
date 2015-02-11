@@ -4,7 +4,7 @@
 }
 
 .form-item {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -72,14 +72,21 @@ textarea {
 
 /** Select ============**/
 
+select {
+  @include appearance(none);
+  height: 38px;
+  border-radius: 0;
+}
+
 .form-select {
   position: relative;
-
+  
   &:before {
     content: "";
     position: absolute;
-    bottom: 17px;
+    bottom: 14px;
     right: 17px;
+    z-index: 10;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 8px solid $green;
@@ -89,7 +96,6 @@ textarea {
     @include appearance(none);
     text-indent: 0.01px;
     text-overflow: '';
-    border-radius: 0;
   }
 }
 

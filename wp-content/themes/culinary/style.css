@@ -515,7 +515,7 @@ a {
 }
 
 .form-item {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .form-item:last-of-type {
   margin-bottom: 0;
@@ -590,14 +590,22 @@ textarea {
 }
 
 /** Select ============**/
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  height: 38px;
+  border-radius: 0;
+}
+
 .form-select {
   position: relative;
 }
 .form-select:before {
   content: "";
   position: absolute;
-  bottom: 17px;
+  bottom: 14px;
   right: 17px;
+  z-index: 10;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid #8aad64;
@@ -607,7 +615,6 @@ textarea {
   -webkit-appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
-  border-radius: 0;
 }
 
 /** Checkboxes ============**/
