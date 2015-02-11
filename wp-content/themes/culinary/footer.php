@@ -35,7 +35,7 @@
     
         <div class="bottom">
           <div class="copyright">&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></div>
-          <div class="site-by"><a href="">Web Design</a>: Eleven Eleven Creative</div>
+          <div class="site-by"><a href="http://bradsawicki.com">Web Design</a>: Brad Sawicki</div>
         </div>
 
       </div>
