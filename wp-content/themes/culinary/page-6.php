@@ -18,7 +18,7 @@
 
 	    <div class="icon-fork"><div class="icon-fork-yellow"></div></div>
 	  
-	    <h2 class="section-title">Meet Our Team</h2>
+	    <h2 class="section-title">Board of Directors</h2>
       <?php
       $args = array( 'post_type' => 'team_members', 'posts_per_page' => -1 );
       $myposts = get_posts( $args );
