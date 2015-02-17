@@ -9,6 +9,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
+	<link rel="icon" type="image/png" href="/favicon.png">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6049932/784486/css/fonts.css" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />

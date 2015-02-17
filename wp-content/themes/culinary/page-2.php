@@ -8,29 +8,25 @@
   		    <div class="slide-content">
       			<?php the_field('slide_1_content'); ?>
   		    </div>
-  		    <div class="slide-img">
-  		    </div>
+  		    <div class="slide-img"></div>
   		  </div>
   		  <div class="slide slide-2" data-hash="slide-2">
   		    <div class="slide-content">
       			<?php the_field('slide_2_content'); ?>
   		    </div>
-  		    <div class="slide-img">
-  		    </div>
+  		    <div class="slide-img"></div>
   		  </div>
   		  <div class="slide slide-3" data-hash="slide-3">
   		    <div class="slide-content">
       			<?php the_field('slide_3_content'); ?>
   		    </div>
-  		    <div class="slide-img">
-  		    </div>
+  		    <div class="slide-img"></div>
   		  </div>
   		  <div class="slide slide-4" data-hash="slide-4">
   		    <div class="slide-content">
       			<?php the_field('slide_4_content'); ?>
   		    </div>
-  		    <div class="slide-img">
-  		    </div>
+  		    <div class="slide-img"></div>
   		  </div>
 		  </div>
 		  <div class="slider-tabs">
@@ -48,7 +44,6 @@
   		  </a>
 		  </div>
 		</section>
-		
 		
 		<section id="how-it-works" class="how-it-works section">
 		  <div class="wrapper">
