@@ -9,6 +9,10 @@
     background: lighten($lt-grey, 15%);
   }
   
+  .slide {
+    @include cf;
+  }
+  
   h1 {
     color: #fff;
   }

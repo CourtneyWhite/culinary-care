@@ -1,21 +1,46 @@
 $(function(){
 
-  $('.hero-slider .slides').bxSlider({
+  // Home Hero Slider
+  var heroSlider = $('.hero-slider .slides').bxSlider({
     mode: 'fade',
     auto: true,
     controls: false,
-    adaptiveHeight: true,
     pagerCustom: '.slider-tabs'
   });
-  
-  $('.testimonials-slider').owlCarousel({
-    loop: true,
-    items: 1,
-    nav: true,
-    navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>']
-  });
+
+  sliderContentHeight = function() {
+    $(window).on('load resize', function(){
+      var windowWidth = window.outerWidth;
+      var content = $('.slide-content');
+      var img = $('.slide-img');
+
+      var contentHeight = content.map(function() {
+        $(this).removeAttr('style');
+        return $(this).height();
+      }).get();
+      var maxHeight = Math.max.apply(Math, contentHeight);
+      
+      if(windowWidth > 980) {
+        content.height(maxHeight);
+        img.height(maxHeight);
+        heroSlider.reloadSlider();
+      } else {
+        content.height(maxHeight);
+        heroSlider.reloadSlider();
+      }
+    });
+  }
+
+  sliderTabActive = function() {
+    var tab = $('.slider-tabs a');
+    $('.slider-tabs a').on('click', function() {
+      $(tab).removeClass('active');
+      $(this).addClass('active');
+    });  
+  }
 
 
+  // Partners Slider
   $('.partners-slider').owlCarousel({
     loop: true,
     items: 6,
@@ -40,26 +65,14 @@ $(function(){
     }
   });
 
-  sliderTabActive = function() {
-    var tab = $('.slider-tabs a');
-    $('.slider-tabs a').on('click', function() {
-      $(tab).removeClass('active');
-      $(this).addClass('active');
-    });  
-  }
+  // Testimonial Slider
+  $('.testimonials-slider').owlCarousel({
+    loop: true,
+    items: 1,
+    nav: true,
+    navText: ['<span class="icon-prev"></span>','<span class="icon-next"></span>']
+  });
 
-  sliderContentHeight = function() {
-    var content = $('.slide-content');
-    var img = $('.slide-img');
-    var contentHeight = content.map(function() {
-      $(this).removeAttr('style');
-      return $(this).height();
-    }).get();
-    var maxHeight = Math.max.apply(Math, contentHeight);
-    content.height(maxHeight);
-    img.height(maxHeight);
-  }
-  
   labelFade = function() {
     var emailField = $('.form-newsletter #mce-EMAIL');
     var emailLabel = $('.form-newsletter label');
