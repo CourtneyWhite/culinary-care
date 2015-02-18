@@ -28,10 +28,14 @@
 }
 
 .member-image {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 160px;
+  margin: 0 auto $base;
+
+  @include bp-min-width($medium) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   
   img {
     border-radius: 50%;
@@ -39,7 +43,9 @@
 }
 
 .member-info {
-  padding-left: 200px;
+  @include bp-min-width($medium) {
+    padding-left: 200px;
+  }
 }
 
 .team .member h3 {
