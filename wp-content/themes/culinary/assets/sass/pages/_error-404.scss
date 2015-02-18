@@ -1,0 +1,8 @@
+
+.error404 .main .wrapper {
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    min-height: 400px;
+  }
+}

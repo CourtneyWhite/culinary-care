@@ -1,13 +1,13 @@
-<?php
-/**
- * @package WordPress
- * @subpackage HTML5-Reset-WordPress-Theme
- * @since HTML5 Reset 2.0
- */
- get_header(); ?>
+<?php get_header(); ?>
 
-	<h2><?php _e('Error 404 - Page Not Found','html5reset'); ?></h2>
-
-<?php get_sidebar(); ?>
+<section class="main">
+  <div class="wrapper">
+	<h2>Whoops!</h2>	
+	<div class="body">
+  	<p>Looks like this page doesn't exist. Head back to the home page and try again.</p>
+  	<p><a href="/" class="btn">Back Home</a></p>
+	</div>
+  </div>
+</section>
 
 <?php get_footer(); ?>
