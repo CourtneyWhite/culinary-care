@@ -34,7 +34,6 @@
 }
 
 .nav li {
-
   @include bp-min-width($xsmall) {
     display: inline-block;
   }
@@ -85,6 +84,7 @@
   @include bp-max-width($xsmall) {
     display: block;
     background: $yellow;
+    border-top: 1px solid $gold;
     text-align: center;
   }
   
