@@ -1,9 +1,77 @@
 
-.page-fundraiser {
+.main-fundraiser {
+  padding-bottom: $base*2;
   text-align: center;
+}
+
+.fundraiser-header,
+.fundraiser-info {
+  @include cf;
+    margin-bottom: $base*3;
+
+  @include bp-max-width($xlarge) {
+    @include width-8-col;
+  }
+
+  @include bp-min-width($xlarge) {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle
+  }
+}
+
+.fundraiser-header .host,
+.fundraiser-header .cook-off {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+}
+
+.logo-cook-off {
+  height: 240px;
+}
+
+.fundraiser-header .host-headshot {
+  margin: 0 29px 12px;
+  border-radius: 50%;
+  max-width: 240px;
+}
+
+.fundraiser-info [class*="icon-"] {
+  margin-bottom: $base;
+}
+
+.fundraiser-info p {
+  font-weight: $bold;
+  color: $black;
+}
+
+.fundraiser-cta {
+  margin-bottom: $base*2;
 }
 
 .fundraiser-cta li {
   display: inline-block;
-  margin-bottom: 0 20px;
+  margin: 0 20px;
 }
+
+.fundraiser-chefs,
+.fundraiser-panel,
+.fundraiser-teams,
+.fundraiser-committee {
+  position: relative;
+  border-top: 1px solid $lt-grey-2;
+}
+
+.fundraiser-grid {
+  text-align: center;
+}
+
+.fundraiser-grid li {
+  display: inline-block;
+  width: 160px;
+  margin: 0 20px $base;
+}
+
+
+
