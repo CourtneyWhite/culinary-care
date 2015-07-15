@@ -24,7 +24,7 @@
         </div>
         <div class="col-1-3">
           <img src="/wp-content/themes/culinary/assets/images/icon-chefs-hat.svg" class="icon-chefs-hat" alt="">
-          <p>Kendal College</p>
+          <p>Kendall College</p>
         </div>
         <div class="col-1-3">
           <img src="/wp-content/themes/culinary/assets/images/icon-watch.svg" class="icon-watch" alt="">

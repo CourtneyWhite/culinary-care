@@ -7,16 +7,17 @@
 .fundraiser-header,
 .fundraiser-info {
   @include cf;
-    margin-bottom: $base*3;
 
   @include bp-max-width($xlarge) {
     @include width-8-col;
+    margin-bottom: $base*3;
   }
 
   @include bp-min-width($xlarge) {
     display: inline-block;
+    vertical-align: middle;
     width: 48%;
-    vertical-align: middle
+    margin-bottom: $base*3;
   }
 }
 
@@ -28,13 +29,16 @@
 }
 
 .logo-cook-off {
-  height: 240px;
+  max-width: 298px;
+  height: auto;
 }
 
 .fundraiser-header .host-headshot {
-  margin: 0 29px 12px;
+  margin-bottom: 12px;
+  padding: 0 29px;
   border-radius: 50%;
-  max-width: 240px;
+  width: 100%;
+  max-width: 298px;
 }
 
 .fundraiser-info [class*="icon-"] {
