@@ -19,7 +19,7 @@ $(function(){
         return $(this).height();
       }).get();
       var maxHeight = Math.max.apply(Math, contentHeight);
-      
+
       if(windowWidth > 980) {
         content.height(maxHeight);
         img.height(maxHeight);
@@ -36,9 +36,8 @@ $(function(){
     $('.slider-tabs a').on('click', function() {
       $(tab).removeClass('active');
       $(this).addClass('active');
-    });  
+    });
   }
-
 
   // Partners Slider
   $('.partners-slider').owlCarousel({
@@ -96,7 +95,7 @@ $(function(){
       $(this).toggleClass('active');
     });
   }
-  
+
   donateFormCheck = function() {
     var donateForm = $('#donate-form');
     var donateAmount = $('#amount');
@@ -105,7 +104,7 @@ $(function(){
     var hiddenDonateTitle = $('input[name="item_name"]');
     var hiddenDonateDuration = $('<input/>',{type:'hidden',name:'p3',value:'12'});
     var hiddenDonateUnits = $('<input/>',{type:'hidden',name:'t3',value:'M'});
-    
+
     if (recurringCheckbox.is(':checked')) {
       hiddenDonateType.val('_xclick-subscriptions');
       hiddenDonateTitle.val('Culinary Care Monthly Donation');
@@ -113,7 +112,7 @@ $(function(){
       donateForm.prepend(hiddenDonateDuration);
       donateForm.prepend(hiddenDonateUnits);
     }
-    
+
     $(recurringCheckbox).click(function() {
       if (recurringCheckbox.is(':checked')) {
         hiddenDonateType.val('_xclick-subscriptions');
@@ -130,11 +129,11 @@ $(function(){
       }
     });
   }
-  
+
   $(window).on("resize", function() {
     sliderContentHeight();
   }).resize();
-  
+
   sliderTabActive();
   labelFade();
   mobileNav();

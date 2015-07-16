@@ -61,8 +61,7 @@
 
 .fundraiser-chefs,
 .fundraiser-panel,
-.fundraiser-teams,
-.fundraiser-committee {
+.fundraiser-teams {
   position: relative;
   border-top: 1px solid $lt-grey-2;
 }
@@ -75,6 +74,22 @@
   display: inline-block;
   width: 160px;
   margin: 0 20px $base;
+}
+
+// .fundraiser-committee .fundraiser-grid {
+//   @include width-8-col;
+// }
+
+.fundraiser-committee {
+  background: $lt-grey-3;
+  border-top: 1px solid $lt-grey-2;
+}
+
+.fundraiser-committee .fundraiser-grid li {
+  @include font-size(18px);
+  margin-bottom: $base*2;
+  color: $black;
+  font-weight: $bold;
 }
 
 

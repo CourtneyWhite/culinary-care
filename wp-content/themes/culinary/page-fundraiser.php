@@ -100,18 +100,30 @@
 
   <section class="fundraiser-committee section">
     <div class="wrapper">
-      <div class="icon-fork"><div class="icon-fork-yellow"></div></div>
+      <!-- <div class="icon-fork"><div class="icon-fork-yellow"></div></div> -->
       <h2 class="section-title">Host Committee</h2>
       <ul class="fundraiser-grid">
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
+        <li>Bob Plant</li>
+        <li>Katy Perry</li>
+        <li>Snoop Dogg</li>
+        <li>Willie Nelson</li>
+        <li>James Page</li>
+        <li>Lykke Li</li>
+        <li>Sara Johansson</li>
+        <li>Bob Plant</li>
+        <li>Katy Perry</li>
+        <li>Snoop Dogg</li>
+        <li>Willie Nelson</li>
+        <li>James Page</li>
+        <li>Lykke Li</li>
+        <li>Sara Johansson</li>
+        <li>Bob Plant</li>
+        <li>Katy Perry</li>
+        <li>Snoop Dogg</li>
+        <li>Willie Nelson</li>
+        <li>James Page</li>
+        <li>Lykke Li</li>
+        <li>Sara Johansson</li>
       </ul>
     </div>
   </section>
