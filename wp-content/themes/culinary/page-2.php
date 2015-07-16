@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
+
 		<section class="hero-slider">
 		  <div class="slides">
   		  <div class="slide slide-1" data-hash="slide-1">
@@ -44,7 +44,7 @@
   		  </a>
 		  </div>
 		</section>
-		
+
 		<section id="how-it-works" class="how-it-works section">
 		  <div class="wrapper">
 		    <h2 class="section-title">How It Works</h2>
@@ -98,7 +98,7 @@
             }
           ?>
         	</div>
-        <?php endforeach; 
+        <?php endforeach;
         wp_reset_postdata();?>
 		    </div>
 		  </div>
@@ -136,7 +136,7 @@
           		<div class="name"><?php the_field('testimonial_name'); ?></div>
         		</div>
         	</div>
-        <?php endforeach; 
+        <?php endforeach;
         wp_reset_postdata();?>
 		    </div>
 		  </div>

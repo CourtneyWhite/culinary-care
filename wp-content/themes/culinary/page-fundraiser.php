@@ -4,7 +4,7 @@
 	<section class="main main-fundraiser">
 	  <div class="wrapper">
 
-  		<h1 class="page-title">Inaugural Corporate Cook-Off</h1>
+  		<h1 class="page-title"><?php the_field('fundraiser_hero_title'); ?></h1>
 
       <div class="fundraiser-header">
         <div class="cook-off">
@@ -12,7 +12,7 @@
         </div>
         <div class="host">
           <img src="/wp-content/themes/culinary/assets/images/host-fpo.jpg" class="host-headshot" alt="Kendrick Lamar">
-          <h3>Kendrick Lamar</h3>
+          <h3><?php the_field('fundraiser_emcee_name'); ?></h3>
           <p>Host and Emcee</p>
         </div>
       </div>
@@ -20,15 +20,15 @@
       <div class="fundraiser-info">
         <div class="col-1-3">
           <img src="/wp-content/themes/culinary/assets/images/icon-calendar.svg" class="icon-calendar" alt="">
-          <p>Friday, October 17</p>
+          <p><?php the_field('fundraiser_date'); ?></p>
         </div>
         <div class="col-1-3">
           <img src="/wp-content/themes/culinary/assets/images/icon-chefs-hat.svg" class="icon-chefs-hat" alt="">
-          <p>Kendall College</p>
+          <p><?php the_field('fundraiser_location'); ?></p>
         </div>
         <div class="col-1-3">
           <img src="/wp-content/themes/culinary/assets/images/icon-watch.svg" class="icon-watch" alt="">
-          <p>7:00PM &ndash; 10:00PM</p>
+          <p><?php the_field('fundraiser_time'); ?></p>
         </div>
       </div>
 
@@ -49,15 +49,18 @@
       <div class="icon-fork"><div class="icon-fork-yellow"></div></div>
       <h2 class="section-title">Participating Chefs</h2>
       <ul class="fundraiser-grid">
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
+        <?php
+        if( have_rows('fundraiser_chefs') ):
+          while ( have_rows('fundraiser_chefs') ) : the_row();
+        ?>
+          <li><?php
+            $image = get_sub_field('fundraiser_chefs_image');
+            echo '<img src="' . $image['sizes']['partner-thumb'] . '">';
+          ?></li>
+        <?php
+          endwhile;
+        endif;
+        ?>
       </ul>
     </div>
   </section>
@@ -67,15 +70,18 @@
       <div class="icon-fork"><div class="icon-fork-yellow"></div></div>
       <h2 class="section-title">Tasting Panel</h2>
       <ul class="fundraiser-grid">
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
+        <?php
+        if( have_rows('fundraiser_panel') ):
+          while ( have_rows('fundraiser_panel') ) : the_row();
+        ?>
+          <li><?php
+            $image = get_sub_field('fundraiser_panel_image');
+            echo '<img src="' . $image['sizes']['partner-thumb'] . '">';
+          ?></li>
+        <?php
+          endwhile;
+        endif;
+        ?>
       </ul>
     </div>
   </section>
@@ -85,45 +91,35 @@
       <div class="icon-fork"><div class="icon-fork-yellow"></div></div>
       <h2 class="section-title">Participating Teams</h2>
       <ul class="fundraiser-grid">
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
-        <li><img src="/wp-content/uploads/2014/12/Sunda_Logo-117x144.jpg"></li>
+        <?php
+        if( have_rows('fundraiser_teams') ):
+          while ( have_rows('fundraiser_teams') ) : the_row();
+        ?>
+          <li><?php
+            $image = get_sub_field('fundraiser_teams_image');
+            echo '<img src="' . $image['sizes']['partner-thumb'] . '">';
+          ?></li>
+        <?php
+          endwhile;
+        endif;
+        ?>
       </ul>
     </div>
   </section>
 
   <section class="fundraiser-committee section">
     <div class="wrapper">
-      <!-- <div class="icon-fork"><div class="icon-fork-yellow"></div></div> -->
       <h2 class="section-title">Host Committee</h2>
       <ul class="fundraiser-grid">
-        <li>Bob Plant</li>
-        <li>Katy Perry</li>
-        <li>Snoop Dogg</li>
-        <li>Willie Nelson</li>
-        <li>James Page</li>
-        <li>Lykke Li</li>
-        <li>Sara Johansson</li>
-        <li>Bob Plant</li>
-        <li>Katy Perry</li>
-        <li>Snoop Dogg</li>
-        <li>Willie Nelson</li>
-        <li>James Page</li>
-        <li>Lykke Li</li>
-        <li>Sara Johansson</li>
-        <li>Bob Plant</li>
-        <li>Katy Perry</li>
-        <li>Snoop Dogg</li>
-        <li>Willie Nelson</li>
-        <li>James Page</li>
-        <li>Lykke Li</li>
-        <li>Sara Johansson</li>
+        <?php
+        if( have_rows('fundraiser_host_committee') ):
+          while ( have_rows('fundraiser_host_committee') ) : the_row();
+        ?>
+          <li><?php the_sub_field('fundraiser_host_committee_name'); ?></li>
+        <?php
+          endwhile;
+        endif;
+        ?>
       </ul>
     </div>
   </section>

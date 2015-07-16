@@ -73,12 +73,8 @@
 .fundraiser-grid li {
   display: inline-block;
   width: 160px;
-  margin: 0 20px $base;
+  margin: 0 20px $base*2;
 }
-
-// .fundraiser-committee .fundraiser-grid {
-//   @include width-8-col;
-// }
 
 .fundraiser-committee {
   background: $lt-grey-3;
@@ -87,10 +83,7 @@
 
 .fundraiser-committee .fundraiser-grid li {
   @include font-size(18px);
-  margin-bottom: $base*2;
   color: $black;
   font-weight: $bold;
 }
-
-
 

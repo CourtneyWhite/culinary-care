@@ -2,6 +2,7 @@
 *.sql
 
 .htaccess
+.DS_Store
 
 sitemap.xml
 sitemap.xml.gz
