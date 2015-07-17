@@ -32,17 +32,40 @@
         </div>
       </div>
 
-      <ul class="fundraiser-cta">
-        <li><a href="" class="btn red">Purchase Tickets</a></li>
-        <li><a href="" class="btn turq">Sponsor a Team</a></li>
-      </ul>
-
-      <div class="fundraiser-body body">
-    		<?php the_content(); ?>
-      </div>
-
 	  </div>
 	</section>
+
+  <section class="fundraiser-details">
+    <div class="wrapper">
+      <div class="fundraiser-body">
+        <?php the_content(); ?>
+        <ul class="fundraiser-cta">
+          <li><a href="" class="btn red">Purchase Tickets</a></li>
+          <li><a href="" class="btn turq">Sponsor a Team</a></li>
+        </ul>
+      </div>
+      <aside class="fundraiser-ticket-info">
+        <div class="ticket-option">
+          <div class="ticket-price">$135</div>
+          <h4>General Admission</h4>
+          <ul>
+            <li>Access to live viewing celebration</li>
+            <li>Open bar</li>
+            <li>Heavy Appetizers</li>
+          </ul>
+        </div>
+        <div class="ticket-option">
+          <div class="ticket-price">$175</div>
+          <h4>VIP</h4>
+          <ul>
+            <li>Early access to live viewing celebration</li>
+            <li>Meet &amp; greet with chefs and Tasting Panel members</li>
+            <li>Speciality craft cocktails</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
 
   <section class="fundraiser-chefs section">
     <div class="wrapper">

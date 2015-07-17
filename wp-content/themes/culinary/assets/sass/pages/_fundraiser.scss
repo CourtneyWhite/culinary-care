@@ -1,23 +1,30 @@
 
 .main-fundraiser {
+  @include cf;
+  margin-bottom: $base*3;
   padding-bottom: $base*2;
-  text-align: center;
+  background: $yellow $bg-testimonials no-repeat;
+  background: $pattern-utensils-yellow;
+  // background-size: cover;
+}
+
+.main-fundraiser .page-title {
+  color: $black;
 }
 
 .fundraiser-header,
 .fundraiser-info {
   @include cf;
+  text-align: center;
 
   @include bp-max-width($xlarge) {
     @include width-8-col;
-    margin-bottom: $base*3;
   }
 
   @include bp-min-width($xlarge) {
     display: inline-block;
     vertical-align: middle;
     width: 48%;
-    margin-bottom: $base*3;
   }
 }
 
@@ -41,6 +48,18 @@
   max-width: 298px;
 }
 
+.fundraiser-header .host h3,
+.fundraiser-header .host p {
+  color: $black;
+}
+
+.fundraiser-info .col-1-3 {
+  @include bp-min-max($medium, $large) {
+    width: 33.333%;
+    margin-top: $base*2;
+  }
+}
+
 .fundraiser-info [class*="icon-"] {
   margin-bottom: $base;
 }
@@ -51,12 +70,94 @@
 }
 
 .fundraiser-cta {
-  margin-bottom: $base*2;
+  @include cf;
+  margin-top: $base*1.5;
 }
 
 .fundraiser-cta li {
-  display: inline-block;
-  margin: 0 20px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: $base;
+}
+
+.fundraiser-details .wrapper {
+  position: relative;
+
+  @include bp-min-width($xlarge) {
+    padding-bottom: $base*4;
+  }
+}
+
+.fundraiser-body {
+  @include bp-min-width($large) {
+    padding-right: 440px;
+  }
+
+  @include bp-min-width($xlarge) {
+    padding-right: 560px;
+  }
+}
+
+.fundraiser-body h3 {
+  margin-bottom: $base;
+  color: $red;
+
+  @include bp-min-width($medium) {
+    @include font-size(32px);
+  }
+}
+
+.fundraiser-ticket-info {
+  padding: 20px;
+  border: 1px solid $red;
+
+  @include bp-min-width($large) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 380px;
+  }
+
+  @include bp-min-width($xlarge) {
+    width: 440px;
+  }
+}
+
+.ticket-option {
+  position: relative;
+  padding-left: 90px;
+}
+
+.ticket-option:first-child {
+  margin-bottom: $base;
+  padding-bottom: $base;
+  border-bottom: 1px solid $red;
+}
+
+.ticket-price {
+  @include font-size(21px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 72px;
+  height: 72px;
+  background: $red;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 72px;
+  font-weight: $bold;
+  text-align: center;
+}
+
+.ticket-option h4 {
+  margin-bottom: 6px;
+  padding-top: 6px;
+  color: $red;
+}
+
+.ticket-option li {
+  @include font-size(15px);
+  color: $black;
 }
 
 .fundraiser-chefs,
@@ -64,6 +165,12 @@
 .fundraiser-teams {
   position: relative;
   border-top: 1px solid $lt-grey-2;
+
+  .wrapper {
+    @include bp-min-width($large) {
+      padding-top: $base*4;
+    }
+  }
 }
 
 .fundraiser-grid {
