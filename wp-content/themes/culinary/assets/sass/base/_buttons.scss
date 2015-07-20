@@ -2,7 +2,7 @@
 a {
   @include global-transition;
 	color: $green;
-	
+
 	&:hover {
 	}
 }
@@ -14,16 +14,21 @@ a {
   background: $green;
   color: #fff;
   font-weight: $heavy;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  
+
+  @include bp-max-width($xsmall) {
+    display: block;
+  }
+
   &:hover {
     background: $dk-green;
   }
-  
+
   &.red {
     background: $red;
-    
+
     &:hover {
       background: $dk-red;
     }
@@ -31,7 +36,7 @@ a {
 
   &.yellow {
     background: $yellow;
-    
+
     &:hover {
       background: $gold;
     }
@@ -39,7 +44,7 @@ a {
 
   &.turq {
     background: $turq;
-    
+
     &:hover {
       background: $dk-turq;
     }
@@ -47,7 +52,7 @@ a {
 
   &.grey {
     background: $grey;
-    
+
     &:hover {
       background: $black;
     }

@@ -19,17 +19,27 @@
 
       <div class="fundraiser-info">
         <div class="col-1-3">
-          <img src="/wp-content/themes/culinary/assets/images/icon-calendar.svg" class="icon-calendar" alt="">
+          <div class="info-icon">
+            <img src="/wp-content/themes/culinary/assets/images/icon-calendar.svg" class="icon-calendar" alt="">
+          </div>
           <p><?php the_field('fundraiser_date'); ?></p>
         </div>
         <div class="col-1-3">
-          <img src="/wp-content/themes/culinary/assets/images/icon-chefs-hat.svg" class="icon-chefs-hat" alt="">
+          <div class="info-icon">
+            <img src="/wp-content/themes/culinary/assets/images/icon-chefs-hat.svg" class="icon-chefs-hat" alt="">
+          </div>
           <p><?php the_field('fundraiser_location'); ?></p>
         </div>
         <div class="col-1-3">
-          <img src="/wp-content/themes/culinary/assets/images/icon-watch.svg" class="icon-watch" alt="">
+          <div class="info-icon">
+            <img src="/wp-content/themes/culinary/assets/images/icon-watch.svg" class="icon-watch" alt="">
+          </div>
           <p><?php the_field('fundraiser_time'); ?></p>
         </div>
+        <ul class="fundraiser-cta">
+          <li><a href="" class="btn red">Purchase Tickets</a></li>
+          <li><a href="" class="btn turq">Sponsor a Team</a></li>
+        </ul>
       </div>
 
 	  </div>

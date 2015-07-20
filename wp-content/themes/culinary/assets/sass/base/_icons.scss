@@ -85,17 +85,19 @@ $icon-fork-yellow: image-url("icon-fork-yellow.png");
 
 /** Fundraiser Icons **/
 
-.icon-calendar {
-  height: 100px;
-}
-
-.icon-chefs-hat {
-  height: 100px;
-}
-
+.icon-calendar,
+.icon-chefs-hat,
 .icon-watch {
-  height: 100px;
+  @include bp-max-width($medium) {
+    @include absolute-center;
+    height: 32px;
+  }
+
+  @include bp-min-width($medium) {
+    height: 100px;
+  }
 }
+
 
 
 

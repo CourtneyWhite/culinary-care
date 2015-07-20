@@ -7,7 +7,7 @@
   @include bp-min-width($large) {
     padding-top: $base*2;
   }
-  
+
   a {
     color: #fff;
   }
@@ -17,7 +17,7 @@
   @include cf;
   width: 100%;
   padding-bottom: $base*1.5;
-  
+
   @include bp-min-width($large) {
     padding-bottom: $base*2;
   }
@@ -41,7 +41,6 @@
 }
 
 .footer .newsletter {
-
   @include bp-max-width($large) {
     margin-bottom: $base*1.5;
     text-align: center;
@@ -57,7 +56,7 @@
     width: 39%;
     padding-right: 20px;
   }
-  
+
   h4 {
     margin-bottom: 16px;
 
@@ -65,18 +64,18 @@
       margin-bottom: $base;
     }
   }
-    
+
   label {
     position: absolute;
     top: 9px;
     left: 12px;
     color: $grey;
   }
-  
+
   input {
     height: 42px;
   }
-  
+
   .btn {
     @include font-size(18px);
     position: absolute;
@@ -109,12 +108,12 @@
     float: left;
     width: 28%;
   }
-  
+
   @include bp-min-width($xlarge) {
     float: left;
     width: 24%;
   }
-  
+
   h4 {
     margin-bottom: 16px;
 
@@ -127,7 +126,7 @@
 .footer .social-links li {
   display: inline-block;
   margin: 0 10px;
-  
+
   @include bp-min-width($large) {
     float: left;
     margin: 0 20px 12px 0;
@@ -155,10 +154,21 @@
     width: 13%;
     text-align: right;
   }
-  
+
   a {
     font-weight: $heavy;
     text-transform: uppercase;
+  }
+}
+
+.footer-nav li {
+  @include bp-max-width($medium) {
+    margin-bottom: 6px;
+  }
+
+  @include bp-min-max($medium, $large) {
+    display: inline-block;
+    margin: 0 16px 4px;
   }
 }
 
@@ -169,13 +179,13 @@
   padding-top: $base;
   border-top: 1px solid #fff;
   text-align: center;
-  
+
   .copyright {
     @include bp-min-width($xsmall) {
       float: left;
     }
   }
-  
+
   .site-by {
     @include bp-min-width($xsmall) {
       float: right;

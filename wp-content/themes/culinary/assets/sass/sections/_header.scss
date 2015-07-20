@@ -24,6 +24,7 @@
   width: 160px;
 
   @include bp-max-width($xsmall) {
+    margin-bottom: 18px;
     margin-left: 4%;
   }
 
@@ -42,7 +43,7 @@
   @include bp-max-width($medium) {
     display: none;
   }
-    
+
   @include bp-min-width($medium) {
     @include cf;
     float: right;
@@ -53,7 +54,7 @@
 .header .top .social-links {
   float: right;
   margin-left: 12px;
-  
+
   li {
     float: left;
     margin-left: 20px;
@@ -69,11 +70,11 @@
   @include bp-max-width($large) {
     width: 280px;
   }
-  
+
   .form-item {
     margin-bottom: 0;
   }
-  
+
   label {
     @include font-size(14px);
     position: absolute;
@@ -81,11 +82,11 @@
     left: 10px;
     color: $grey;
   }
-  
+
   input {
     border: none;
   }
-  
+
   .btn {
     @extend .grey;
     @include font-size(14px);
