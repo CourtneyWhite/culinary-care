@@ -118,6 +118,7 @@
 
 .fundraiser-details .wrapper {
   position: relative;
+  padding-bottom: $base*2;
 
   @include bp-min-width($xlarge) {
     padding-bottom: $base*4;
@@ -217,6 +218,8 @@
   border-top: 1px solid $lt-grey-2;
 
   .wrapper {
+    padding: $base*3 0 0;
+
     @include bp-min-width($large) {
       padding-top: $base*4;
     }
