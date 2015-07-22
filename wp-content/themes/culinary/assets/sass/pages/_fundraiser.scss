@@ -1,11 +1,15 @@
 
 .main-fundraiser {
   @include cf;
-  margin-bottom: $base*3;
+  margin-bottom: $base*2;
   background: $pattern-utensils-yellow;
 
   @include bp-max-width($large) {
     border-top: 1px solid $dk-yellow;
+  }
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*3;
   }
 }
 
@@ -90,6 +94,9 @@
 }
 
 .fundraiser-info p {
+  font-weight: $bold;
+  color: $black;
+
   @include bp-max-width($medium) {
     display: inline-block;
     vertical-align: middle;
@@ -97,9 +104,6 @@
     padding-left: 20px;
     text-align: left;
   }
-
-  font-weight: $bold;
-  color: $black;
 }
 
 .fundraiser-info .fundraiser-cta {
@@ -120,12 +124,14 @@
   position: relative;
   padding-bottom: $base*2;
 
-  @include bp-min-width($xlarge) {
-    padding-bottom: $base*4;
+  @include bp-min-width($large) {
+    min-height: $base*19;
   }
 }
 
 .fundraiser-body {
+  margin-bottom: $base;
+
   @include bp-min-width($large) {
     padding-right: 440px;
   }

@@ -91,7 +91,7 @@
 
 @mixin line-height($size) {
   line-height: $size;
-  line-height: calculateEm($size);
+  line-height: calculateRem($size);
 }
 
 

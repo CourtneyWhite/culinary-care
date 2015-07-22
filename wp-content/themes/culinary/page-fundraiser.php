@@ -49,10 +49,6 @@
     <div class="wrapper">
       <div class="fundraiser-body">
         <?php the_content(); ?>
-        <ul class="fundraiser-cta">
-          <li><a href="" class="btn red">Purchase Tickets</a></li>
-          <li><a href="" class="btn turq">Sponsor a Team</a></li>
-        </ul>
       </div>
       <aside class="fundraiser-ticket-info">
         <div class="ticket-option">
