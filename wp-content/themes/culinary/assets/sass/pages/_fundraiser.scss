@@ -233,6 +233,7 @@
 }
 
 .fundraiser-grid {
+  margin-bottom: $base;
   text-align: center;
 }
 
@@ -240,6 +241,21 @@
   display: inline-block;
   width: 160px;
   margin: 0 20px $base*2;
+}
+
+.fundraiser-thumb {
+  position: relative;
+  height: 144px;
+  margin-bottom: 12px;
+}
+
+.fundraiser-thumb img {
+  @include absolute-center;
+}
+
+.fundraiser-thumb-caption {
+  color: $black;
+  font-weight: $bold;
 }
 
 .fundraiser-committee {

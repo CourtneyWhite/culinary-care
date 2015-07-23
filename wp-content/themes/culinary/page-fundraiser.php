@@ -84,7 +84,9 @@
         ?>
           <li><?php
             $image = get_sub_field('fundraiser_chefs_image');
-            echo '<img src="' . $image['sizes']['partner-thumb'] . '">';
+            $caption = get_sub_field('fundraiser_chefs_caption');
+            echo '<div class="fundraiser-thumb"><img src="' . $image['sizes']['partner-thumb'] . '"></div>';
+            echo '<div class="fundraiser-thumb-caption">' . $caption . '</div>';
           ?></li>
         <?php
           endwhile;
@@ -105,7 +107,9 @@
         ?>
           <li><?php
             $image = get_sub_field('fundraiser_panel_image');
-            echo '<img src="' . $image['sizes']['partner-thumb'] . '">';
+            $caption = get_sub_field('fundraiser_panel_caption');
+            echo '<div class="fundraiser-thumb"><img src="' . $image['sizes']['partner-thumb'] . '"></div>';
+            echo '<div class="fundraiser-thumb-caption">' . $caption . '</div>';
           ?></li>
         <?php
           endwhile;
@@ -126,8 +130,9 @@
         ?>
           <li><?php
             $image = get_sub_field('fundraiser_teams_image');
-            echo '<img src="' . $image['sizes']['partner-thumb'] . '">';
-          ?></li>
+            $caption = get_sub_field('fundraiser_teams_caption');
+            echo '<div class="fundraiser-thumb"><img src="' . $image['sizes']['partner-thumb'] . '"></div>';
+            echo '<div class="fundraiser-thumb-caption">' . $caption . '</div>';          ?></li>
         <?php
           endwhile;
         endif;
