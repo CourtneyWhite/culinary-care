@@ -37,8 +37,8 @@
           <p><?php the_field('fundraiser_time'); ?></p>
         </div>
         <ul class="fundraiser-cta">
-          <li><a href="" class="btn red">Purchase Tickets</a></li>
-          <li><a href="" class="btn turq">Sponsor a Team</a></li>
+          <li><a href="<?php the_field('purchase_tickets_link'); ?>" class="btn red">Purchase Tickets</a></li>
+          <li><a href="<?php the_field('sponsor_a_team_link'); ?>" class="btn turq">Sponsor a Team</a></li>
         </ul>
       </div>
 
@@ -52,22 +52,14 @@
       </div>
       <aside class="fundraiser-ticket-info">
         <div class="ticket-option">
-          <div class="ticket-price">$135</div>
-          <h4>General Admission</h4>
-          <ul>
-            <li>Access to live viewing celebration</li>
-            <li>Open bar</li>
-            <li>Heavy Appetizers</li>
-          </ul>
+          <div class="ticket-price"><?php the_field('ticket_option_1_price'); ?></div>
+          <h4><?php the_field('ticket_option_1_title'); ?></h4>
+          <?php the_field('ticket_option_1_details'); ?>
         </div>
         <div class="ticket-option">
-          <div class="ticket-price">$175</div>
-          <h4>VIP</h4>
-          <ul>
-            <li>Early access to live viewing celebration</li>
-            <li>Meet &amp; greet with chefs and Tasting Panel members</li>
-            <li>Speciality craft cocktails</li>
-          </ul>
+          <div class="ticket-price"><?php the_field('ticket_option_2_price'); ?></div>
+          <h4><?php the_field('ticket_option_2_title'); ?></h4>
+          <?php the_field('ticket_option_2_details'); ?>
         </div>
       </aside>
     </div>
